@@ -1,0 +1,150 @@
+[alignedTypes.exe] starting...
+
+MapSMtoCores undefined SM 3.5 is undefined (please update to the latest SDK)!
+> Using CUDA device [0]: GeForce GTX 780
+MapSMtoCores SM 3.5 is undefined (please update to the latest SDK)!
+MapSMtoCores SM 3.5 is undefined (please update to the latest SDK)!
+[GeForce GTX 780] has 12 MP(s) x -1 (Cores/MP) = -12 (Cores)
+MapSMtoCores SM 3.5 is undefined (please update to the latest SDK)!
+> Compute scaling value = 1.00
+> Memory Size = 49999872
+Allocating memory...
+Generating host input data array...
+Uploading input data to GPU memory...
+Testing misaligned types...
+uint8...
+Avg. time: 26.222057 ms / Copy throughput: 1.775834 GB/s.
+	TEST OK
+uint16...
+Avg. time: 24.150171 ms / Copy throughput: 1.928185 GB/s.
+	TEST OK
+RGBA8_misaligned...
+Avg. time: 24.171471 ms / Copy throughput: 1.926486 GB/s.
+	TEST OK
+LA32_misaligned...
+Avg. time: 23.537718 ms / Copy throughput: 1.978357 GB/s.
+	TEST OK
+RGB32_misaligned...
+Avg. time: 23.886492 ms / Copy throughput: 1.949470 GB/s.
+	TEST OK
+RGBA32_misaligned...
+Avg. time: 24.437981 ms / Copy throughput: 1.905477 GB/s.
+	TEST OK
+Testing aligned types...
+RGBA8...
+Avg. time: 23.470749 ms / Copy throughput: 1.984002 GB/s.
+	TEST OK
+I32...
+Avg. time: 23.694300 ms / Copy throughput: 1.965283 GB/s.
+	TEST OK
+LA32...
+Avg. time: 23.573122 ms / Copy throughput: 1.975386 GB/s.
+	TEST OK
+RGB32...
+Avg. time: 23.637365 ms / Copy throughput: 1.970017 GB/s.
+	TEST OK
+RGBA32...
+Avg. time: 23.536438 ms / Copy throughput: 1.978465 GB/s.
+	TEST OK
+RGBA32_2...
+Avg. time: 23.708853 ms / Copy throughput: 1.964077 GB/s.
+	TEST OK
+
+[alignedTypes] -> Test Results: 0 Failures
+Shutting down...
+[alignedTypes.exe] test results...
+PASSED
+
+> exiting in 3 seconds: 3...2...1...done!
+
+======== Warning: Metric "branch_efficiency" cannot be found on device 0.
+==4676== NVPROF is profiling process 4676, command: alignedTypes.exe
+==4676== Warning: Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==4676== Profiling application: alignedTypes.exe
+==4676== Profiling result:
+==4676== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"GeForce GTX 780 (0)","void testKernel<RGBA32_misaligned>(RGBA32_misaligned*, RGBA32_misaligned*, int)",32,"inst_replay_overhead","Instruction Replay Overhead",4.121628,4.162952,4.143994
+"GeForce GTX 780 (0)","void testKernel<RGBA32_misaligned>(RGBA32_misaligned*, RGBA32_misaligned*, int)",32,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void testKernel<RGBA32_misaligned>(RGBA32_misaligned*, RGBA32_misaligned*, int)",32,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void testKernel<RGBA32_misaligned>(RGBA32_misaligned*, RGBA32_misaligned*, int)",32,"cf_executed","Executed Control-Flow Instructions",98680,98680,98680
+"GeForce GTX 780 (0)","void testKernel<RGBA32_misaligned>(RGBA32_misaligned*, RGBA32_misaligned*, int)",32,"inst_executed","Instructions Executed",1274136,1274136,1274136
+"GeForce GTX 780 (0)","void testKernel<RGBA32_misaligned>(RGBA32_misaligned*, RGBA32_misaligned*, int)",32,"inst_issued","Instructions Issued",6525651,6578303,6554148
+"GeForce GTX 780 (0)","void testKernel<RGBA32_misaligned>(RGBA32_misaligned*, RGBA32_misaligned*, int)",32,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void testKernel<RGBA8>(RGBA8*, RGBA8*, int)",32,"inst_replay_overhead","Instruction Replay Overhead",0.196960,0.197420,0.197179
+"GeForce GTX 780 (0)","void testKernel<RGBA8>(RGBA8*, RGBA8*, int)",32,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void testKernel<RGBA8>(RGBA8*, RGBA8*, int)",32,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void testKernel<RGBA8>(RGBA8*, RGBA8*, int)",32,"cf_executed","Executed Control-Flow Instructions",391648,391648,391648
+"GeForce GTX 780 (0)","void testKernel<RGBA8>(RGBA8*, RGBA8*, int)",32,"inst_executed","Instructions Executed",5473344,5473344,5473344
+"GeForce GTX 780 (0)","void testKernel<RGBA8>(RGBA8*, RGBA8*, int)",32,"inst_issued","Instructions Issued",6551374,6553893,6552572
+"GeForce GTX 780 (0)","void testKernel<RGBA8>(RGBA8*, RGBA8*, int)",32,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void testKernel<RGBA8_misaligned>(RGBA8_misaligned*, RGBA8_misaligned*, int)",32,"inst_replay_overhead","Instruction Replay Overhead",0.463719,0.470473,0.466603
+"GeForce GTX 780 (0)","void testKernel<RGBA8_misaligned>(RGBA8_misaligned*, RGBA8_misaligned*, int)",32,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void testKernel<RGBA8_misaligned>(RGBA8_misaligned*, RGBA8_misaligned*, int)",32,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void testKernel<RGBA8_misaligned>(RGBA8_misaligned*, RGBA8_misaligned*, int)",32,"cf_executed","Executed Control-Flow Instructions",391648,391648,391648
+"GeForce GTX 780 (0)","void testKernel<RGBA8_misaligned>(RGBA8_misaligned*, RGBA8_misaligned*, int)",32,"inst_executed","Instructions Executed",5082720,5082720,5082720
+"GeForce GTX 780 (0)","void testKernel<RGBA8_misaligned>(RGBA8_misaligned*, RGBA8_misaligned*, int)",32,"inst_issued","Instructions Issued",7439676,7474001,7454333
+"GeForce GTX 780 (0)","void testKernel<RGBA8_misaligned>(RGBA8_misaligned*, RGBA8_misaligned*, int)",32,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void testKernel<LA32>(LA32*, LA32*, int)",32,"inst_replay_overhead","Instruction Replay Overhead",0.637764,0.639829,0.638851
+"GeForce GTX 780 (0)","void testKernel<LA32>(LA32*, LA32*, int)",32,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void testKernel<LA32>(LA32*, LA32*, int)",32,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void testKernel<LA32>(LA32*, LA32*, int)",32,"cf_executed","Executed Control-Flow Instructions",196336,196336,196336
+"GeForce GTX 780 (0)","void testKernel<LA32>(LA32*, LA32*, int)",32,"inst_executed","Instructions Executed",1371792,1371792,1371792
+"GeForce GTX 780 (0)","void testKernel<LA32>(LA32*, LA32*, int)",32,"inst_issued","Instructions Issued",2246671,2249504,2248162
+"GeForce GTX 780 (0)","void testKernel<LA32>(LA32*, LA32*, int)",32,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void testKernel<RGB32_misaligned>(RGB32_misaligned*, RGB32_misaligned*, int)",32,"inst_replay_overhead","Instruction Replay Overhead",2.745660,2.773192,2.758383
+"GeForce GTX 780 (0)","void testKernel<RGB32_misaligned>(RGB32_misaligned*, RGB32_misaligned*, int)",32,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void testKernel<RGB32_misaligned>(RGB32_misaligned*, RGB32_misaligned*, int)",32,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void testKernel<RGB32_misaligned>(RGB32_misaligned*, RGB32_misaligned*, int)",32,"cf_executed","Executed Control-Flow Instructions",131232,131232,131232
+"GeForce GTX 780 (0)","void testKernel<RGB32_misaligned>(RGB32_misaligned*, RGB32_misaligned*, int)",32,"inst_executed","Instructions Executed",1437408,1437408,1437408
+"GeForce GTX 780 (0)","void testKernel<RGB32_misaligned>(RGB32_misaligned*, RGB32_misaligned*, int)",32,"inst_issued","Instructions Issued",5384042,5423616,5402329
+"GeForce GTX 780 (0)","void testKernel<RGB32_misaligned>(RGB32_misaligned*, RGB32_misaligned*, int)",32,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void testKernel<RGBA32_2>(RGBA32_2*, RGBA32_2*, int)",32,"inst_replay_overhead","Instruction Replay Overhead",9.743796,9.905245,9.811477
+"GeForce GTX 780 (0)","void testKernel<RGBA32_2>(RGBA32_2*, RGBA32_2*, int)",32,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void testKernel<RGBA32_2>(RGBA32_2*, RGBA32_2*, int)",32,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void testKernel<RGBA32_2>(RGBA32_2*, RGBA32_2*, int)",32,"cf_executed","Executed Control-Flow Instructions",49852,49852,49852
+"GeForce GTX 780 (0)","void testKernel<RGBA32_2>(RGBA32_2*, RGBA32_2*, int)",32,"inst_executed","Instructions Executed",444060,444060,444060
+"GeForce GTX 780 (0)","void testKernel<RGBA32_2>(RGBA32_2*, RGBA32_2*, int)",32,"inst_issued","Instructions Issued",4770890,4842583,4800944
+"GeForce GTX 780 (0)","void testKernel<RGBA32_2>(RGBA32_2*, RGBA32_2*, int)",32,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void testKernel<unsigned short>(unsigned short*, unsigned short*, int)",32,"inst_replay_overhead","Instruction Replay Overhead",0.212550,0.212835,0.212693
+"GeForce GTX 780 (0)","void testKernel<unsigned short>(unsigned short*, unsigned short*, int)",32,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void testKernel<unsigned short>(unsigned short*, unsigned short*, int)",32,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void testKernel<unsigned short>(unsigned short*, unsigned short*, int)",32,"cf_executed","Executed Control-Flow Instructions",782272,782272,782272
+"GeForce GTX 780 (0)","void testKernel<unsigned short>(unsigned short*, unsigned short*, int)",32,"inst_executed","Instructions Executed",5473344,5473344,5473344
+"GeForce GTX 780 (0)","void testKernel<unsigned short>(unsigned short*, unsigned short*, int)",32,"inst_issued","Instructions Issued",6636706,6638265,6637488
+"GeForce GTX 780 (0)","void testKernel<unsigned short>(unsigned short*, unsigned short*, int)",32,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void testKernel<unsigned int>(unsigned int*, unsigned int*, int)",32,"inst_replay_overhead","Instruction Replay Overhead",0.209478,0.210102,0.209843
+"GeForce GTX 780 (0)","void testKernel<unsigned int>(unsigned int*, unsigned int*, int)",32,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void testKernel<unsigned int>(unsigned int*, unsigned int*, int)",32,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void testKernel<unsigned int>(unsigned int*, unsigned int*, int)",32,"cf_executed","Executed Control-Flow Instructions",391648,391648,391648
+"GeForce GTX 780 (0)","void testKernel<unsigned int>(unsigned int*, unsigned int*, int)",32,"inst_executed","Instructions Executed",2738976,2738976,2738976
+"GeForce GTX 780 (0)","void testKernel<unsigned int>(unsigned int*, unsigned int*, int)",32,"inst_issued","Instructions Issued",3312730,3314440,3313730
+"GeForce GTX 780 (0)","void testKernel<unsigned int>(unsigned int*, unsigned int*, int)",32,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void testKernel<unsigned char>(unsigned char*, unsigned char*, int)",32,"inst_replay_overhead","Instruction Replay Overhead",0.212835,0.213016,0.212905
+"GeForce GTX 780 (0)","void testKernel<unsigned char>(unsigned char*, unsigned char*, int)",32,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void testKernel<unsigned char>(unsigned char*, unsigned char*, int)",32,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void testKernel<unsigned char>(unsigned char*, unsigned char*, int)",32,"cf_executed","Executed Control-Flow Instructions",1563520,1563520,1563520
+"GeForce GTX 780 (0)","void testKernel<unsigned char>(unsigned char*, unsigned char*, int)",32,"inst_executed","Instructions Executed",10942080,10942080,10942080
+"GeForce GTX 780 (0)","void testKernel<unsigned char>(unsigned char*, unsigned char*, int)",32,"inst_issued","Instructions Issued",13270943,13272919,13271698
+"GeForce GTX 780 (0)","void testKernel<unsigned char>(unsigned char*, unsigned char*, int)",32,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void testKernel<RGBA32>(RGBA32*, RGBA32*, int)",32,"inst_replay_overhead","Instruction Replay Overhead",3.430344,3.651642,3.606548
+"GeForce GTX 780 (0)","void testKernel<RGBA32>(RGBA32*, RGBA32*, int)",32,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void testKernel<RGBA32>(RGBA32*, RGBA32*, int)",32,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void testKernel<RGBA32>(RGBA32*, RGBA32*, int)",32,"cf_executed","Executed Control-Flow Instructions",98680,98680,98680
+"GeForce GTX 780 (0)","void testKernel<RGBA32>(RGBA32*, RGBA32*, int)",32,"inst_executed","Instructions Executed",688200,688200,688200
+"GeForce GTX 780 (0)","void testKernel<RGBA32>(RGBA32*, RGBA32*, int)",32,"inst_issued","Instructions Issued",3048963,3201260,3170226
+"GeForce GTX 780 (0)","void testKernel<RGBA32>(RGBA32*, RGBA32*, int)",32,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void testKernel<RGB32>(RGB32*, RGB32*, int)",32,"inst_replay_overhead","Instruction Replay Overhead",2.337001,2.372189,2.353167
+"GeForce GTX 780 (0)","void testKernel<RGB32>(RGB32*, RGB32*, int)",32,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void testKernel<RGB32>(RGB32*, RGB32*, int)",32,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void testKernel<RGB32>(RGB32*, RGB32*, int)",32,"cf_executed","Executed Control-Flow Instructions",98680,98680,98680
+"GeForce GTX 780 (0)","void testKernel<RGB32>(RGB32*, RGB32*, int)",32,"inst_executed","Instructions Executed",1664760,1664760,1664760
+"GeForce GTX 780 (0)","void testKernel<RGB32>(RGB32*, RGB32*, int)",32,"inst_issued","Instructions Issued",5555306,5613886,5582219
+"GeForce GTX 780 (0)","void testKernel<RGB32>(RGB32*, RGB32*, int)",32,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void testKernel<LA32_misaligned>(LA32_misaligned*, LA32_misaligned*, int)",32,"inst_replay_overhead","Instruction Replay Overhead",1.381944,1.403890,1.391283
+"GeForce GTX 780 (0)","void testKernel<LA32_misaligned>(LA32_misaligned*, LA32_misaligned*, int)",32,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void testKernel<LA32_misaligned>(LA32_misaligned*, LA32_misaligned*, int)",32,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void testKernel<LA32_misaligned>(LA32_misaligned*, LA32_misaligned*, int)",32,"cf_executed","Executed Control-Flow Instructions",196336,196336,196336
+"GeForce GTX 780 (0)","void testKernel<LA32_misaligned>(LA32_misaligned*, LA32_misaligned*, int)",32,"inst_executed","Instructions Executed",1762416,1762416,1762416
+"GeForce GTX 780 (0)","void testKernel<LA32_misaligned>(LA32_misaligned*, LA32_misaligned*, int)",32,"inst_issued","Instructions Issued",4197976,4236654,4214436
+"GeForce GTX 780 (0)","void testKernel<LA32_misaligned>(LA32_misaligned*, LA32_misaligned*, int)",32,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000

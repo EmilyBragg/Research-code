@@ -1,0 +1,108 @@
+[transpose.exe] starting...
+
+transpose.exe Starting...
+
+MapSMtoCores undefined SM 3.5 is undefined (please update to the latest SDK)!
+> Using CUDA device [0]: GeForce GTX 780
+MapSMtoCores SM 3.5 is undefined (please update to the latest SDK)!
+> Device 0: "GeForce GTX 780"
+> SM Capability 3.5 detected:
+MapSMtoCores SM 3.5 is undefined (please update to the latest SDK)!
+MapSMtoCores SM 3.5 is undefined (please update to the latest SDK)!
+> [GeForce GTX 780] has 12 MP(s) x -1 (Cores/MP) = -12 (Cores)
+> Compute performance scaling factor = 1.00
+
+Matrix size: 1024x1024 (64x64 tiles), tile size: 16x16, block size: 16x16
+
+
+transpose-Outer-simple copy       , Throughput = 0.3960 GB/s, Time = 19.72851 s, Size = 1048576 fp32 elements, NumDevsUsed = 1, Workgroup = 256
+transpose-Inner-simple copy       , Throughput = 30.8845 GB/s, Time = 0.25296 s, Size = 1048576 fp32 elements, NumDevsUsed = 1, Workgroup = 256
+
+transpose-Outer-shared memory copy, Throughput = 0.4070 GB/s, Time = 19.19515 s, Size = 1048576 fp32 elements, NumDevsUsed = 1, Workgroup = 256
+transpose-Inner-shared memory copy, Throughput = 29.6577 GB/s, Time = 0.26342 s, Size = 1048576 fp32 elements, NumDevsUsed = 1, Workgroup = 256
+
+transpose-Outer-naive             , Throughput = 0.4057 GB/s, Time = 19.25751 s, Size = 1048576 fp32 elements, NumDevsUsed = 1, Workgroup = 256
+transpose-Inner-naive             , Throughput = 21.3912 GB/s, Time = 0.36522 s, Size = 1048576 fp32 elements, NumDevsUsed = 1, Workgroup = 256
+
+transpose-Outer-coalesced         , Throughput = 0.4069 GB/s, Time = 19.20219 s, Size = 1048576 fp32 elements, NumDevsUsed = 1, Workgroup = 256
+transpose-Inner-coalesced         , Throughput = 26.0237 GB/s, Time = 0.30021 s, Size = 1048576 fp32 elements, NumDevsUsed = 1, Workgroup = 256
+
+transpose-Outer-optimized         , Throughput = 0.4075 GB/s, Time = 19.16952 s, Size = 1048576 fp32 elements, NumDevsUsed = 1, Workgroup = 256
+transpose-Inner-optimized         , Throughput = 27.6114 GB/s, Time = 0.28294 s, Size = 1048576 fp32 elements, NumDevsUsed = 1, Workgroup = 256
+
+transpose-Outer-coarse-grained    , Throughput = 0.4047 GB/s, Time = 19.30303 s, Size = 1048576 fp32 elements, NumDevsUsed = 1, Workgroup = 256
+transpose-Inner-coarse-grained    , Throughput = 28.8443 GB/s, Time = 0.27085 s, Size = 1048576 fp32 elements, NumDevsUsed = 1, Workgroup = 256
+
+transpose-Outer-fine-grained      , Throughput = 0.4074 GB/s, Time = 19.17601 s, Size = 1048576 fp32 elements, NumDevsUsed = 1, Workgroup = 256
+transpose-Inner-fine-grained      , Throughput = 27.0062 GB/s, Time = 0.28929 s, Size = 1048576 fp32 elements, NumDevsUsed = 1, Workgroup = 256
+
+transpose-Outer-diagonal          , Throughput = 0.4077 GB/s, Time = 19.16229 s, Size = 1048576 fp32 elements, NumDevsUsed = 1, Workgroup = 256
+transpose-Inner-diagonal          , Throughput = 28.0157 GB/s, Time = 0.27886 s, Size = 1048576 fp32 elements, NumDevsUsed = 1, Workgroup = 256
+[transpose.exe] test results...
+PASSED
+
+> exiting in 3 seconds: 3...2...1...done!
+
+======== Warning: Metric "branch_efficiency" cannot be found on device 0.
+==5700== NVPROF is profiling process 5700, command: transpose.exe
+==5700== Warning: Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==5700== Profiling application: transpose.exe
+==5700== Profiling result:
+==5700== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"GeForce GTX 780 (0)","copy(float*, float*, int, int, int)",102,"inst_replay_overhead","Instruction Replay Overhead",0.232770,0.967388,0.241724
+"GeForce GTX 780 (0)","copy(float*, float*, int, int, int)",102,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","copy(float*, float*, int, int, int)",102,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","copy(float*, float*, int, int, int)",102,"cf_executed","Executed Control-Flow Instructions",98304,1736704,114366
+"GeForce GTX 780 (0)","copy(float*, float*, int, int, int)",102,"inst_executed","Instructions Executed",655360,15368192,799603
+"GeForce GTX 780 (0)","copy(float*, float*, int, int, int)",102,"inst_issued","Instructions Issued",807908,30235193,1097559
+"GeForce GTX 780 (0)","copy(float*, float*, int, int, int)",102,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","transposeCoarseGrained(float*, float*, int, int, int)",102,"inst_replay_overhead","Instruction Replay Overhead",0.228638,0.603384,0.233117
+"GeForce GTX 780 (0)","transposeCoarseGrained(float*, float*, int, int, int)",102,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","transposeCoarseGrained(float*, float*, int, int, int)",102,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","transposeCoarseGrained(float*, float*, int, int, int)",102,"cf_executed","Executed Control-Flow Instructions",131072,5013504,178938
+"GeForce GTX 780 (0)","transposeCoarseGrained(float*, float*, int, int, int)",102,"inst_executed","Instructions Executed",917504,27000832,1173222
+"GeForce GTX 780 (0)","transposeCoarseGrained(float*, float*, int, int, int)",102,"inst_issued","Instructions Issued",1127280,43292705,1541405
+"GeForce GTX 780 (0)","transposeCoarseGrained(float*, float*, int, int, int)",102,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","transposeNoBankConflicts(float*, float*, int, int, int)",102,"inst_replay_overhead","Instruction Replay Overhead",0.260033,0.674301,0.265191
+"GeForce GTX 780 (0)","transposeNoBankConflicts(float*, float*, int, int, int)",102,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","transposeNoBankConflicts(float*, float*, int, int, int)",102,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","transposeNoBankConflicts(float*, float*, int, int, int)",102,"cf_executed","Executed Control-Flow Instructions",131072,5013504,178938
+"GeForce GTX 780 (0)","transposeNoBankConflicts(float*, float*, int, int, int)",102,"inst_executed","Instructions Executed",983040,27066368,1238758
+"GeForce GTX 780 (0)","transposeNoBankConflicts(float*, float*, int, int, int)",102,"inst_issued","Instructions Issued",1238663,45317245,1671883
+"GeForce GTX 780 (0)","transposeNoBankConflicts(float*, float*, int, int, int)",102,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","transposeCoalesced(float*, float*, int, int, int)",102,"inst_replay_overhead","Instruction Replay Overhead",0.287303,0.799261,0.293390
+"GeForce GTX 780 (0)","transposeCoalesced(float*, float*, int, int, int)",102,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","transposeCoalesced(float*, float*, int, int, int)",102,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","transposeCoalesced(float*, float*, int, int, int)",102,"cf_executed","Executed Control-Flow Instructions",131072,5013504,178938
+"GeForce GTX 780 (0)","transposeCoalesced(float*, float*, int, int, int)",102,"inst_executed","Instructions Executed",983040,27066368,1238758
+"GeForce GTX 780 (0)","transposeCoalesced(float*, float*, int, int, int)",102,"inst_issued","Instructions Issued",1265470,48699450,1731559
+"GeForce GTX 780 (0)","transposeCoalesced(float*, float*, int, int, int)",102,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","transposeFineGrained(float*, float*, int, int, int)",102,"inst_replay_overhead","Instruction Replay Overhead",0.261635,0.663831,0.267522
+"GeForce GTX 780 (0)","transposeFineGrained(float*, float*, int, int, int)",102,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","transposeFineGrained(float*, float*, int, int, int)",102,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","transposeFineGrained(float*, float*, int, int, int)",102,"cf_executed","Executed Control-Flow Instructions",131072,5013504,178938
+"GeForce GTX 780 (0)","transposeFineGrained(float*, float*, int, int, int)",102,"inst_executed","Instructions Executed",884736,28606464,1156517
+"GeForce GTX 780 (0)","transposeFineGrained(float*, float*, int, int, int)",102,"inst_issued","Instructions Issued",1116214,47596324,1573621
+"GeForce GTX 780 (0)","transposeFineGrained(float*, float*, int, int, int)",102,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","copySharedMem(float*, float*, int, int, int)",102,"inst_replay_overhead","Instruction Replay Overhead",0.148425,0.385176,0.151075
+"GeForce GTX 780 (0)","copySharedMem(float*, float*, int, int, int)",102,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","copySharedMem(float*, float*, int, int, int)",102,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","copySharedMem(float*, float*, int, int, int)",102,"cf_executed","Executed Control-Flow Instructions",131072,6619136,194680
+"GeForce GTX 780 (0)","copySharedMem(float*, float*, int, int, int)",102,"inst_executed","Instructions Executed",1015808,26968064,1270241
+"GeForce GTX 780 (0)","copySharedMem(float*, float*, int, int, int)",102,"inst_issued","Instructions Issued",1166579,37355508,1521706
+"GeForce GTX 780 (0)","copySharedMem(float*, float*, int, int, int)",102,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","transposeDiagonal(float*, float*, int, int, int)",102,"inst_replay_overhead","Instruction Replay Overhead",0.141014,0.672889,0.146546
+"GeForce GTX 780 (0)","transposeDiagonal(float*, float*, int, int, int)",102,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","transposeDiagonal(float*, float*, int, int, int)",102,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","transposeDiagonal(float*, float*, int, int, int)",102,"cf_executed","Executed Control-Flow Instructions",163840,5046272,211706
+"GeForce GTX 780 (0)","transposeDiagonal(float*, float*, int, int, int)",102,"inst_executed","Instructions Executed",1638400,27721728,1894118
+"GeForce GTX 780 (0)","transposeDiagonal(float*, float*, int, int, int)",102,"inst_issued","Instructions Issued",1869437,46375384,2306289
+"GeForce GTX 780 (0)","transposeDiagonal(float*, float*, int, int, int)",102,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","transposeNaive(float*, float*, int, int, int)",102,"inst_replay_overhead","Instruction Replay Overhead",0.812645,3.803616,0.842741
+"GeForce GTX 780 (0)","transposeNaive(float*, float*, int, int, int)",102,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","transposeNaive(float*, float*, int, int, int)",102,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","transposeNaive(float*, float*, int, int, int)",102,"cf_executed","Executed Control-Flow Instructions",98304,1736704,114366
+"GeForce GTX 780 (0)","transposeNaive(float*, float*, int, int, int)",102,"inst_executed","Instructions Executed",753664,15466496,897907
+"GeForce GTX 780 (0)","transposeNaive(float*, float*, int, int, int)",102,"inst_issued","Instructions Issued",1366125,74295100,2081697
+"GeForce GTX 780 (0)","transposeNaive(float*, float*, int, int, int)",102,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000

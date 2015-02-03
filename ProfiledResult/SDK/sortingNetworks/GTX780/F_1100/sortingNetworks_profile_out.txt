@@ -1,0 +1,202 @@
+[sortingNetworks.exe] starting...
+
+Starting up CUDA context...
+MapSMtoCores undefined SMversion 3.5!
+Allocating and initializing host arrays...
+
+Allocating and initializing CUDA arrays...
+
+Running GPU bitonic sort (1 identical iterations)...
+
+Testing array length 64 (16384 arrays per batch)...
+Average time: 24.980278 ms
+
+
+Validating the results...
+...reading back GPU results
+...inspecting keys array: OK
+...inspecting keys and values array: OK
+...stability property: NOT stable
+
+Testing array length 128 (8192 arrays per batch)...
+Average time: 30.971498 ms
+
+
+Validating the results...
+...reading back GPU results
+...inspecting keys array: OK
+...inspecting keys and values array: OK
+...stability property: NOT stable
+
+Testing array length 256 (4096 arrays per batch)...
+Average time: 21.834959 ms
+
+
+Validating the results...
+...reading back GPU results
+...inspecting keys array: OK
+...inspecting keys and values array: OK
+...stability property: NOT stable
+
+Testing array length 512 (2048 arrays per batch)...
+Average time: 25.677418 ms
+
+
+Validating the results...
+...reading back GPU results
+...inspecting keys array: OK
+...inspecting keys and values array: OK
+...stability property: NOT stable
+
+Testing array length 1024 (1024 arrays per batch)...
+Average time: 22.229813 ms
+
+
+Validating the results...
+...reading back GPU results
+...inspecting keys array: OK
+...inspecting keys and values array: OK
+...stability property: NOT stable
+
+Testing array length 2048 (512 arrays per batch)...
+Average time: 61.815609 ms
+
+
+Validating the results...
+...reading back GPU results
+...inspecting keys array: OK
+...inspecting keys and values array: OK
+...stability property: NOT stable
+
+Testing array length 4096 (256 arrays per batch)...
+Average time: 121.758934 ms
+
+
+Validating the results...
+...reading back GPU results
+...inspecting keys array: OK
+...inspecting keys and values array: OK
+...stability property: NOT stable
+
+Testing array length 8192 (128 arrays per batch)...
+Average time: 199.111084 ms
+
+
+Validating the results...
+...reading back GPU results
+...inspecting keys array: OK
+...inspecting keys and values array: OK
+...stability property: NOT stable
+
+Testing array length 16384 (64 arrays per batch)...
+Average time: 329.549042 ms
+
+
+Validating the results...
+...reading back GPU results
+...inspecting keys array: OK
+...inspecting keys and values array: OK
+...stability property: NOT stable
+
+Testing array length 32768 (32 arrays per batch)...
+Average time: 412.012177 ms
+
+
+Validating the results...
+...reading back GPU results
+...inspecting keys array: OK
+...inspecting keys and values array: OK
+...stability property: NOT stable
+
+Testing array length 65536 (16 arrays per batch)...
+Average time: 544.009094 ms
+
+
+Validating the results...
+...reading back GPU results
+...inspecting keys array: OK
+...inspecting keys and values array: OK
+...stability property: NOT stable
+
+Testing array length 131072 (8 arrays per batch)...
+Average time: 706.200012 ms
+
+
+Validating the results...
+...reading back GPU results
+...inspecting keys array: OK
+...inspecting keys and values array: OK
+...stability property: NOT stable
+
+Testing array length 262144 (4 arrays per batch)...
+Average time: 880.490967 ms
+
+
+Validating the results...
+...reading back GPU results
+...inspecting keys array: OK
+...inspecting keys and values array: OK
+...stability property: NOT stable
+
+Testing array length 524288 (2 arrays per batch)...
+Average time: 1069.178223 ms
+
+
+Validating the results...
+...reading back GPU results
+...inspecting keys array: OK
+...inspecting keys and values array: OK
+...stability property: NOT stable
+
+Testing array length 1048576 (1 arrays per batch)...
+Average time: 1288.962158 ms
+
+sortingNetworks-bitonic, Throughput = 0.8135 MElements/s, Time = 1.28896 s, Size = 1048576 elements, NumDevsUsed = 1, Workgroup = 512
+
+Validating the results...
+...reading back GPU results
+...inspecting keys array: OK
+...inspecting keys and values array: OK
+...stability property: NOT stable
+
+Shutting down...
+[sortingNetworks.exe] test results...
+PASSED
+
+> exiting in 3 seconds: 3...2...1...done!
+
+======== Warning: Metric "branch_efficiency" cannot be found on device 0.
+==6532== NVPROF is profiling process 6532, command: sortingNetworks.exe
+==6532== Warning: Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==6532== Profiling application: sortingNetworks.exe
+==6532== Profiling result:
+==6532== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"GeForce GTX 780 (0)","bitonicSortShared(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",5,"inst_replay_overhead","Instruction Replay Overhead",0.005010,0.012498,0.008186
+"GeForce GTX 780 (0)","bitonicSortShared(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",5,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","bitonicSortShared(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",5,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","bitonicSortShared(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",5,"cf_executed","Executed Control-Flow Instructions",917504,2162688,1507328
+"GeForce GTX 780 (0)","bitonicSortShared(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",5,"inst_executed","Instructions Executed",9371648,22839296,15728640
+"GeForce GTX 780 (0)","bitonicSortShared(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",5,"inst_issued","Instructions Issued",9488774,22953718,15845104
+"GeForce GTX 780 (0)","bitonicSortShared(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",5,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","bitonicMergeShared(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",55,"inst_replay_overhead","Instruction Replay Overhead",0.024418,0.025710,0.025042
+"GeForce GTX 780 (0)","bitonicMergeShared(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",55,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","bitonicMergeShared(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",55,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","bitonicMergeShared(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",55,"cf_executed","Executed Control-Flow Instructions",196608,196608,196608
+"GeForce GTX 780 (0)","bitonicMergeShared(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",55,"inst_executed","Instructions Executed",3391488,3391488,3391488
+"GeForce GTX 780 (0)","bitonicMergeShared(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",55,"inst_issued","Instructions Issued",3474302,3478684,3476418
+"GeForce GTX 780 (0)","bitonicMergeShared(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",55,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","bitonicSortShared1(unsigned int*, unsigned int*, unsigned int*, unsigned int*)",10,"inst_replay_overhead","Instruction Replay Overhead",0.003840,0.003982,0.003908
+"GeForce GTX 780 (0)","bitonicSortShared1(unsigned int*, unsigned int*, unsigned int*, unsigned int*)",10,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","bitonicSortShared1(unsigned int*, unsigned int*, unsigned int*, unsigned int*)",10,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","bitonicSortShared1(unsigned int*, unsigned int*, unsigned int*, unsigned int*)",10,"cf_executed","Executed Control-Flow Instructions",1966080,1966080,1966080
+"GeForce GTX 780 (0)","bitonicSortShared1(unsigned int*, unsigned int*, unsigned int*, unsigned int*)",10,"inst_executed","Instructions Executed",19316736,19316736,19316736
+"GeForce GTX 780 (0)","bitonicSortShared1(unsigned int*, unsigned int*, unsigned int*, unsigned int*)",10,"inst_issued","Instructions Issued",19390912,19393656,19392233
+"GeForce GTX 780 (0)","bitonicSortShared1(unsigned int*, unsigned int*, unsigned int*, unsigned int*)",10,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","bitonicMergeGlobal(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int, unsigned int)",220,"inst_replay_overhead","Instruction Replay Overhead",0.181787,0.227577,0.204442
+"GeForce GTX 780 (0)","bitonicMergeGlobal(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int, unsigned int)",220,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","bitonicMergeGlobal(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int, unsigned int)",220,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","bitonicMergeGlobal(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int, unsigned int)",220,"cf_executed","Executed Control-Flow Instructions",32768,32768,32768
+"GeForce GTX 780 (0)","bitonicMergeGlobal(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int, unsigned int)",220,"inst_executed","Instructions Executed",737244,738524,737695
+"GeForce GTX 780 (0)","bitonicMergeGlobal(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int, unsigned int)",220,"inst_issued","Instructions Issued",871380,905392,888510
+"GeForce GTX 780 (0)","bitonicMergeGlobal(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int, unsigned int)",220,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000

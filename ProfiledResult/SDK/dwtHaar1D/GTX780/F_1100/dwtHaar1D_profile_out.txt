@@ -1,0 +1,24 @@
+[dwtHaar1D.exe] starting...
+
+MapSMtoCores undefined SMversion 3.5!
+Reading signal from ../../../src/dwtHaar1D/data/signal.dat
+Reading reference result from ../../../src/dwtHaar1D/data/regression.gold.dat
+[dwtHaar1D.exe] test results...
+PASSED
+
+> exiting in 3 seconds: 3...2...1...done!
+
+======== Warning: Metric "branch_efficiency" cannot be found on device 0.
+==1284== NVPROF is profiling process 1284, command: dwtHaar1D.exe
+==1284== Warning: Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==1284== Profiling application: dwtHaar1D.exe
+==1284== Profiling result:
+==1284== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"GeForce GTX 780 (0)","dwtHaar1D(float*, float*, float*, unsigned int, unsigned int, int)",2,"inst_replay_overhead","Instruction Replay Overhead",0.116159,0.128205,0.122182
+"GeForce GTX 780 (0)","dwtHaar1D(float*, float*, float*, unsigned int, unsigned int, int)",2,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","dwtHaar1D(float*, float*, float*, unsigned int, unsigned int, int)",2,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","dwtHaar1D(float*, float*, float*, unsigned int, unsigned int, int)",2,"cf_executed","Executed Control-Flow Instructions",9,2112,1060
+"GeForce GTX 780 (0)","dwtHaar1D(float*, float*, float*, unsigned int, unsigned int, int)",2,"inst_executed","Instructions Executed",78,8144,4111
+"GeForce GTX 780 (0)","dwtHaar1D(float*, float*, float*, unsigned int, unsigned int, int)",2,"inst_issued","Instructions Issued",88,9090,4589
+"GeForce GTX 780 (0)","dwtHaar1D(float*, float*, float*, unsigned int, unsigned int, int)",2,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000

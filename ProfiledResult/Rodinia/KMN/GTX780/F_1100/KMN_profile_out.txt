@@ -1,0 +1,49 @@
+
+I/O completed
+
+Number of objects: 131072
+Number of features: 34
+invert_mapping
+kmeansPoint
+kmeansPoint
+kmeansPoint
+kmeansPoint
+kmeansPoint
+kmeansPoint
+kmeansPoint
+kmeansPoint
+kmeansPoint
+kmeansPoint
+kmeansPoint
+kmeansPoint
+kmeansPoint
+kmeansPoint
+kmeansPoint
+kmeansPoint
+kmeansPoint
+kmeansPoint
+kmeansPoint
+kmeansPoint
+Number of Iteration: 1
+Time for Entire Clustering: 0.00000sec
+======== Warning: Metric "branch_efficiency" cannot be found on device 0.
+==6692== NVPROF is profiling process 6692, command: KMN.exe -i rodinia_inputs\\128k.txt
+==6692== Warning: Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==6692== Profiling application: KMN.exe -i rodinia_inputs\\128k.txt
+==6692== Profiling result:
+==6692== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"GeForce GTX 780 (0)","invert_mapping(float*, float*, int, int)",1,"inst_replay_overhead","Instruction Replay Overhead",7.318935,7.318935,7.318935
+"GeForce GTX 780 (0)","invert_mapping(float*, float*, int, int)",1,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","invert_mapping(float*, float*, int, int)",1,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","invert_mapping(float*, float*, int, int)",1,"cf_executed","Executed Control-Flow Instructions",82056,82056,82056
+"GeForce GTX 780 (0)","invert_mapping(float*, float*, int, int)",1,"inst_executed","Instructions Executed",910264,910264,910264
+"GeForce GTX 780 (0)","invert_mapping(float*, float*, int, int)",1,"inst_issued","Instructions Issued",7572427,7572427,7572427
+"GeForce GTX 780 (0)","invert_mapping(float*, float*, int, int)",1,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","kmeansPoint(float*, int, int, int, int*, float*, float*, int*)",20,"inst_replay_overhead","Instruction Replay Overhead",0.121853,0.122447,0.122153
+"GeForce GTX 780 (0)","kmeansPoint(float*, int, int, int, int*, float*, float*, int*)",20,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","kmeansPoint(float*, int, int, int, int*, float*, float*, int*)",20,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","kmeansPoint(float*, int, int, int, int*, float*, float*, int*)",20,"cf_executed","Executed Control-Flow Instructions",1696424,1696424,1696424
+"GeForce GTX 780 (0)","kmeansPoint(float*, int, int, int, int*, float*, float*, int*)",20,"inst_executed","Instructions Executed",5781768,5781768,5781768
+"GeForce GTX 780 (0)","kmeansPoint(float*, int, int, int, int*, float*, float*, int*)",20,"inst_issued","Instructions Issued",6486292,6489727,6488028
+"GeForce GTX 780 (0)","kmeansPoint(float*, int, int, int, int*, float*, float*, int*)",20,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000

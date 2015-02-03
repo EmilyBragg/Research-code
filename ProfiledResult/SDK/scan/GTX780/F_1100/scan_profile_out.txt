@@ -1,0 +1,170 @@
+[scan.exe] starting...
+
+MapSMtoCores undefined SMversion 3.5!
+Allocating and initializing host arrays...
+Allocating and initializing CUDA arrays...
+Initializing CUDA-C scan...
+
+*** Running GPU scan for short arrays (100 identical iterations)...
+
+Running scan for 4 elements (1703936 arrays)...
+Validating the results...
+...reading back GPU results
+ ...scanExclusiveHost()
+ ...comparing the results
+ ...Results Match
+
+Running scan for 8 elements (851968 arrays)...
+Validating the results...
+...reading back GPU results
+ ...scanExclusiveHost()
+ ...comparing the results
+ ...Results Match
+
+Running scan for 16 elements (425984 arrays)...
+Validating the results...
+...reading back GPU results
+ ...scanExclusiveHost()
+ ...comparing the results
+ ...Results Match
+
+Running scan for 32 elements (212992 arrays)...
+Validating the results...
+...reading back GPU results
+ ...scanExclusiveHost()
+ ...comparing the results
+ ...Results Match
+
+Running scan for 64 elements (106496 arrays)...
+Validating the results...
+...reading back GPU results
+ ...scanExclusiveHost()
+ ...comparing the results
+ ...Results Match
+
+Running scan for 128 elements (53248 arrays)...
+Validating the results...
+...reading back GPU results
+ ...scanExclusiveHost()
+ ...comparing the results
+ ...Results Match
+
+Running scan for 256 elements (26624 arrays)...
+Validating the results...
+...reading back GPU results
+ ...scanExclusiveHost()
+ ...comparing the results
+ ...Results Match
+
+Running scan for 512 elements (13312 arrays)...
+Validating the results...
+...reading back GPU results
+ ...scanExclusiveHost()
+ ...comparing the results
+ ...Results Match
+
+Running scan for 1024 elements (6656 arrays)...
+Validating the results...
+...reading back GPU results
+ ...scanExclusiveHost()
+ ...comparing the results
+ ...Results Match
+
+
+scan-Short, Throughput = 0.0489 MElements/s, Time = 0.02094 s, Size = 1024 Elements, NumDevsUsed = 1, Workgroup = 256
+
+***Running GPU scan for large arrays (100 identical iterations)...
+
+Running scan for 2048 elements (3328 arrays)...
+Validating the results...
+...reading back GPU results
+...scanExclusiveHost()
+ ...comparing the results
+ ...Results Match
+
+Running scan for 4096 elements (1664 arrays)...
+Validating the results...
+...reading back GPU results
+...scanExclusiveHost()
+ ...comparing the results
+ ...Results Match
+
+Running scan for 8192 elements (832 arrays)...
+Validating the results...
+...reading back GPU results
+...scanExclusiveHost()
+ ...comparing the results
+ ...Results Match
+
+Running scan for 16384 elements (416 arrays)...
+Validating the results...
+...reading back GPU results
+...scanExclusiveHost()
+ ...comparing the results
+ ...Results Match
+
+Running scan for 32768 elements (208 arrays)...
+Validating the results...
+...reading back GPU results
+...scanExclusiveHost()
+ ...comparing the results
+ ...Results Match
+
+Running scan for 65536 elements (104 arrays)...
+Validating the results...
+...reading back GPU results
+...scanExclusiveHost()
+ ...comparing the results
+ ...Results Match
+
+Running scan for 131072 elements (52 arrays)...
+Validating the results...
+...reading back GPU results
+...scanExclusiveHost()
+ ...comparing the results
+ ...Results Match
+
+Running scan for 262144 elements (26 arrays)...
+Validating the results...
+...reading back GPU results
+...scanExclusiveHost()
+ ...comparing the results
+ ...Results Match
+
+
+scan-Large, Throughput = 3.9329 MElements/s, Time = 0.06665 s, Size = 262144 Elements, NumDevsUsed = 1, Workgroup = 256
+
+Shutting down...
+[scan.exe] test results...
+PASSED
+
+> exiting in 3 seconds: 3...2...1...done!
+
+======== Warning: Metric "branch_efficiency" cannot be found on device 0.
+==6680== NVPROF is profiling process 6680, command: scan.exe
+==6680== Warning: Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==6680== Profiling application: scan.exe
+==6680== Profiling result:
+==6680== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"GeForce GTX 780 (0)","scanExclusiveShared2(unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",800,"inst_replay_overhead","Instruction Replay Overhead",2.688369,4.963687,3.527217
+"GeForce GTX 780 (0)","scanExclusiveShared2(unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",800,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","scanExclusiveShared2(unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",800,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","scanExclusiveShared2(unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",800,"cf_executed","Executed Control-Flow Instructions",1248,2080,1693
+"GeForce GTX 780 (0)","scanExclusiveShared2(unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",800,"inst_executed","Instructions Executed",9776,17264,13802
+"GeForce GTX 780 (0)","scanExclusiveShared2(unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",800,"inst_issued","Instructions Issued",56543,65943,61193
+"GeForce GTX 780 (0)","scanExclusiveShared2(unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",800,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","scanExclusiveShared(uint4*, uint4*, unsigned int)",1700,"inst_replay_overhead","Instruction Replay Overhead",0.159794,0.733530,0.235636
+"GeForce GTX 780 (0)","scanExclusiveShared(uint4*, uint4*, unsigned int)",1700,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","scanExclusiveShared(uint4*, uint4*, unsigned int)",1700,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","scanExclusiveShared(uint4*, uint4*, unsigned int)",1700,"cf_executed","Executed Control-Flow Instructions",212992,479232,379392
+"GeForce GTX 780 (0)","scanExclusiveShared(uint4*, uint4*, unsigned int)",1700,"inst_executed","Instructions Executed",1863680,4313088,3454464
+"GeForce GTX 780 (0)","scanExclusiveShared(uint4*, uint4*, unsigned int)",1700,"inst_issued","Instructions Issued",3051547,5099952,4195671
+"GeForce GTX 780 (0)","scanExclusiveShared(uint4*, uint4*, unsigned int)",1700,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","uniformUpdate(uint4*, unsigned int*)",800,"inst_replay_overhead","Instruction Replay Overhead",0.933796,1.003951,0.968897
+"GeForce GTX 780 (0)","uniformUpdate(uint4*, unsigned int*)",800,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","uniformUpdate(uint4*, unsigned int*)",800,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","uniformUpdate(uint4*, unsigned int*)",800,"cf_executed","Executed Control-Flow Instructions",159744,159744,159744
+"GeForce GTX 780 (0)","uniformUpdate(uint4*, unsigned int*)",800,"inst_executed","Instructions Executed",878592,878592,878592
+"GeForce GTX 780 (0)","uniformUpdate(uint4*, unsigned int*)",800,"inst_issued","Instructions Issued",1699018,1760655,1729856
+"GeForce GTX 780 (0)","uniformUpdate(uint4*, unsigned int*)",800,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000

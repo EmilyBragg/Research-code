@@ -1,0 +1,42 @@
+[convolutionTexture.exe] starting...
+
+MapSMtoCores undefined SMversion 3.5!
+Initializing data...
+Running GPU rows convolution (10 identical iterations)...
+Average convolutionRowsGPU() time: 29.328756 msecs; //160.886195 Mpix/s
+Copying convolutionRowGPU() output back to the texture...
+cudaMemcpyToArray() time: 0.537395 msecs; //8780.487170 Mpix/s
+Running GPU columns convolution (10 iterations)
+Average convolutionColumnsGPU() time: 28.867832 msecs; //163.455017 Mpix/s
+Reading back GPU results...
+Checking the results...
+...running convolutionRowsCPU()
+...running convolutionColumnsCPU()
+Relative L2 norm: 0.000000E+000
+Shutting down...
+[convolutionTexture.exe] test results...
+PASSED
+
+> exiting in 3 seconds: 3...2...1...done!
+
+======== Warning: Metric "branch_efficiency" cannot be found on device 0.
+==6976== NVPROF is profiling process 6976, command: convolutionTexture.exe
+==6976== Warning: Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==6976== Profiling application: convolutionTexture.exe
+==6976== Profiling result:
+==6976== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"GeForce GTX 780 (0)","convolutionRowsKernel(float*, int, int)",10,"inst_replay_overhead","Instruction Replay Overhead",0.020674,0.020687,0.020681
+"GeForce GTX 780 (0)","convolutionRowsKernel(float*, int, int)",10,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","convolutionRowsKernel(float*, int, int)",10,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","convolutionRowsKernel(float*, int, int)",10,"cf_executed","Executed Control-Flow Instructions",2801664,2801664,2801664
+"GeForce GTX 780 (0)","convolutionRowsKernel(float*, int, int)",10,"inst_executed","Instructions Executed",14450688,14450688,14450688
+"GeForce GTX 780 (0)","convolutionRowsKernel(float*, int, int)",10,"inst_issued","Instructions Issued",14749444,14749634,14749536
+"GeForce GTX 780 (0)","convolutionRowsKernel(float*, int, int)",10,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","convolutionColumnsKernel(float*, int, int)",10,"inst_replay_overhead","Instruction Replay Overhead",0.020674,0.020682,0.020676
+"GeForce GTX 780 (0)","convolutionColumnsKernel(float*, int, int)",10,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","convolutionColumnsKernel(float*, int, int)",10,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","convolutionColumnsKernel(float*, int, int)",10,"cf_executed","Executed Control-Flow Instructions",2801664,2801664,2801664
+"GeForce GTX 780 (0)","convolutionColumnsKernel(float*, int, int)",10,"inst_executed","Instructions Executed",14450688,14450688,14450688
+"GeForce GTX 780 (0)","convolutionColumnsKernel(float*, int, int)",10,"inst_issued","Instructions Issued",14749442,14749552,14749474
+"GeForce GTX 780 (0)","convolutionColumnsKernel(float*, int, int)",10,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000

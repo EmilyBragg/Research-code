@@ -1,0 +1,150 @@
+[convolutionFFT2D.exe] starting...
+
+MapSMtoCores undefined SMversion 3.5!
+Testing built-in R2C / C2R FFT-based convolution
+...allocating memory
+...generating random input data
+...creating R2C & C2R FFT plans for 2048 x 2048
+...uploading to GPU and padding convolution kernel and input data
+...transforming convolution kernel
+...running GPU FFT convolution: 12.282970 MPix/s (325.654144 ms)
+...reading back GPU convolution results
+...running reference CPU convolution
+...comparing the results: rel L2 = 7.179421E-008 (max delta = 4.808732E-007)
+L2norm Error OK
+...shutting down
+Testing custom R2C / C2R FFT-based convolution
+...allocating memory
+...generating random input data
+...creating C2C FFT plan for 2048 x 1024
+...uploading to GPU and padding convolution kernel and input data
+...transforming convolution kernel
+...running GPU FFT convolution: 12.649739 MPix/s (316.212067 ms)
+...reading back GPU FFT results
+...running reference CPU convolution
+...comparing the results: rel L2 = 7.505000E-008 (max delta = 4.873593E-007)
+L2norm Error OK
+...shutting down
+Testing updated custom R2C / C2R FFT-based convolution
+...allocating memory
+...generating random input data
+...creating C2C FFT plan for 2048 x 1024
+...uploading to GPU and padding convolution kernel and input data
+...transforming convolution kernel
+...running GPU FFT convolution: 17.097788 MPix/s (233.948395 ms)
+...reading back GPU FFT results
+...running reference CPU convolution
+...comparing the results: rel L2 = 7.470519E-008 (max delta = 5.276085E-007)
+L2norm Error OK
+...shutting down
+Test Summary: 0 errors
+[convolutionFFT2D.exe] test results...
+PASSED
+
+> exiting in 3 seconds: 3...2...1...done!
+
+======== Warning: Metric "branch_efficiency" cannot be found on device 0.
+==6504== NVPROF is profiling process 6504, command: convolutionFFT2D.exe
+==6504== Warning: Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==6504== Profiling application: convolutionFFT2D.exe
+==6504== Profiling result:
+==6504== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"GeForce GTX 780 (0)","void spRadix0064B_kernel1Tex<fftDirection_t=1>(Complex<float>*, unsigned int, unsigned int, unsigned int, divisor_t, divisor_t, divisor_t, Coord<divisor_t>, Coord<unsigned int>, Coord<unsigned int>, unsigned int, unsigned int, float)",3,"inst_replay_overhead","Instruction Replay Overhead",0.143911,0.146365,0.145358
+"GeForce GTX 780 (0)","void spRadix0064B_kernel1Tex<fftDirection_t=1>(Complex<float>*, unsigned int, unsigned int, unsigned int, divisor_t, divisor_t, divisor_t, Coord<divisor_t>, Coord<unsigned int>, Coord<unsigned int>, unsigned int, unsigned int, float)",3,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void spRadix0064B_kernel1Tex<fftDirection_t=1>(Complex<float>*, unsigned int, unsigned int, unsigned int, divisor_t, divisor_t, divisor_t, Coord<divisor_t>, Coord<unsigned int>, Coord<unsigned int>, unsigned int, unsigned int, float)",3,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void spRadix0064B_kernel1Tex<fftDirection_t=1>(Complex<float>*, unsigned int, unsigned int, unsigned int, divisor_t, divisor_t, divisor_t, Coord<divisor_t>, Coord<unsigned int>, Coord<unsigned int>, unsigned int, unsigned int, float)",3,"cf_executed","Executed Control-Flow Instructions",131072,131072,131072
+"GeForce GTX 780 (0)","void spRadix0064B_kernel1Tex<fftDirection_t=1>(Complex<float>*, unsigned int, unsigned int, unsigned int, divisor_t, divisor_t, divisor_t, Coord<divisor_t>, Coord<unsigned int>, Coord<unsigned int>, unsigned int, unsigned int, float)",3,"inst_executed","Instructions Executed",2973696,2973696,2973696
+"GeForce GTX 780 (0)","void spRadix0064B_kernel1Tex<fftDirection_t=1>(Complex<float>*, unsigned int, unsigned int, unsigned int, divisor_t, divisor_t, divisor_t, Coord<divisor_t>, Coord<unsigned int>, Coord<unsigned int>, unsigned int, unsigned int, float)",3,"inst_issued","Instructions Issued",3401645,3408940,3405946
+"GeForce GTX 780 (0)","void spRadix0064B_kernel1Tex<fftDirection_t=1>(Complex<float>*, unsigned int, unsigned int, unsigned int, divisor_t, divisor_t, divisor_t, Coord<divisor_t>, Coord<unsigned int>, Coord<unsigned int>, unsigned int, unsigned int, float)",3,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","spPreprocess2D_kernel(float2*, float2*, unsigned int, unsigned int, unsigned int, unsigned int, float)",1,"inst_replay_overhead","Instruction Replay Overhead",0.077197,0.077197,0.077197
+"GeForce GTX 780 (0)","spPreprocess2D_kernel(float2*, float2*, unsigned int, unsigned int, unsigned int, unsigned int, float)",1,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","spPreprocess2D_kernel(float2*, float2*, unsigned int, unsigned int, unsigned int, unsigned int, float)",1,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","spPreprocess2D_kernel(float2*, float2*, unsigned int, unsigned int, unsigned int, unsigned int, float)",1,"cf_executed","Executed Control-Flow Instructions",133122,133122,133122
+"GeForce GTX 780 (0)","spPreprocess2D_kernel(float2*, float2*, unsigned int, unsigned int, unsigned int, unsigned int, float)",1,"inst_executed","Instructions Executed",2323485,2323485,2323485
+"GeForce GTX 780 (0)","spPreprocess2D_kernel(float2*, float2*, unsigned int, unsigned int, unsigned int, unsigned int, float)",1,"inst_issued","Instructions Issued",2502852,2502852,2502852
+"GeForce GTX 780 (0)","spPreprocess2D_kernel(float2*, float2*, unsigned int, unsigned int, unsigned int, unsigned int, float)",1,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void spPreprocessC2C_kernelTex<fftAxii_t=3>(Complex<float>*, unsigned int, unsigned int, Coord<divisor_t>, Coord<unsigned int>, Coord<unsigned int>, unsigned int, float)",1,"inst_replay_overhead","Instruction Replay Overhead",0.081969,0.081969,0.081969
+"GeForce GTX 780 (0)","void spPreprocessC2C_kernelTex<fftAxii_t=3>(Complex<float>*, unsigned int, unsigned int, Coord<divisor_t>, Coord<unsigned int>, Coord<unsigned int>, unsigned int, float)",1,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void spPreprocessC2C_kernelTex<fftAxii_t=3>(Complex<float>*, unsigned int, unsigned int, Coord<divisor_t>, Coord<unsigned int>, Coord<unsigned int>, unsigned int, float)",1,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void spPreprocessC2C_kernelTex<fftAxii_t=3>(Complex<float>*, unsigned int, unsigned int, Coord<divisor_t>, Coord<unsigned int>, Coord<unsigned int>, unsigned int, float)",1,"cf_executed","Executed Control-Flow Instructions",102400,102400,102400
+"GeForce GTX 780 (0)","void spPreprocessC2C_kernelTex<fftAxii_t=3>(Complex<float>*, unsigned int, unsigned int, Coord<divisor_t>, Coord<unsigned int>, Coord<unsigned int>, unsigned int, float)",1,"inst_executed","Instructions Executed",3340288,3340288,3340288
+"GeForce GTX 780 (0)","void spPreprocessC2C_kernelTex<fftAxii_t=3>(Complex<float>*, unsigned int, unsigned int, Coord<divisor_t>, Coord<unsigned int>, Coord<unsigned int>, unsigned int, float)",1,"inst_issued","Instructions Issued",3614088,3614088,3614088
+"GeForce GTX 780 (0)","void spPreprocessC2C_kernelTex<fftAxii_t=3>(Complex<float>*, unsigned int, unsigned int, Coord<divisor_t>, Coord<unsigned int>, Coord<unsigned int>, unsigned int, float)",1,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","padKernel_kernel(float*, float*, int, int, int, int, int, int)",3,"inst_replay_overhead","Instruction Replay Overhead",0.258065,0.279570,0.272401
+"GeForce GTX 780 (0)","padKernel_kernel(float*, float*, int, int, int, int, int, int)",3,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","padKernel_kernel(float*, float*, int, int, int, int, int, int)",3,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","padKernel_kernel(float*, float*, int, int, int, int, int, int)",3,"cf_executed","Executed Control-Flow Instructions",23,23,23
+"GeForce GTX 780 (0)","padKernel_kernel(float*, float*, int, int, int, int, int, int)",3,"inst_executed","Instructions Executed",186,186,186
+"GeForce GTX 780 (0)","padKernel_kernel(float*, float*, int, int, int, int, int, int)",3,"inst_issued","Instructions Issued",234,238,236
+"GeForce GTX 780 (0)","padKernel_kernel(float*, float*, int, int, int, int, int, int)",3,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void spRadix0032B_kernel1Tex<fftDirection_t=-1>(Complex<float>*, unsigned int, unsigned int, unsigned int, divisor_t, divisor_t, divisor_t, Coord<divisor_t>, Coord<unsigned int>, Coord<unsigned int>, unsigned int, unsigned int, float)",6,"inst_replay_overhead","Instruction Replay Overhead",0.125409,0.133324,0.128968
+"GeForce GTX 780 (0)","void spRadix0032B_kernel1Tex<fftDirection_t=-1>(Complex<float>*, unsigned int, unsigned int, unsigned int, divisor_t, divisor_t, divisor_t, Coord<divisor_t>, Coord<unsigned int>, Coord<unsigned int>, unsigned int, unsigned int, float)",6,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void spRadix0032B_kernel1Tex<fftDirection_t=-1>(Complex<float>*, unsigned int, unsigned int, unsigned int, divisor_t, divisor_t, divisor_t, Coord<divisor_t>, Coord<unsigned int>, Coord<unsigned int>, unsigned int, unsigned int, float)",6,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void spRadix0032B_kernel1Tex<fftDirection_t=-1>(Complex<float>*, unsigned int, unsigned int, unsigned int, divisor_t, divisor_t, divisor_t, Coord<divisor_t>, Coord<unsigned int>, Coord<unsigned int>, unsigned int, unsigned int, float)",6,"cf_executed","Executed Control-Flow Instructions",114688,114688,114688
+"GeForce GTX 780 (0)","void spRadix0032B_kernel1Tex<fftDirection_t=-1>(Complex<float>*, unsigned int, unsigned int, unsigned int, divisor_t, divisor_t, divisor_t, Coord<divisor_t>, Coord<unsigned int>, Coord<unsigned int>, unsigned int, unsigned int, float)",6,"inst_executed","Instructions Executed",2727936,2727936,2727936
+"GeForce GTX 780 (0)","void spRadix0032B_kernel1Tex<fftDirection_t=-1>(Complex<float>*, unsigned int, unsigned int, unsigned int, divisor_t, divisor_t, divisor_t, Coord<divisor_t>, Coord<unsigned int>, Coord<unsigned int>, unsigned int, unsigned int, float)",6,"inst_issued","Instructions Issued",3070043,3091635,3079753
+"GeForce GTX 780 (0)","void spRadix0032B_kernel1Tex<fftDirection_t=-1>(Complex<float>*, unsigned int, unsigned int, unsigned int, divisor_t, divisor_t, divisor_t, Coord<divisor_t>, Coord<unsigned int>, Coord<unsigned int>, unsigned int, unsigned int, float)",6,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void spRadix0064B_kernel1Tex<fftDirection_t=-1>(Complex<float>*, unsigned int, unsigned int, unsigned int, divisor_t, divisor_t, divisor_t, Coord<divisor_t>, Coord<unsigned int>, Coord<unsigned int>, unsigned int, unsigned int, float)",6,"inst_replay_overhead","Instruction Replay Overhead",0.127722,0.132682,0.130727
+"GeForce GTX 780 (0)","void spRadix0064B_kernel1Tex<fftDirection_t=-1>(Complex<float>*, unsigned int, unsigned int, unsigned int, divisor_t, divisor_t, divisor_t, Coord<divisor_t>, Coord<unsigned int>, Coord<unsigned int>, unsigned int, unsigned int, float)",6,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void spRadix0064B_kernel1Tex<fftDirection_t=-1>(Complex<float>*, unsigned int, unsigned int, unsigned int, divisor_t, divisor_t, divisor_t, Coord<divisor_t>, Coord<unsigned int>, Coord<unsigned int>, unsigned int, unsigned int, float)",6,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void spRadix0064B_kernel1Tex<fftDirection_t=-1>(Complex<float>*, unsigned int, unsigned int, unsigned int, divisor_t, divisor_t, divisor_t, Coord<divisor_t>, Coord<unsigned int>, Coord<unsigned int>, unsigned int, unsigned int, float)",6,"cf_executed","Executed Control-Flow Instructions",131072,131072,131072
+"GeForce GTX 780 (0)","void spRadix0064B_kernel1Tex<fftDirection_t=-1>(Complex<float>*, unsigned int, unsigned int, unsigned int, divisor_t, divisor_t, divisor_t, Coord<divisor_t>, Coord<unsigned int>, Coord<unsigned int>, unsigned int, unsigned int, float)",6,"inst_executed","Instructions Executed",2957312,2957312,2957312
+"GeForce GTX 780 (0)","void spRadix0064B_kernel1Tex<fftDirection_t=-1>(Complex<float>*, unsigned int, unsigned int, unsigned int, divisor_t, divisor_t, divisor_t, Coord<divisor_t>, Coord<unsigned int>, Coord<unsigned int>, unsigned int, unsigned int, float)",6,"inst_issued","Instructions Issued",3335025,3349693,3343911
+"GeForce GTX 780 (0)","void spRadix0064B_kernel1Tex<fftDirection_t=-1>(Complex<float>*, unsigned int, unsigned int, unsigned int, divisor_t, divisor_t, divisor_t, Coord<divisor_t>, Coord<unsigned int>, Coord<unsigned int>, unsigned int, unsigned int, float)",6,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","spPostprocess2D_kernel(float2*, float2*, unsigned int, unsigned int, unsigned int, unsigned int, float)",2,"inst_replay_overhead","Instruction Replay Overhead",0.069541,0.070514,0.070027
+"GeForce GTX 780 (0)","spPostprocess2D_kernel(float2*, float2*, unsigned int, unsigned int, unsigned int, unsigned int, float)",2,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","spPostprocess2D_kernel(float2*, float2*, unsigned int, unsigned int, unsigned int, unsigned int, float)",2,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","spPostprocess2D_kernel(float2*, float2*, unsigned int, unsigned int, unsigned int, unsigned int, float)",2,"cf_executed","Executed Control-Flow Instructions",102400,102400,102400
+"GeForce GTX 780 (0)","spPostprocess2D_kernel(float2*, float2*, unsigned int, unsigned int, unsigned int, unsigned int, float)",2,"inst_executed","Instructions Executed",2291712,2291712,2291712
+"GeForce GTX 780 (0)","spPostprocess2D_kernel(float2*, float2*, unsigned int, unsigned int, unsigned int, unsigned int, float)",2,"inst_issued","Instructions Issued",2451080,2453309,2452194
+"GeForce GTX 780 (0)","spPostprocess2D_kernel(float2*, float2*, unsigned int, unsigned int, unsigned int, unsigned int, float)",2,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","modulateAndNormalize_kernel(float2*, float2*, int, float)",2,"inst_replay_overhead","Instruction Replay Overhead",1.232320,1.234713,1.233517
+"GeForce GTX 780 (0)","modulateAndNormalize_kernel(float2*, float2*, int, float)",2,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","modulateAndNormalize_kernel(float2*, float2*, int, float)",2,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","modulateAndNormalize_kernel(float2*, float2*, int, float)",2,"cf_executed","Executed Control-Flow Instructions",131200,133120,132160
+"GeForce GTX 780 (0)","modulateAndNormalize_kernel(float2*, float2*, int, float)",2,"inst_executed","Instructions Executed",1180800,1198080,1189440
+"GeForce GTX 780 (0)","modulateAndNormalize_kernel(float2*, float2*, int, float)",2,"inst_issued","Instructions Issued",2635924,2677365,2656644
+"GeForce GTX 780 (0)","modulateAndNormalize_kernel(float2*, float2*, int, float)",2,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","padDataClampToBorder_kernel(float*, float*, int, int, int, int, int, int, int, int)",3,"inst_replay_overhead","Instruction Replay Overhead",0.031979,0.032068,0.032038
+"GeForce GTX 780 (0)","padDataClampToBorder_kernel(float*, float*, int, int, int, int, int, int, int, int)",3,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","padDataClampToBorder_kernel(float*, float*, int, int, int, int, int, int, int, int)",3,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","padDataClampToBorder_kernel(float*, float*, int, int, int, int, int, int, int, int)",3,"cf_executed","Executed Control-Flow Instructions",393216,393216,393216
+"GeForce GTX 780 (0)","padDataClampToBorder_kernel(float*, float*, int, int, int, int, int, int, int, int)",3,"inst_executed","Instructions Executed",4194304,4194304,4194304
+"GeForce GTX 780 (0)","padDataClampToBorder_kernel(float*, float*, int, int, int, int, int, int, int, int)",3,"inst_issued","Instructions Issued",4328432,4328809,4328681
+"GeForce GTX 780 (0)","padDataClampToBorder_kernel(float*, float*, int, int, int, int, int, int, int, int)",3,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void spRadix0032B_kernel1Tex<fftDirection_t=1>(Complex<float>*, unsigned int, unsigned int, unsigned int, divisor_t, divisor_t, divisor_t, Coord<divisor_t>, Coord<unsigned int>, Coord<unsigned int>, unsigned int, unsigned int, float)",3,"inst_replay_overhead","Instruction Replay Overhead",0.135472,0.139400,0.136866
+"GeForce GTX 780 (0)","void spRadix0032B_kernel1Tex<fftDirection_t=1>(Complex<float>*, unsigned int, unsigned int, unsigned int, divisor_t, divisor_t, divisor_t, Coord<divisor_t>, Coord<unsigned int>, Coord<unsigned int>, unsigned int, unsigned int, float)",3,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void spRadix0032B_kernel1Tex<fftDirection_t=1>(Complex<float>*, unsigned int, unsigned int, unsigned int, divisor_t, divisor_t, divisor_t, Coord<divisor_t>, Coord<unsigned int>, Coord<unsigned int>, unsigned int, unsigned int, float)",3,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void spRadix0032B_kernel1Tex<fftDirection_t=1>(Complex<float>*, unsigned int, unsigned int, unsigned int, divisor_t, divisor_t, divisor_t, Coord<divisor_t>, Coord<unsigned int>, Coord<unsigned int>, unsigned int, unsigned int, float)",3,"cf_executed","Executed Control-Flow Instructions",122880,122880,122880
+"GeForce GTX 780 (0)","void spRadix0032B_kernel1Tex<fftDirection_t=1>(Complex<float>*, unsigned int, unsigned int, unsigned int, divisor_t, divisor_t, divisor_t, Coord<divisor_t>, Coord<unsigned int>, Coord<unsigned int>, unsigned int, unsigned int, float)",3,"inst_executed","Instructions Executed",2736128,2736128,2736128
+"GeForce GTX 780 (0)","void spRadix0032B_kernel1Tex<fftDirection_t=1>(Complex<float>*, unsigned int, unsigned int, unsigned int, divisor_t, divisor_t, divisor_t, Coord<divisor_t>, Coord<unsigned int>, Coord<unsigned int>, unsigned int, unsigned int, float)",3,"inst_issued","Instructions Issued",3106797,3117545,3110611
+"GeForce GTX 780 (0)","void spRadix0032B_kernel1Tex<fftDirection_t=1>(Complex<float>*, unsigned int, unsigned int, unsigned int, divisor_t, divisor_t, divisor_t, Coord<divisor_t>, Coord<unsigned int>, Coord<unsigned int>, unsigned int, unsigned int, float)",3,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void spVector1024D_kernelTex<fftDirection_t=-1>(Complex<float>*, unsigned int, unsigned int, unsigned int, Coord<divisor_t>, Coord<unsigned int>, Coord<unsigned int>)",6,"inst_replay_overhead","Instruction Replay Overhead",0.160064,0.165444,0.162348
+"GeForce GTX 780 (0)","void spVector1024D_kernelTex<fftDirection_t=-1>(Complex<float>*, unsigned int, unsigned int, unsigned int, Coord<divisor_t>, Coord<unsigned int>, Coord<unsigned int>)",6,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void spVector1024D_kernelTex<fftDirection_t=-1>(Complex<float>*, unsigned int, unsigned int, unsigned int, Coord<divisor_t>, Coord<unsigned int>, Coord<unsigned int>)",6,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void spVector1024D_kernelTex<fftDirection_t=-1>(Complex<float>*, unsigned int, unsigned int, unsigned int, Coord<divisor_t>, Coord<unsigned int>, Coord<unsigned int>)",6,"cf_executed","Executed Control-Flow Instructions",139264,139264,139264
+"GeForce GTX 780 (0)","void spVector1024D_kernelTex<fftDirection_t=-1>(Complex<float>*, unsigned int, unsigned int, unsigned int, Coord<divisor_t>, Coord<unsigned int>, Coord<unsigned int>)",6,"inst_executed","Instructions Executed",3571712,3571712,3571712
+"GeForce GTX 780 (0)","void spVector1024D_kernelTex<fftDirection_t=-1>(Complex<float>*, unsigned int, unsigned int, unsigned int, Coord<divisor_t>, Coord<unsigned int>, Coord<unsigned int>)",6,"inst_issued","Instructions Issued",4143415,4162631,4151573
+"GeForce GTX 780 (0)","void spVector1024D_kernelTex<fftDirection_t=-1>(Complex<float>*, unsigned int, unsigned int, unsigned int, Coord<divisor_t>, Coord<unsigned int>, Coord<unsigned int>)",6,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void spVector1024D_kernelTex<fftDirection_t=1>(Complex<float>*, unsigned int, unsigned int, unsigned int, Coord<divisor_t>, Coord<unsigned int>, Coord<unsigned int>)",3,"inst_replay_overhead","Instruction Replay Overhead",0.167229,0.170349,0.168665
+"GeForce GTX 780 (0)","void spVector1024D_kernelTex<fftDirection_t=1>(Complex<float>*, unsigned int, unsigned int, unsigned int, Coord<divisor_t>, Coord<unsigned int>, Coord<unsigned int>)",3,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void spVector1024D_kernelTex<fftDirection_t=1>(Complex<float>*, unsigned int, unsigned int, unsigned int, Coord<divisor_t>, Coord<unsigned int>, Coord<unsigned int>)",3,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void spVector1024D_kernelTex<fftDirection_t=1>(Complex<float>*, unsigned int, unsigned int, unsigned int, Coord<divisor_t>, Coord<unsigned int>, Coord<unsigned int>)",3,"cf_executed","Executed Control-Flow Instructions",139264,139264,139264
+"GeForce GTX 780 (0)","void spVector1024D_kernelTex<fftDirection_t=1>(Complex<float>*, unsigned int, unsigned int, unsigned int, Coord<divisor_t>, Coord<unsigned int>, Coord<unsigned int>)",3,"inst_executed","Instructions Executed",3571712,3571712,3571712
+"GeForce GTX 780 (0)","void spVector1024D_kernelTex<fftDirection_t=1>(Complex<float>*, unsigned int, unsigned int, unsigned int, Coord<divisor_t>, Coord<unsigned int>, Coord<unsigned int>)",3,"inst_issued","Instructions Issued",4169005,4180149,4174135
+"GeForce GTX 780 (0)","void spVector1024D_kernelTex<fftDirection_t=1>(Complex<float>*, unsigned int, unsigned int, unsigned int, Coord<divisor_t>, Coord<unsigned int>, Coord<unsigned int>)",3,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","spProcess2D_kernel(float2*, float2*, float2*, unsigned int, unsigned int, unsigned int, float, float)",1,"inst_replay_overhead","Instruction Replay Overhead",0.059155,0.059155,0.059155
+"GeForce GTX 780 (0)","spProcess2D_kernel(float2*, float2*, float2*, unsigned int, unsigned int, unsigned int, float, float)",1,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","spProcess2D_kernel(float2*, float2*, float2*, unsigned int, unsigned int, unsigned int, float, float)",1,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","spProcess2D_kernel(float2*, float2*, float2*, unsigned int, unsigned int, unsigned int, float, float)",1,"cf_executed","Executed Control-Flow Instructions",196582,196582,196582
+"GeForce GTX 780 (0)","spProcess2D_kernel(float2*, float2*, float2*, unsigned int, unsigned int, unsigned int, float, float)",1,"inst_executed","Instructions Executed",3375054,3375054,3375054
+"GeForce GTX 780 (0)","spProcess2D_kernel(float2*, float2*, float2*, unsigned int, unsigned int, unsigned int, float, float)",1,"inst_issued","Instructions Issued",3574704,3574704,3574704
+"GeForce GTX 780 (0)","spProcess2D_kernel(float2*, float2*, float2*, unsigned int, unsigned int, unsigned int, float, float)",1,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void spPostprocessC2C_kernelTex<fftAxii_t=3>(Complex<float>*, unsigned int, unsigned int, Coord<divisor_t>, Coord<unsigned int>, Coord<unsigned int>, unsigned int, float)",2,"inst_replay_overhead","Instruction Replay Overhead",0.146144,0.147037,0.146591
+"GeForce GTX 780 (0)","void spPostprocessC2C_kernelTex<fftAxii_t=3>(Complex<float>*, unsigned int, unsigned int, Coord<divisor_t>, Coord<unsigned int>, Coord<unsigned int>, unsigned int, float)",2,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void spPostprocessC2C_kernelTex<fftAxii_t=3>(Complex<float>*, unsigned int, unsigned int, Coord<divisor_t>, Coord<unsigned int>, Coord<unsigned int>, unsigned int, float)",2,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void spPostprocessC2C_kernelTex<fftAxii_t=3>(Complex<float>*, unsigned int, unsigned int, Coord<divisor_t>, Coord<unsigned int>, Coord<unsigned int>, unsigned int, float)",2,"cf_executed","Executed Control-Flow Instructions",102400,102400,102400
+"GeForce GTX 780 (0)","void spPostprocessC2C_kernelTex<fftAxii_t=3>(Complex<float>*, unsigned int, unsigned int, Coord<divisor_t>, Coord<unsigned int>, Coord<unsigned int>, unsigned int, float)",2,"inst_executed","Instructions Executed",3194880,3194880,3194880
+"GeForce GTX 780 (0)","void spPostprocessC2C_kernelTex<fftAxii_t=3>(Complex<float>*, unsigned int, unsigned int, Coord<divisor_t>, Coord<unsigned int>, Coord<unsigned int>, unsigned int, float)",2,"inst_issued","Instructions Issued",3661794,3664646,3663220
+"GeForce GTX 780 (0)","void spPostprocessC2C_kernelTex<fftAxii_t=3>(Complex<float>*, unsigned int, unsigned int, Coord<divisor_t>, Coord<unsigned int>, Coord<unsigned int>, unsigned int, float)",2,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000

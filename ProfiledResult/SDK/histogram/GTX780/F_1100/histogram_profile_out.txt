@@ -1,0 +1,85 @@
+[histogram.exe] starting...
+
+MapSMtoCores undefined SM 3.5 is undefined (please update to the latest SDK)!
+> Using CUDA device [0]: GeForce GTX 780
+CUDA device [GeForce GTX 780] has 12 Multi-Processors, Compute 3.5
+Initializing data...
+...allocating CPU memory.
+...generating input data
+...allocating GPU memory and copying input data
+
+Starting up 64-bin histogram...
+
+Running 64-bin GPU histogram for 67108864 bytes (16 runs)...
+
+histogram64() time (average) : 0.04890 sec, 1372.3695 MB/sec
+
+histogram64, Throughput = 1372.3695 MB/s, Time = 0.04890 s, Size = 67108864 Bytes, NumDevsUsed = 1, Workgroup = 64
+
+Validating GPU results...
+ ...reading back GPU results
+ ...histogram64CPU()
+ ...comparing the results...
+ ...64-bin histograms match
+
+Shutting down 64-bin histogram...
+
+
+Initializing 256-bin histogram...
+Running 256-bin GPU histogram for 67108864 bytes (16 runs)...
+
+histogram256() time (average) : 0.05429 sec, 1236.0506 MB/sec
+
+histogram256, Throughput = 1236.0506 MB/s, Time = 0.05429 s, Size = 67108864 Bytes, NumDevsUsed = 1, Workgroup = 192
+
+Validating GPU results...
+ ...reading back GPU results
+ ...histogram256CPU()
+ ...comparing the results
+ ...256-bin histograms match
+
+Shutting down 256-bin histogram...
+
+
+Shutting down...
+[histogram] - Test Summary
+[histogram.exe] test results...
+PASSED
+
+> exiting in 3 seconds: 3...2...1...done!
+
+======== Warning: Metric "branch_efficiency" cannot be found on device 0.
+==6992== NVPROF is profiling process 6992, command: histogram.exe
+==6992== Warning: Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==6992== Profiling application: histogram.exe
+==6992== Profiling result:
+==6992== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"GeForce GTX 780 (0)","histogram256Kernel(unsigned int*, unsigned int*, unsigned int)",17,"inst_replay_overhead","Instruction Replay Overhead",0.370116,0.371244,0.370695
+"GeForce GTX 780 (0)","histogram256Kernel(unsigned int*, unsigned int*, unsigned int)",17,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","histogram256Kernel(unsigned int*, unsigned int*, unsigned int)",17,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","histogram256Kernel(unsigned int*, unsigned int*, unsigned int)",17,"cf_executed","Executed Control-Flow Instructions",7716032,7716032,7716032
+"GeForce GTX 780 (0)","histogram256Kernel(unsigned int*, unsigned int*, unsigned int)",17,"inst_executed","Instructions Executed",47154880,47154880,47154880
+"GeForce GTX 780 (0)","histogram256Kernel(unsigned int*, unsigned int*, unsigned int)",17,"inst_issued","Instructions Issued",64607651,64660841,64634935
+"GeForce GTX 780 (0)","histogram256Kernel(unsigned int*, unsigned int*, unsigned int)",17,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","mergeHistogram256Kernel(unsigned int*, unsigned int*, unsigned int)",17,"inst_replay_overhead","Instruction Replay Overhead",0.515165,0.524147,0.520328
+"GeForce GTX 780 (0)","mergeHistogram256Kernel(unsigned int*, unsigned int*, unsigned int)",17,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","mergeHistogram256Kernel(unsigned int*, unsigned int*, unsigned int)",17,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","mergeHistogram256Kernel(unsigned int*, unsigned int*, unsigned int)",17,"cf_executed","Executed Control-Flow Instructions",26880,26880,26880
+"GeForce GTX 780 (0)","mergeHistogram256Kernel(unsigned int*, unsigned int*, unsigned int)",17,"inst_executed","Instructions Executed",152320,152320,152320
+"GeForce GTX 780 (0)","mergeHistogram256Kernel(unsigned int*, unsigned int*, unsigned int)",17,"inst_issued","Instructions Issued",230790,232158,231576
+"GeForce GTX 780 (0)","mergeHistogram256Kernel(unsigned int*, unsigned int*, unsigned int)",17,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","mergeHistogram64Kernel(unsigned int*, unsigned int*, unsigned int)",17,"inst_replay_overhead","Instruction Replay Overhead",4.275900,4.298941,4.289172
+"GeForce GTX 780 (0)","mergeHistogram64Kernel(unsigned int*, unsigned int*, unsigned int)",17,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","mergeHistogram64Kernel(unsigned int*, unsigned int*, unsigned int)",17,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","mergeHistogram64Kernel(unsigned int*, unsigned int*, unsigned int)",17,"cf_executed","Executed Control-Flow Instructions",9792,9792,9792
+"GeForce GTX 780 (0)","mergeHistogram64Kernel(unsigned int*, unsigned int*, unsigned int)",17,"inst_executed","Instructions Executed",70656,70656,70656
+"GeForce GTX 780 (0)","mergeHistogram64Kernel(unsigned int*, unsigned int*, unsigned int)",17,"inst_issued","Instructions Issued",372774,374402,373711
+"GeForce GTX 780 (0)","mergeHistogram64Kernel(unsigned int*, unsigned int*, unsigned int)",17,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","histogram64Kernel(unsigned int*, uint4*, unsigned int)",17,"inst_replay_overhead","Instruction Replay Overhead",0.719886,0.720261,0.720057
+"GeForce GTX 780 (0)","histogram64Kernel(unsigned int*, uint4*, unsigned int)",17,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","histogram64Kernel(unsigned int*, uint4*, unsigned int)",17,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","histogram64Kernel(unsigned int*, uint4*, unsigned int)",17,"cf_executed","Executed Control-Flow Instructions",192252,192252,192252
+"GeForce GTX 780 (0)","histogram64Kernel(unsigned int*, uint4*, unsigned int)",17,"inst_executed","Instructions Executed",15143592,15143592,15143592
+"GeForce GTX 780 (0)","histogram64Kernel(unsigned int*, uint4*, unsigned int)",17,"inst_issued","Instructions Issued",26045253,26050938,26047843
+"GeForce GTX 780 (0)","histogram64Kernel(unsigned int*, uint4*, unsigned int)",17,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000

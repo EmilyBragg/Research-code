@@ -1,0 +1,35 @@
+[simplePitchLinearTexture.exe] starting...
+
+MapSMtoCores undefined SM 3.5 is undefined (please update to the latest SDK)!
+> Using CUDA device [0]: GeForce GTX 780
+
+Bandwidth (GB/s) for pitch linear: 1.26e+000; for array: 1.27e+000
+
+Texture fetch rate (Mpix/s) for pitch linear: 1.58e+002; for array: 1.59e+002
+
+[simplePitchLinearTexture.exe] test results...
+PASSED
+
+> exiting in 3 seconds: 3...2...1...done!
+
+======== Warning: Metric "branch_efficiency" cannot be found on device 0.
+==4876== NVPROF is profiling process 4876, command: simplePitchLinearTexture.exe
+==4876== Warning: Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==4876== Profiling application: simplePitchLinearTexture.exe
+==4876== Profiling result:
+==4876== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"GeForce GTX 780 (0)","shiftArray(float*, int, int, int, int, int)",100,"inst_replay_overhead","Instruction Replay Overhead",0.034648,0.034674,0.034664
+"GeForce GTX 780 (0)","shiftArray(float*, int, int, int, int, int)",100,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","shiftArray(float*, int, int, int, int, int)",100,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","shiftArray(float*, int, int, int, int, int)",100,"cf_executed","Executed Control-Flow Instructions",1048576,1048576,1048576
+"GeForce GTX 780 (0)","shiftArray(float*, int, int, int, int, int)",100,"inst_executed","Instructions Executed",7733248,7733248,7733248
+"GeForce GTX 780 (0)","shiftArray(float*, int, int, int, int, int)",100,"inst_issued","Instructions Issued",8001189,8001389,8001311
+"GeForce GTX 780 (0)","shiftArray(float*, int, int, int, int, int)",100,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","shiftPitchLinear(float*, int, int, int, int, int)",100,"inst_replay_overhead","Instruction Replay Overhead",0.034654,0.034698,0.034670
+"GeForce GTX 780 (0)","shiftPitchLinear(float*, int, int, int, int, int)",100,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","shiftPitchLinear(float*, int, int, int, int, int)",100,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","shiftPitchLinear(float*, int, int, int, int, int)",100,"cf_executed","Executed Control-Flow Instructions",1048576,1048576,1048576
+"GeForce GTX 780 (0)","shiftPitchLinear(float*, int, int, int, int, int)",100,"inst_executed","Instructions Executed",7733248,7733248,7733248
+"GeForce GTX 780 (0)","shiftPitchLinear(float*, int, int, int, int, int)",100,"inst_issued","Instructions Issued",8001236,8001574,8001360
+"GeForce GTX 780 (0)","shiftPitchLinear(float*, int, int, int, int, int)",100,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
