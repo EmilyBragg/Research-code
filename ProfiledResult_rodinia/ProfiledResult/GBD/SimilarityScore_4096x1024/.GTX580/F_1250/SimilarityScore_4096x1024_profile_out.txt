@@ -1,0 +1,21 @@
+load matrice...
+=====start map/reduce=====
+** init GPU
+----------start map-----------
+** Map Input: keys buf size 33546240 bytes, vals buf size 134184960 bytes, index buf size 134184960 bytes, 8386560 records
+** Upload map input data onto device memory
+ PCI-E I/O:		140.012000ms
+** MapCount
+** Do prefix sum on intermediate data's size
+
+** Map Output: keys buf size 33546240 bytes, vals buf size 67092480 bytes, index buf size 134184960 bytes, 8386560 records
+** Allocate intermediate memory on device memory
+** Map
+       Map:		5968.751000ms
+----------start group-----------
+** Sort for group
+Cuda error in file 'C:/ProgramData/NVIDIA Corporation/NVIDIA GPU Computing SDK 4.2/C/src/Mars_SimilarityScore/MarsLib.cu' in line 540 : the launch timed out and was terminated.
+==5900== NVPROF is profiling process 5900, command: Mars_SimilarityScore.exe 4096 1024
+==5900== Warning: Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==5900== Error: Internal profiling error 2900:999.
+======== Error: Application returned non-zero code 1

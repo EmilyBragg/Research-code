@@ -1,0 +1,69 @@
+Using pinned memory
+Loading database into memory
+Using database sqlite_inputs\\million.db
+native execution time: 2.318544 seconds
+vm execution time: 0.435655 seconds
+transfer results time: 0.004000 seconds
+stream
+speedup:		5.321973x
+speedup with results:	5.273552x
+==== Results ===========================================================
+ Rows:		949987
+ Columns:	2
+ Stride:	32
+========================================================================
+8672	-6	
+8673	-80	
+8704	28	
+8674	-9	
+8675	-77	
+8688	-83	
+8689	-12	
+8690	31	
+8640	-85	
+8691	11	
+8768	-28	
+8676	-23	
+8769	-2	
+8677	-82	
+8770	22	
+8678	-32	
+8771	55	
+8679	15	
+8784	-19	
+8800	58	
+8641	-98	
+8801	74	
+8692	-63	
+8736	35	
+8693	38	
+8705	14	
+8694	78	
+8706	-95	
+8695	75	
+8707	-24	
+8642	-27	
+8786	2	
+8738	28	
+8787	-70	
+8739	-89	
+8643	84	
+8802	-12	
+8656	16	
+8803	86	
+8657	36	
+======== Warning: Metric "branch_efficiency" cannot be found on device 0.
+==5972== NVPROF is profiling process 5972, command: SQLite.exe -p -m -d sqlite_inputs\\million.db
+==5972== Warning: Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==5972== Profiling application: SQLite.exe -p -m -d sqlite_inputs\\million.db
+==5972== Profiling result:
+==5972== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"GeForce GTX 780 (0)","VmKernel(char*, sphyraena_results*, int, int, int)",1,"inst_replay_overhead","Instruction Replay Overhead",0.091320,0.091320,0.091320
+"GeForce GTX 780 (0)","VmKernel(char*, sphyraena_results*, int, int, int)",1,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","VmKernel(char*, sphyraena_results*, int, int, int)",1,"local_replay_overhead","Local Memory Cache Replay Overhead",0.007143,0.007143,0.007143
+"GeForce GTX 780 (0)","VmKernel(char*, sphyraena_results*, int, int, int)",1,"cf_issued","Issued Control-Flow Instructions",16411803,16411803,16411803
+"GeForce GTX 780 (0)","VmKernel(char*, sphyraena_results*, int, int, int)",1,"cf_executed","Executed Control-Flow Instructions",15711364,15711364,15711364
+"GeForce GTX 780 (0)","VmKernel(char*, sphyraena_results*, int, int, int)",1,"inst_executed","Instructions Executed",63687029,63687029,63687029
+"GeForce GTX 780 (0)","VmKernel(char*, sphyraena_results*, int, int, int)",1,"inst_issued","Instructions Issued",69621205,69621205,69621205
+"GeForce GTX 780 (0)","VmKernel(char*, sphyraena_results*, int, int, int)",1,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000

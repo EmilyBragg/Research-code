@@ -1,0 +1,20 @@
+pyramidHeight: 6
+gridSize: [256, 256]
+border:[6, 6]
+blockGrid:[64, 64]
+targetBlock:[4, 4]
+==3188== NVPROF is profiling process 3188, command: HOTSP.exe 256 6 60000
+==3188== Warning: Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==3188== Profiling application: HOTSP.exe 256 6 60000
+==3188== Profiling result:
+==3188== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"GeForce GTX 580 (0)","calculate_temp(int, float*, float*, int, int, int, int, float, float, float, float, float, float)",10000,"branch_efficiency","Branch Efficiency",84.788555%,84.788555%,84.788555%
+"GeForce GTX 580 (0)","calculate_temp(int, float*, float*, int, int, int, int, float, float, float, float, float, float)",10000,"inst_executed","Instructions Executed",16880352,16880352,16880352
+"GeForce GTX 580 (0)","calculate_temp(int, float*, float*, int, int, int, int, float, float, float, float, float, float)",10000,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 580 (0)","calculate_temp(int, float*, float*, int, int, int, int, float, float, float, float, float, float)",10000,"inst_replay_overhead","Instruction Replay Overhead",0.008306,0.009381,0.009183
+"GeForce GTX 580 (0)","calculate_temp(int, float*, float*, int, int, int, int, float, float, float, float, float, float)",10000,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.006316,0.007845,0.007048
+"GeForce GTX 580 (0)","calculate_temp(int, float*, float*, int, int, int, int, float, float, float, float, float, float)",10000,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 580 (0)","calculate_temp(int, float*, float*, int, int, int, int, float, float, float, float, float, float)",10000,"cf_issued","Issued Control-Flow Instructions",1703424,1703424,1703424
+"GeForce GTX 580 (0)","calculate_temp(int, float*, float*, int, int, int, int, float, float, float, float, float, float)",10000,"cf_executed","Executed Control-Flow Instructions",1703424,1703424,1703424
+"GeForce GTX 580 (0)","calculate_temp(int, float*, float*, int, int, int, int, float, float, float, float, float, float)",10000,"inst_issued","Instructions Issued",17020557,17038714,17035367

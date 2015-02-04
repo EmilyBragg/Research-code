@@ -1,0 +1,75 @@
+Chose device: name='GeForce GTX 780' index=0
+Vertices: 1000000
+Edges: 999999
+Running Benchmark
+
+Verification of GPU results: Passed
+
+Verification of GPU results: Passed
+
+Verification of GPU results: Passed
+
+Verification of GPU results: Passed
+
+Verification of GPU results: Passed
+
+Verification of GPU results: Passed
+
+Verification of GPU results: Passed
+
+Verification of GPU results: Passed
+
+Verification of GPU results: Passed
+
+Verification of GPU results: Passed
+test	atts	units	median	mean	stddev	min	max	trial0	trial1	trial2	trial3	trial4	trial5	trial6	trial7	trial8	trial9	
+BFS	v:1000000_e:1999998	GB/s	0.0107263	0.0109769	0.000650113	0.0101062	0.0122936	0.0105609	0.0122936	0.0119816	0.0101062	0.0109429	0.0106095	0.0107997	0.0112793	0.0106529	0.0105428	
+BFS_PCIe	v:1000000_e:1999998	GB/s	0.0107084	0.0109583	0.000647891	0.0100905	0.0122703	0.0105438	0.0122703	0.0119595	0.0100905	0.0109246	0.0105919	0.0107816	0.0112597	0.0106352	0.0105258	
+BFS_Parity	v:1000000_e:1999998	N	0.00167094	0.00169607	9.81725e-005	0.00155415	0.00189373	0.00162807	0.00189373	0.00184503	0.00155415	0.00168255	0.00165934	0.00168536	0.00173416	0.00165898	0.00161937	
+BFS_kernel_time	v:1000000_e:1999998	s	2.61053	2.55936	0.144702	2.27761	2.77057	2.65128	2.27761	2.33692	2.77057	2.55873	2.63914	2.59266	2.48243	2.6284	2.65583	
+BFS_teps	v:1000000_e:1999998	Edges/s	383379	392087	23069.1	361141	438596	377216	438596	428082	361141	390472	379075	385951	402738	380807	376789	
+BFS_total	v:1000000_e:1999998	s	2.6085	2.5589	0.143768	2.28	2.769	2.651	2.28	2.336	2.769	2.561	2.638	2.591	2.483	2.626	2.654	
+BFS_visited_vertices	v:1000000_e:1999998	N	1e+006	1e+006	0	1e+006	1e+006	1e+006	1e+006	1e+006	1e+006	1e+006	1e+006	1e+006	1e+006	1e+006	1e+006	
+
+Note: Any results marked with (*) had missing values.
+      This can occur on systems with a mixture of
+      device types or architectural capabilities.
+======== Warning: Metric "branch_efficiency" cannot be found on device 0.
+==4932== NVPROF is profiling process 4932, command: BFS.exe --algo 2 -s 4
+==4932== Warning: Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==4932== Profiling application: BFS.exe --algo 2 -s 4
+==4932== Profiling result:
+==4932== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"GeForce GTX 780 (0)","Reset_kernel_parameters(unsigned int*)",100,"inst_replay_overhead","Instruction Replay Overhead",0.333333,0.333333,0.333333
+"GeForce GTX 780 (0)","Reset_kernel_parameters(unsigned int*)",100,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","Reset_kernel_parameters(unsigned int*)",100,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","Reset_kernel_parameters(unsigned int*)",100,"cf_issued","Issued Control-Flow Instructions",1,1,1
+"GeForce GTX 780 (0)","Reset_kernel_parameters(unsigned int*)",100,"cf_executed","Executed Control-Flow Instructions",1,1,1
+"GeForce GTX 780 (0)","Reset_kernel_parameters(unsigned int*)",100,"inst_executed","Instructions Executed",12,12,12
+"GeForce GTX 780 (0)","Reset_kernel_parameters(unsigned int*)",100,"inst_issued","Instructions Issued",16,16,16
+"GeForce GTX 780 (0)","Reset_kernel_parameters(unsigned int*)",100,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","Frontier_copy(unsigned int*, unsigned int*, unsigned int*)",90,"inst_replay_overhead","Instruction Replay Overhead",0.113558,0.159111,0.120279
+"GeForce GTX 780 (0)","Frontier_copy(unsigned int*, unsigned int*, unsigned int*)",90,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000032,0.000038,0.000037
+"GeForce GTX 780 (0)","Frontier_copy(unsigned int*, unsigned int*, unsigned int*)",90,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","Frontier_copy(unsigned int*, unsigned int*, unsigned int*)",90,"cf_issued","Issued Control-Flow Instructions",62529,62529,62529
+"GeForce GTX 780 (0)","Frontier_copy(unsigned int*, unsigned int*, unsigned int*)",90,"cf_executed","Executed Control-Flow Instructions",62529,62529,62529
+"GeForce GTX 780 (0)","Frontier_copy(unsigned int*, unsigned int*, unsigned int*)",90,"inst_executed","Instructions Executed",312650,372118,326482
+"GeForce GTX 780 (0)","Frontier_copy(unsigned int*, unsigned int*, unsigned int*)",90,"inst_issued","Instructions Issued",348154,431326,365893
+"GeForce GTX 780 (0)","Frontier_copy(unsigned int*, unsigned int*, unsigned int*)",90,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","BFS_kernel_multi_block_spill(unsigned int volatile *, unsigned int volatile *, unsigned int, unsigned int volatile *, int volatile *, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int volatile *, unsigned int)",90,"inst_replay_overhead","Instruction Replay Overhead",0.140001,8.245428,1.106830
+"GeForce GTX 780 (0)","BFS_kernel_multi_block_spill(unsigned int volatile *, unsigned int volatile *, unsigned int, unsigned int volatile *, int volatile *, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int volatile *, unsigned int)",90,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","BFS_kernel_multi_block_spill(unsigned int volatile *, unsigned int volatile *, unsigned int, unsigned int volatile *, int volatile *, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int volatile *, unsigned int)",90,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","BFS_kernel_multi_block_spill(unsigned int volatile *, unsigned int volatile *, unsigned int, unsigned int volatile *, int volatile *, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int volatile *, unsigned int)",90,"cf_issued","Issued Control-Flow Instructions",368557,6625562,1806005
+"GeForce GTX 780 (0)","BFS_kernel_multi_block_spill(unsigned int volatile *, unsigned int volatile *, unsigned int, unsigned int volatile *, int volatile *, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int volatile *, unsigned int)",90,"cf_executed","Executed Control-Flow Instructions",367270,6536063,1788598
+"GeForce GTX 780 (0)","BFS_kernel_multi_block_spill(unsigned int volatile *, unsigned int volatile *, unsigned int, unsigned int volatile *, int volatile *, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int volatile *, unsigned int)",90,"inst_executed","Instructions Executed",852006,25948490,6649094
+"GeForce GTX 780 (0)","BFS_kernel_multi_block_spill(unsigned int volatile *, unsigned int volatile *, unsigned int, unsigned int volatile *, int volatile *, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int volatile *, unsigned int)",90,"inst_issued","Instructions Issued",973676,37312780,9889408
+"GeForce GTX 780 (0)","BFS_kernel_multi_block_spill(unsigned int volatile *, unsigned int volatile *, unsigned int, unsigned int volatile *, int volatile *, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int volatile *, unsigned int)",90,"atomic_replay_overhead","Atomic Replay Overhead",0.011984,0.437759,0.081671
+"GeForce GTX 780 (0)","BFS_kernel_one_block_spill(unsigned int volatile *, unsigned int, unsigned int volatile *, int volatile *, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int volatile *, unsigned int)",10,"inst_replay_overhead","Instruction Replay Overhead",0.152791,0.161096,0.157537
+"GeForce GTX 780 (0)","BFS_kernel_one_block_spill(unsigned int volatile *, unsigned int, unsigned int volatile *, int volatile *, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int volatile *, unsigned int)",10,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","BFS_kernel_one_block_spill(unsigned int volatile *, unsigned int, unsigned int volatile *, int volatile *, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int volatile *, unsigned int)",10,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","BFS_kernel_one_block_spill(unsigned int volatile *, unsigned int, unsigned int volatile *, int volatile *, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int volatile *, unsigned int)",10,"cf_issued","Issued Control-Flow Instructions",46804,51295,49275
+"GeForce GTX 780 (0)","BFS_kernel_one_block_spill(unsigned int volatile *, unsigned int, unsigned int volatile *, int volatile *, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int volatile *, unsigned int)",10,"cf_executed","Executed Control-Flow Instructions",46479,49571,48311
+"GeForce GTX 780 (0)","BFS_kernel_one_block_spill(unsigned int volatile *, unsigned int, unsigned int volatile *, int volatile *, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int volatile *, unsigned int)",10,"inst_executed","Instructions Executed",179981,194389,189411
+"GeForce GTX 780 (0)","BFS_kernel_one_block_spill(unsigned int volatile *, unsigned int, unsigned int volatile *, int volatile *, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int volatile *, unsigned int)",10,"inst_issued","Instructions Issued",216023,227991,221655
+"GeForce GTX 780 (0)","BFS_kernel_one_block_spill(unsigned int volatile *, unsigned int, unsigned int volatile *, int volatile *, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int volatile *, unsigned int)",10,"atomic_replay_overhead","Atomic Replay Overhead",0.027977,0.029785,0.029058

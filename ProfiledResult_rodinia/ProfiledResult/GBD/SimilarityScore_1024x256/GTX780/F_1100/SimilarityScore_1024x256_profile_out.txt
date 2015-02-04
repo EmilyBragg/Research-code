@@ -1,0 +1,179 @@
+load matrice...
+=====start map/reduce=====
+** init GPU
+----------start map-----------
+** Map Input: keys buf size 2095104 bytes, vals buf size 8380416 bytes, index buf size 8380416 bytes, 523776 records
+** Upload map input data onto device memory
+ PCI-E I/O:		9.998000ms
+** MapCount
+** Do prefix sum on intermediate data's size
+
+** Map Output: keys buf size 2095104 bytes, vals buf size 4190208 bytes, index buf size 8380416 bytes, 523776 records
+** Allocate intermediate memory on device memory
+** Map
+       Map:		691.066000ms
+----------start group-----------
+** Sort for group
+** InterRecordCount:523776, number of groups: 319228
+     Group:		6104.052000ms
+  all-test:		7195.142000ms
+=====finish map/reduce=====
+======== Warning: Metric "branch_efficiency" cannot be found on device 0.
+==3532== NVPROF is profiling process 3532, command: Mars_SimilarityScore.exe 1024 256
+==3532== Warning: Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==3532== Profiling application: Mars_SimilarityScore.exe 1024 256
+==3532== Profiling result:
+==3532== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"GeForce GTX 780 (0)","initialize_kernel(int4*, int, int, int4)",2,"inst_replay_overhead","Instruction Replay Overhead",0.291601,0.354397,0.322999
+"GeForce GTX 780 (0)","initialize_kernel(int4*, int, int, int4)",2,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","initialize_kernel(int4*, int, int, int4)",2,"local_replay_overhead","Local Memory Cache Replay Overhead",0.073069,0.074458,0.073764
+"GeForce GTX 780 (0)","initialize_kernel(int4*, int, int, int4)",2,"cf_issued","Issued Control-Flow Instructions",115456,115456,115456
+"GeForce GTX 780 (0)","initialize_kernel(int4*, int, int, int4)",2,"cf_executed","Executed Control-Flow Instructions",106496,106496,106496
+"GeForce GTX 780 (0)","initialize_kernel(int4*, int, int, int4)",2,"inst_executed","Instructions Executed",630784,630784,630784
+"GeForce GTX 780 (0)","initialize_kernel(int4*, int, int, int4)",2,"inst_issued","Instructions Issued",814721,854332,834526
+"GeForce GTX 780 (0)","initialize_kernel(int4*, int, int, int4)",2,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","bitonicKernel(void*, int, int4*, unsigned int, int, int)",66,"inst_replay_overhead","Instruction Replay Overhead",0.598778,1.205584,0.834251
+"GeForce GTX 780 (0)","bitonicKernel(void*, int, int4*, unsigned int, int, int)",66,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","bitonicKernel(void*, int, int4*, unsigned int, int, int)",66,"local_replay_overhead","Local Memory Cache Replay Overhead",0.178367,0.182932,0.181576
+"GeForce GTX 780 (0)","bitonicKernel(void*, int, int4*, unsigned int, int, int)",66,"cf_issued","Issued Control-Flow Instructions",406163,424418,409413
+"GeForce GTX 780 (0)","bitonicKernel(void*, int, int4*, unsigned int, int, int)",66,"cf_executed","Executed Control-Flow Instructions",360339,374498,362907
+"GeForce GTX 780 (0)","bitonicKernel(void*, int, int4*, unsigned int, int, int)",66,"inst_executed","Instructions Executed",2662839,2701766,2673796
+"GeForce GTX 780 (0)","bitonicKernel(void*, int, int4*, unsigned int, int, int)",66,"inst_issued","Instructions Issued",4292032,5920686,4905014
+"GeForce GTX 780 (0)","bitonicKernel(void*, int, int4*, unsigned int, int, int)",66,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","copyChunks_kernel(void*, int, int2*, int, int*, void*)",16,"inst_replay_overhead","Instruction Replay Overhead",1.393137,2.202894,1.794080
+"GeForce GTX 780 (0)","copyChunks_kernel(void*, int, int2*, int, int*, void*)",16,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","copyChunks_kernel(void*, int, int2*, int, int*, void*)",16,"local_replay_overhead","Local Memory Cache Replay Overhead",0.028875,0.040423,0.034551
+"GeForce GTX 780 (0)","copyChunks_kernel(void*, int, int2*, int, int*, void*)",16,"cf_issued","Issued Control-Flow Instructions",49486,66304,57922
+"GeForce GTX 780 (0)","copyChunks_kernel(void*, int, int2*, int, int*, void*)",16,"cf_executed","Executed Control-Flow Instructions",44896,61440,53220
+"GeForce GTX 780 (0)","copyChunks_kernel(void*, int, int2*, int, int*, void*)",16,"inst_executed","Instructions Executed",295312,419840,358134
+"GeForce GTX 780 (0)","copyChunks_kernel(void*, int, int2*, int, int*, void*)",16,"inst_issued","Instructions Issued",710666,1344703,1019839
+"GeForce GTX 780 (0)","copyChunks_kernel(void*, int, int2*, int, int*, void*)",16,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","unitBitonicSortKernel(void*, int, int4*, unsigned int, int)",8,"inst_replay_overhead","Instruction Replay Overhead",0.330037,0.409162,0.366427
+"GeForce GTX 780 (0)","unitBitonicSortKernel(void*, int, int4*, unsigned int, int)",8,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","unitBitonicSortKernel(void*, int, int4*, unsigned int, int)",8,"local_replay_overhead","Local Memory Cache Replay Overhead",0.142036,0.143178,0.142502
+"GeForce GTX 780 (0)","unitBitonicSortKernel(void*, int, int4*, unsigned int, int)",8,"cf_issued","Issued Control-Flow Instructions",2506838,2509665,2509275
+"GeForce GTX 780 (0)","unitBitonicSortKernel(void*, int, int4*, unsigned int, int)",8,"cf_executed","Executed Control-Flow Instructions",2158362,2161231,2160822
+"GeForce GTX 780 (0)","unitBitonicSortKernel(void*, int, int4*, unsigned int, int)",8,"inst_executed","Instructions Executed",19339473,19397242,19389298
+"GeForce GTX 780 (0)","unitBitonicSortKernel(void*, int, int4*, unsigned int, int)",8,"inst_issued","Instructions Issued",25798524,27332550,26493972
+"GeForce GTX 780 (0)","unitBitonicSortKernel(void*, int, int4*, unsigned int, int)",8,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","Mapper(char*, char*, int4*, int*, int*, int*, int2*, char*, char*, int4*, int*, int, int, int)",1,"inst_replay_overhead","Instruction Replay Overhead",0.539796,0.539796,0.539796
+"GeForce GTX 780 (0)","Mapper(char*, char*, int4*, int*, int*, int*, int2*, char*, char*, int4*, int*, int, int, int)",1,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","Mapper(char*, char*, int4*, int*, int*, int*, int2*, char*, char*, int4*, int*, int, int, int)",1,"local_replay_overhead","Local Memory Cache Replay Overhead",0.173834,0.173834,0.173834
+"GeForce GTX 780 (0)","Mapper(char*, char*, int4*, int*, int*, int*, int2*, char*, char*, int4*, int*, int, int, int)",1,"cf_issued","Issued Control-Flow Instructions",3683376,3683376,3683376
+"GeForce GTX 780 (0)","Mapper(char*, char*, int4*, int*, int*, int*, int2*, char*, char*, int4*, int*, int, int, int)",1,"cf_executed","Executed Control-Flow Instructions",3502752,3502752,3502752
+"GeForce GTX 780 (0)","Mapper(char*, char*, int4*, int*, int*, int*, int2*, char*, char*, int4*, int*, int, int, int)",1,"inst_executed","Instructions Executed",149096112,149096112,149096112
+"GeForce GTX 780 (0)","Mapper(char*, char*, int4*, int*, int*, int*, int2*, char*, char*, int4*, int*, int, int, int)",1,"inst_issued","Instructions Issued",229577667,229577667,229577667
+"GeForce GTX 780 (0)","Mapper(char*, char*, int4*, int*, int*, int*, int2*, char*, char*, int4*, int*, int, int, int)",1,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void prescan<bool=0, bool=0>(int*, int const *, int*, int, int, int)",6,"inst_replay_overhead","Instruction Replay Overhead",0.036680,0.036680,0.036680
+"GeForce GTX 780 (0)","void prescan<bool=0, bool=0>(int*, int const *, int*, int, int, int)",6,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void prescan<bool=0, bool=0>(int*, int const *, int*, int, int, int)",6,"local_replay_overhead","Local Memory Cache Replay Overhead",0.027027,0.027027,0.027027
+"GeForce GTX 780 (0)","void prescan<bool=0, bool=0>(int*, int const *, int*, int, int, int)",6,"cf_issued","Issued Control-Flow Instructions",71,71,71
+"GeForce GTX 780 (0)","void prescan<bool=0, bool=0>(int*, int const *, int*, int, int, int)",6,"cf_executed","Executed Control-Flow Instructions",63,63,63
+"GeForce GTX 780 (0)","void prescan<bool=0, bool=0>(int*, int const *, int*, int, int, int)",6,"inst_executed","Instructions Executed",518,518,518
+"GeForce GTX 780 (0)","void prescan<bool=0, bool=0>(int*, int const *, int*, int, int, int)",6,"inst_issued","Instructions Issued",537,537,537
+"GeForce GTX 780 (0)","void prescan<bool=0, bool=0>(int*, int const *, int*, int, int, int)",6,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void prescan<bool=1, bool=0>(int*, int const *, int*, int, int, int)",12,"inst_replay_overhead","Instruction Replay Overhead",0.039625,0.061967,0.048671
+"GeForce GTX 780 (0)","void prescan<bool=1, bool=0>(int*, int const *, int*, int, int, int)",12,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void prescan<bool=1, bool=0>(int*, int const *, int*, int, int, int)",12,"local_replay_overhead","Local Memory Cache Replay Overhead",0.015682,0.038575,0.027019
+"GeForce GTX 780 (0)","void prescan<bool=1, bool=0>(int*, int const *, int*, int, int, int)",12,"cf_issued","Issued Control-Flow Instructions",1543,1571073,786308
+"GeForce GTX 780 (0)","void prescan<bool=1, bool=0>(int*, int const *, int*, int, int, int)",12,"cf_executed","Executed Control-Flow Instructions",1358,1389234,695296
+"GeForce GTX 780 (0)","void prescan<bool=1, bool=0>(int*, int const *, int*, int, int, int)",12,"inst_executed","Instructions Executed",7142,7306266,3656704
+"GeForce GTX 780 (0)","void prescan<bool=1, bool=0>(int*, int const *, int*, int, int, int)",12,"inst_issued","Instructions Issued",7425,7759011,3867691
+"GeForce GTX 780 (0)","void prescan<bool=1, bool=0>(int*, int const *, int*, int, int, int)",12,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","partBitonicSortKernel(void*, int, int4*, unsigned int, int, int)",88,"inst_replay_overhead","Instruction Replay Overhead",0.396656,0.805895,0.506949
+"GeForce GTX 780 (0)","partBitonicSortKernel(void*, int, int4*, unsigned int, int, int)",88,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","partBitonicSortKernel(void*, int, int4*, unsigned int, int, int)",88,"local_replay_overhead","Local Memory Cache Replay Overhead",0.145187,0.148689,0.146865
+"GeForce GTX 780 (0)","partBitonicSortKernel(void*, int, int4*, unsigned int, int, int)",88,"cf_issued","Issued Control-Flow Instructions",524273,534650,527064
+"GeForce GTX 780 (0)","partBitonicSortKernel(void*, int, int4*, unsigned int, int, int)",88,"cf_executed","Executed Control-Flow Instructions",447708,458020,450474
+"GeForce GTX 780 (0)","partBitonicSortKernel(void*, int, int4*, unsigned int, int, int)",88,"inst_executed","Instructions Executed",3936539,3979931,3953562
+"GeForce GTX 780 (0)","partBitonicSortKernel(void*, int, int4*, unsigned int, int, int)",88,"inst_issued","Instructions Issued",5512332,7187256,5958819
+"GeForce GTX 780 (0)","partBitonicSortKernel(void*, int, int4*, unsigned int, int, int)",88,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void prescan<bool=1, bool=1>(int*, int const *, int*, int, int, int)",6,"inst_replay_overhead","Instruction Replay Overhead",0.039825,0.039825,0.039825
+"GeForce GTX 780 (0)","void prescan<bool=1, bool=1>(int*, int const *, int*, int, int, int)",6,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void prescan<bool=1, bool=1>(int*, int const *, int*, int, int, int)",6,"local_replay_overhead","Local Memory Cache Replay Overhead",0.015817,0.015817,0.015817
+"GeForce GTX 780 (0)","void prescan<bool=1, bool=1>(int*, int const *, int*, int, int, int)",6,"cf_issued","Issued Control-Flow Instructions",1592,1592,1592
+"GeForce GTX 780 (0)","void prescan<bool=1, bool=1>(int*, int const *, int*, int, int, int)",6,"cf_executed","Executed Control-Flow Instructions",1391,1391,1391
+"GeForce GTX 780 (0)","void prescan<bool=1, bool=1>(int*, int const *, int*, int, int, int)",6,"inst_executed","Instructions Executed",7081,7081,7081
+"GeForce GTX 780 (0)","void prescan<bool=1, bool=1>(int*, int const *, int*, int, int, int)",6,"inst_issued","Instructions Issued",7363,7363,7363
+"GeForce GTX 780 (0)","void prescan<bool=1, bool=1>(int*, int const *, int*, int, int, int)",6,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","MapperCount(char*, char*, int4*, int*, int*, int*, int, int, int)",1,"inst_replay_overhead","Instruction Replay Overhead",0.185422,0.185422,0.185422
+"GeForce GTX 780 (0)","MapperCount(char*, char*, int4*, int*, int*, int*, int, int, int)",1,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","MapperCount(char*, char*, int4*, int*, int*, int*, int, int, int)",1,"local_replay_overhead","Local Memory Cache Replay Overhead",0.047501,0.047501,0.047501
+"GeForce GTX 780 (0)","MapperCount(char*, char*, int4*, int*, int*, int*, int, int, int)",1,"cf_issued","Issued Control-Flow Instructions",491808,491808,491808
+"GeForce GTX 780 (0)","MapperCount(char*, char*, int4*, int*, int*, int*, int, int, int)",1,"cf_executed","Executed Control-Flow Instructions",441936,441936,441936
+"GeForce GTX 780 (0)","MapperCount(char*, char*, int4*, int*, int*, int*, int, int, int)",1,"inst_executed","Instructions Executed",3502752,3502752,3502752
+"GeForce GTX 780 (0)","MapperCount(char*, char*, int4*, int*, int*, int*, int, int, int)",1,"inst_issued","Instructions Issued",4152241,4152241,4152241
+"GeForce GTX 780 (0)","MapperCount(char*, char*, int4*, int*, int*, int*, int, int, int)",1,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","getChunkBoundary_kernel(void*, int, int4*, int, int*)",2,"inst_replay_overhead","Instruction Replay Overhead",0.483684,0.489505,0.486594
+"GeForce GTX 780 (0)","getChunkBoundary_kernel(void*, int, int4*, int, int*)",2,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","getChunkBoundary_kernel(void*, int, int4*, int, int*)",2,"local_replay_overhead","Local Memory Cache Replay Overhead",0.183001,0.183313,0.183157
+"GeForce GTX 780 (0)","getChunkBoundary_kernel(void*, int, int4*, int, int*)",2,"cf_issued","Issued Control-Flow Instructions",319620,320126,319873
+"GeForce GTX 780 (0)","getChunkBoundary_kernel(void*, int, int4*, int, int*)",2,"cf_executed","Executed Control-Flow Instructions",277956,278398,278177
+"GeForce GTX 780 (0)","getChunkBoundary_kernel(void*, int, int4*, int, int*)",2,"inst_executed","Instructions Executed",2211346,2215597,2213471
+"GeForce GTX 780 (0)","getChunkBoundary_kernel(void*, int, int4*, int, int*)",2,"inst_issued","Instructions Issued",3287245,3293811,3290528
+"GeForce GTX 780 (0)","getChunkBoundary_kernel(void*, int, int4*, int, int*)",2,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","getIntYArray_kernel(int2*, int, int, int*)",4,"inst_replay_overhead","Instruction Replay Overhead",0.180107,0.182814,0.181111
+"GeForce GTX 780 (0)","getIntYArray_kernel(int2*, int, int, int*)",4,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","getIntYArray_kernel(int2*, int, int, int*)",4,"local_replay_overhead","Local Memory Cache Replay Overhead",0.026778,0.028146,0.027653
+"GeForce GTX 780 (0)","getIntYArray_kernel(int2*, int, int, int*)",4,"cf_issued","Issued Control-Flow Instructions",90880,90880,90880
+"GeForce GTX 780 (0)","getIntYArray_kernel(int2*, int, int, int*)",4,"cf_executed","Executed Control-Flow Instructions",81920,81920,81920
+"GeForce GTX 780 (0)","getIntYArray_kernel(int2*, int, int, int*)",4,"inst_executed","Instructions Executed",450288,450560,450424
+"GeForce GTX 780 (0)","getIntYArray_kernel(int2*, int, int, int*)",4,"inst_issued","Instructions Issued",531388,532607,532000
+"GeForce GTX 780 (0)","getIntYArray_kernel(int2*, int, int, int*)",4,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","getZWArray_kernel(int4*, int, int, int2*)",2,"inst_replay_overhead","Instruction Replay Overhead",0.519054,0.523594,0.521324
+"GeForce GTX 780 (0)","getZWArray_kernel(int4*, int, int, int2*)",2,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","getZWArray_kernel(int4*, int, int, int2*)",2,"local_replay_overhead","Local Memory Cache Replay Overhead",0.067923,0.068174,0.068048
+"GeForce GTX 780 (0)","getZWArray_kernel(int4*, int, int, int2*)",2,"cf_issued","Issued Control-Flow Instructions",90880,90880,90880
+"GeForce GTX 780 (0)","getZWArray_kernel(int4*, int, int, int2*)",2,"cf_executed","Executed Control-Flow Instructions",81920,81920,81920
+"GeForce GTX 780 (0)","getZWArray_kernel(int4*, int, int, int2*)",2,"inst_executed","Instructions Executed",548400,548864,548632
+"GeForce GTX 780 (0)","getZWArray_kernel(int4*, int, int, int2*)",2,"inst_issued","Instructions Issued",833754,835539,834646
+"GeForce GTX 780 (0)","getZWArray_kernel(int4*, int, int, int2*)",2,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","getXYArray_kernel(int4*, int, int, int2*)",2,"inst_replay_overhead","Instruction Replay Overhead",0.552151,0.557657,0.554904
+"GeForce GTX 780 (0)","getXYArray_kernel(int4*, int, int, int2*)",2,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","getXYArray_kernel(int4*, int, int, int2*)",2,"local_replay_overhead","Local Memory Cache Replay Overhead",0.071027,0.071167,0.071097
+"GeForce GTX 780 (0)","getXYArray_kernel(int4*, int, int, int2*)",2,"cf_issued","Issued Control-Flow Instructions",90880,90880,90880
+"GeForce GTX 780 (0)","getXYArray_kernel(int4*, int, int, int2*)",2,"cf_executed","Executed Control-Flow Instructions",81920,81920,81920
+"GeForce GTX 780 (0)","getXYArray_kernel(int4*, int, int, int2*)",2,"inst_executed","Instructions Executed",548400,548864,548632
+"GeForce GTX 780 (0)","getXYArray_kernel(int4*, int, int, int2*)",2,"inst_issued","Instructions Issued",851920,854219,853069
+"GeForce GTX 780 (0)","getXYArray_kernel(int4*, int, int, int2*)",2,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","setBoundaryInt2_kernel(int*, int, int, int, int2*)",2,"inst_replay_overhead","Instruction Replay Overhead",0.222434,0.270348,0.246391
+"GeForce GTX 780 (0)","setBoundaryInt2_kernel(int*, int, int, int, int2*)",2,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","setBoundaryInt2_kernel(int*, int, int, int, int2*)",2,"local_replay_overhead","Local Memory Cache Replay Overhead",0.009799,0.025891,0.017845
+"GeForce GTX 780 (0)","setBoundaryInt2_kernel(int*, int, int, int, int2*)",2,"cf_issued","Issued Control-Flow Instructions",107994,140032,124013
+"GeForce GTX 780 (0)","setBoundaryInt2_kernel(int*, int, int, int, int2*)",2,"cf_executed","Executed Control-Flow Instructions",97250,122880,110065
+"GeForce GTX 780 (0)","setBoundaryInt2_kernel(int*, int, int, int, int2*)",2,"inst_executed","Instructions Executed",386557,598016,492286
+"GeForce GTX 780 (0)","setBoundaryInt2_kernel(int*, int, int, int, int2*)",2,"inst_issued","Instructions Issued",491062,731035,611048
+"GeForce GTX 780 (0)","setBoundaryInt2_kernel(int*, int, int, int, int2*)",2,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","setZWArray_kernel(int4*, int, int, int2*)",2,"inst_replay_overhead","Instruction Replay Overhead",0.602500,0.634290,0.618395
+"GeForce GTX 780 (0)","setZWArray_kernel(int4*, int, int, int2*)",2,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","setZWArray_kernel(int4*, int, int, int2*)",2,"local_replay_overhead","Local Memory Cache Replay Overhead",0.110849,0.111013,0.110931
+"GeForce GTX 780 (0)","setZWArray_kernel(int4*, int, int, int2*)",2,"cf_issued","Issued Control-Flow Instructions",90880,90880,90880
+"GeForce GTX 780 (0)","setZWArray_kernel(int4*, int, int, int2*)",2,"cf_executed","Executed Control-Flow Instructions",81920,81920,81920
+"GeForce GTX 780 (0)","setZWArray_kernel(int4*, int, int, int2*)",2,"inst_executed","Instructions Executed",662864,663552,663208
+"GeForce GTX 780 (0)","setZWArray_kernel(int4*, int, int, int2*)",2,"inst_issued","Instructions Issued",1063342,1083312,1073327
+"GeForce GTX 780 (0)","setZWArray_kernel(int4*, int, int, int2*)",2,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","setXYArray_kernel(int4*, int, int, int2*)",2,"inst_replay_overhead","Instruction Replay Overhead",0.625329,0.630094,0.627711
+"GeForce GTX 780 (0)","setXYArray_kernel(int4*, int, int, int2*)",2,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","setXYArray_kernel(int4*, int, int, int2*)",2,"local_replay_overhead","Local Memory Cache Replay Overhead",0.110045,0.110400,0.110222
+"GeForce GTX 780 (0)","setXYArray_kernel(int4*, int, int, int2*)",2,"cf_issued","Issued Control-Flow Instructions",90880,90880,90880
+"GeForce GTX 780 (0)","setXYArray_kernel(int4*, int, int, int2*)",2,"cf_executed","Executed Control-Flow Instructions",81920,81920,81920
+"GeForce GTX 780 (0)","setXYArray_kernel(int4*, int, int, int2*)",2,"inst_executed","Instructions Executed",662864,663552,663208
+"GeForce GTX 780 (0)","setXYArray_kernel(int4*, int, int, int2*)",2,"inst_issued","Instructions Issued",1077372,1081652,1079512
+"GeForce GTX 780 (0)","setXYArray_kernel(int4*, int, int, int2*)",2,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","uniformAdd(int*, int*, int, int, int)",18,"inst_replay_overhead","Instruction Replay Overhead",0.114453,0.164103,0.147663
+"GeForce GTX 780 (0)","uniformAdd(int*, int*, int, int, int)",18,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","uniformAdd(int*, int*, int, int, int)",18,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","uniformAdd(int*, int*, int, int, int)",18,"cf_issued","Issued Control-Flow Instructions",121,116367,38869
+"GeForce GTX 780 (0)","uniformAdd(int*, int*, int, int, int)",18,"cf_executed","Executed Control-Flow Instructions",105,107415,35875
+"GeForce GTX 780 (0)","uniformAdd(int*, int*, int, int, int)",18,"inst_executed","Instructions Executed",585,598455,199875
+"GeForce GTX 780 (0)","uniformAdd(int*, int*, int, int, int)",18,"inst_issued","Instructions Issued",681,667344,222836
+"GeForce GTX 780 (0)","uniformAdd(int*, int*, int, int, int)",18,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","writeBoundary_kernel(int, int, int*, int*, int*)",2,"inst_replay_overhead","Instruction Replay Overhead",0.170530,0.171067,0.170799
+"GeForce GTX 780 (0)","writeBoundary_kernel(int, int, int*, int*, int*)",2,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","writeBoundary_kernel(int, int, int*, int*, int*)",2,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","writeBoundary_kernel(int, int, int*, int*, int*)",2,"cf_issued","Issued Control-Flow Instructions",107130,107198,107164
+"GeForce GTX 780 (0)","writeBoundary_kernel(int, int, int*, int*, int*)",2,"cf_executed","Executed Control-Flow Instructions",98170,98238,98204
+"GeForce GTX 780 (0)","writeBoundary_kernel(int, int, int*, int*, int*)",2,"inst_executed","Instructions Executed",425594,425918,425756
+"GeForce GTX 780 (0)","writeBoundary_kernel(int, int, int*, int*, int*)",2,"inst_issued","Instructions Issued",498399,498550,498474
+"GeForce GTX 780 (0)","writeBoundary_kernel(int, int, int*, int*, int*)",2,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000

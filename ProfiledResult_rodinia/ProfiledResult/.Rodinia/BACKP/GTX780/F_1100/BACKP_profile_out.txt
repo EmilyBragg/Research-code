@@ -1,0 +1,29 @@
+Random number generator seed: 7
+Input layer size : 65536
+Starting training kernel
+Performing GPU computation
+checksum = 0x42abae359a8a7
+Training done
+======== Warning: Metric "branch_efficiency" cannot be found on device 0.
+==4900== NVPROF is profiling process 4900, command: BACKP.exe 65536
+==4900== Warning: Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==4900== Profiling application: BACKP.exe 65536
+==4900== Profiling result:
+==4900== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"GeForce GTX 780 (0)","bpnn_layerforward_CUDA(float*, float*, float*, float*, int, int)",1,"inst_replay_overhead","Instruction Replay Overhead",0.048475,0.048475,0.048475
+"GeForce GTX 780 (0)","bpnn_layerforward_CUDA(float*, float*, float*, float*, int, int)",1,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","bpnn_layerforward_CUDA(float*, float*, float*, float*, int, int)",1,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","bpnn_layerforward_CUDA(float*, float*, float*, float*, int, int)",1,"cf_issued","Issued Control-Flow Instructions",360401,360401,360401
+"GeForce GTX 780 (0)","bpnn_layerforward_CUDA(float*, float*, float*, float*, int, int)",1,"cf_executed","Executed Control-Flow Instructions",327680,327680,327680
+"GeForce GTX 780 (0)","bpnn_layerforward_CUDA(float*, float*, float*, float*, int, int)",1,"inst_executed","Instructions Executed",5013504,5013504,5013504
+"GeForce GTX 780 (0)","bpnn_layerforward_CUDA(float*, float*, float*, float*, int, int)",1,"inst_issued","Instructions Issued",5256536,5256536,5256536
+"GeForce GTX 780 (0)","bpnn_layerforward_CUDA(float*, float*, float*, float*, int, int)",1,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","bpnn_adjust_weights_cuda(float*, int, float*, int, float*, float*)",1,"inst_replay_overhead","Instruction Replay Overhead",1.495667,1.495667,1.495667
+"GeForce GTX 780 (0)","bpnn_adjust_weights_cuda(float*, int, float*, int, float*, float*)",1,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","bpnn_adjust_weights_cuda(float*, int, float*, int, float*, float*)",1,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","bpnn_adjust_weights_cuda(float*, int, float*, int, float*, float*)",1,"cf_issued","Issued Control-Flow Instructions",130972,130972,130972
+"GeForce GTX 780 (0)","bpnn_adjust_weights_cuda(float*, int, float*, int, float*, float*)",1,"cf_executed","Executed Control-Flow Instructions",98304,98304,98304
+"GeForce GTX 780 (0)","bpnn_adjust_weights_cuda(float*, int, float*, int, float*, float*)",1,"inst_executed","Instructions Executed",1671189,1671189,1671189
+"GeForce GTX 780 (0)","bpnn_adjust_weights_cuda(float*, int, float*, int, float*, float*)",1,"inst_issued","Instructions Issued",4170731,4170731,4170731
+"GeForce GTX 780 (0)","bpnn_adjust_weights_cuda(float*, int, float*, int, float*, float*)",1,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000

@@ -1,0 +1,26 @@
+Configuration used: boxes1d = 10
+Time spent in different stages of GPU_CUDA KERNEL:
+ 0.168357000000 s, 29.811576007947 : GPU: SET DEVICE / DRIVER INIT
+ 0.000997000000 s,  0.176542355114 : GPU MEM: ALO
+ 0.004004000000 s,  0.709002597669 : GPU MEM: COPY IN
+10714123518.913834000000 s, 1897188163501.564700000000 : GPU: KERNEL
+-10714123518.523458000000 s, -1897188163432.439700000000 : GPU MEM: COPY OUT
+ 0.001004000000 s,  0.177781870145 : GPU MEM: FRE
+Total time:
+0.564737000000 s
+Time shorter than 1s
+==3528== NVPROF is profiling process 3528, command: rodinia_lavaMD.exe -boxes1d 10
+==3528== Warning: Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==3528== Profiling application: rodinia_lavaMD.exe -boxes1d 10
+==3528== Profiling result:
+==3528== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"GeForce GTX 580 (0)","kernel_gpu_cuda(par_str, dim_str, box_str*, FOUR_VECTOR*, double*, FOUR_VECTOR*)",1,"branch_efficiency","Branch Efficiency",99.890916%,99.890916%,99.890916%
+"GeForce GTX 580 (0)","kernel_gpu_cuda(par_str, dim_str, box_str*, FOUR_VECTOR*, double*, FOUR_VECTOR*)",1,"inst_executed","Instructions Executed",685954432,685954432,685954432
+"GeForce GTX 580 (0)","kernel_gpu_cuda(par_str, dim_str, box_str*, FOUR_VECTOR*, double*, FOUR_VECTOR*)",1,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 580 (0)","kernel_gpu_cuda(par_str, dim_str, box_str*, FOUR_VECTOR*, double*, FOUR_VECTOR*)",1,"inst_replay_overhead","Instruction Replay Overhead",0.006903,0.006903,0.006903
+"GeForce GTX 580 (0)","kernel_gpu_cuda(par_str, dim_str, box_str*, FOUR_VECTOR*, double*, FOUR_VECTOR*)",1,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.001884,0.001884,0.001884
+"GeForce GTX 580 (0)","kernel_gpu_cuda(par_str, dim_str, box_str*, FOUR_VECTOR*, double*, FOUR_VECTOR*)",1,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 580 (0)","kernel_gpu_cuda(par_str, dim_str, box_str*, FOUR_VECTOR*, double*, FOUR_VECTOR*)",1,"cf_issued","Issued Control-Flow Instructions",33676416,33676416,33676416
+"GeForce GTX 580 (0)","kernel_gpu_cuda(par_str, dim_str, box_str*, FOUR_VECTOR*, double*, FOUR_VECTOR*)",1,"cf_executed","Executed Control-Flow Instructions",33676416,33676416,33676416
+"GeForce GTX 580 (0)","kernel_gpu_cuda(par_str, dim_str, box_str*, FOUR_VECTOR*, double*, FOUR_VECTOR*)",1,"inst_issued","Instructions Issued",690689768,690689768,690689768

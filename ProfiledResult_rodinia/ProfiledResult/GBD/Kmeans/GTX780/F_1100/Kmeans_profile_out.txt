@@ -1,0 +1,674 @@
+preprocess:		390.024000ms
+=====start map/reduce=====
+** init GPU
+----------start map-----------
+** Map Input: keys buf size 480000 bytes, vals buf size 360000 bytes, index buf size 480000 bytes, 30000 records
+** Upload map input data onto device memory
+ PCI-E I/O:		0.000000ms
+** MapCount
+** Do prefix sum on intermediate data's size
+
+** Map Output: keys buf size 480000 bytes, vals buf size 360000 bytes, index buf size 480000 bytes, 30000 records
+** Allocate intermediate memory on device memory
+** Map
+       Map:		298.277000ms
+----------start group-----------
+** Sort for group
+** InterRecordCount:30000, number of groups: 24
+     Group:		3819.399000ms
+----------start reduce--------
+** ReduceCount
+** Do prefix sum on output data's size
+** Reduce Output: key buf size 384 bytes, val buf size 288 bytes, index buf size 384 bytes, 24 records
+** Allocate intermediate memory on device memory
+** Reduce
+    Reduce:		150.011000ms
+=====start map/reduce=====
+** init GPU
+----------start map-----------
+** Map Input: keys buf size 480000 bytes, vals buf size 360000 bytes, index buf size 480000 bytes, 30000 records
+** Upload map input data onto device memory
+ PCI-E I/O:		0.000000ms
+** MapCount
+** Do prefix sum on intermediate data's size
+
+** Map Output: keys buf size 480000 bytes, vals buf size 360000 bytes, index buf size 480000 bytes, 30000 records
+** Allocate intermediate memory on device memory
+** Map
+       Map:		300.019000ms
+----------start group-----------
+** Sort for group
+** InterRecordCount:30000, number of groups: 24
+     Group:		4037.821000ms
+----------start reduce--------
+** ReduceCount
+** Do prefix sum on output data's size
+** Reduce Output: key buf size 384 bytes, val buf size 288 bytes, index buf size 384 bytes, 24 records
+** Allocate intermediate memory on device memory
+** Reduce
+    Reduce:		173.110000ms
+=====start map/reduce=====
+** init GPU
+----------start map-----------
+** Map Input: keys buf size 480000 bytes, vals buf size 360000 bytes, index buf size 480000 bytes, 30000 records
+** Upload map input data onto device memory
+ PCI-E I/O:		0.991000ms
+** MapCount
+** Do prefix sum on intermediate data's size
+
+** Map Output: keys buf size 480000 bytes, vals buf size 360000 bytes, index buf size 480000 bytes, 30000 records
+** Allocate intermediate memory on device memory
+** Map
+       Map:		330.351000ms
+----------start group-----------
+** Sort for group
+** InterRecordCount:30000, number of groups: 24
+     Group:		4370.282000ms
+----------start reduce--------
+** ReduceCount
+** Do prefix sum on output data's size
+** Reduce Output: key buf size 384 bytes, val buf size 288 bytes, index buf size 384 bytes, 24 records
+** Allocate intermediate memory on device memory
+** Reduce
+    Reduce:		160.007000ms
+=====start map/reduce=====
+** init GPU
+----------start map-----------
+** Map Input: keys buf size 480000 bytes, vals buf size 360000 bytes, index buf size 480000 bytes, 30000 records
+** Upload map input data onto device memory
+ PCI-E I/O:		0.000000ms
+** MapCount
+** Do prefix sum on intermediate data's size
+
+** Map Output: keys buf size 480000 bytes, vals buf size 360000 bytes, index buf size 480000 bytes, 30000 records
+** Allocate intermediate memory on device memory
+** Map
+       Map:		320.018000ms
+----------start group-----------
+** Sort for group
+** InterRecordCount:30000, number of groups: 24
+     Group:		4585.631000ms
+----------start reduce--------
+** ReduceCount
+** Do prefix sum on output data's size
+** Reduce Output: key buf size 384 bytes, val buf size 288 bytes, index buf size 384 bytes, 24 records
+** Allocate intermediate memory on device memory
+** Reduce
+    Reduce:		160.012000ms
+=====start map/reduce=====
+** init GPU
+----------start map-----------
+** Map Input: keys buf size 480000 bytes, vals buf size 360000 bytes, index buf size 480000 bytes, 30000 records
+** Upload map input data onto device memory
+ PCI-E I/O:		0.000000ms
+** MapCount
+** Do prefix sum on intermediate data's size
+
+** Map Output: keys buf size 480000 bytes, vals buf size 360000 bytes, index buf size 480000 bytes, 30000 records
+** Allocate intermediate memory on device memory
+** Map
+       Map:		333.133000ms
+----------start group-----------
+** Sort for group
+** InterRecordCount:30000, number of groups: 24
+     Group:		4762.683000ms
+----------start reduce--------
+** ReduceCount
+** Do prefix sum on output data's size
+** Reduce Output: key buf size 384 bytes, val buf size 288 bytes, index buf size 384 bytes, 24 records
+** Allocate intermediate memory on device memory
+** Reduce
+    Reduce:		160.016000ms
+=====start map/reduce=====
+** init GPU
+----------start map-----------
+** Map Input: keys buf size 480000 bytes, vals buf size 360000 bytes, index buf size 480000 bytes, 30000 records
+** Upload map input data onto device memory
+ PCI-E I/O:		0.000000ms
+** MapCount
+** Do prefix sum on intermediate data's size
+
+** Map Output: keys buf size 480000 bytes, vals buf size 360000 bytes, index buf size 480000 bytes, 30000 records
+** Allocate intermediate memory on device memory
+** Map
+       Map:		350.016000ms
+----------start group-----------
+** Sort for group
+** InterRecordCount:30000, number of groups: 24
+     Group:		4920.571000ms
+----------start reduce--------
+** ReduceCount
+** Do prefix sum on output data's size
+** Reduce Output: key buf size 384 bytes, val buf size 288 bytes, index buf size 384 bytes, 24 records
+** Allocate intermediate memory on device memory
+** Reduce
+    Reduce:		160.018000ms
+=====start map/reduce=====
+** init GPU
+----------start map-----------
+** Map Input: keys buf size 480000 bytes, vals buf size 360000 bytes, index buf size 480000 bytes, 30000 records
+** Upload map input data onto device memory
+ PCI-E I/O:		0.000000ms
+** MapCount
+** Do prefix sum on intermediate data's size
+
+** Map Output: keys buf size 480000 bytes, vals buf size 360000 bytes, index buf size 480000 bytes, 30000 records
+** Allocate intermediate memory on device memory
+** Map
+       Map:		386.460000ms
+----------start group-----------
+** Sort for group
+** InterRecordCount:30000, number of groups: 24
+     Group:		5195.430000ms
+----------start reduce--------
+** ReduceCount
+** Do prefix sum on output data's size
+** Reduce Output: key buf size 384 bytes, val buf size 288 bytes, index buf size 384 bytes, 24 records
+** Allocate intermediate memory on device memory
+** Reduce
+    Reduce:		200.013000ms
+=====start map/reduce=====
+** init GPU
+----------start map-----------
+** Map Input: keys buf size 480000 bytes, vals buf size 360000 bytes, index buf size 480000 bytes, 30000 records
+** Upload map input data onto device memory
+ PCI-E I/O:		0.000000ms
+** MapCount
+** Do prefix sum on intermediate data's size
+
+** Map Output: keys buf size 480000 bytes, vals buf size 360000 bytes, index buf size 480000 bytes, 30000 records
+** Allocate intermediate memory on device memory
+** Map
+       Map:		360.026000ms
+----------start group-----------
+** Sort for group
+** InterRecordCount:30000, number of groups: 24
+     Group:		5410.345000ms
+----------start reduce--------
+** ReduceCount
+** Do prefix sum on output data's size
+** Reduce Output: key buf size 384 bytes, val buf size 288 bytes, index buf size 384 bytes, 24 records
+** Allocate intermediate memory on device memory
+** Reduce
+    Reduce:		180.017000ms
+=====start map/reduce=====
+** init GPU
+----------start map-----------
+** Map Input: keys buf size 480000 bytes, vals buf size 360000 bytes, index buf size 480000 bytes, 30000 records
+** Upload map input data onto device memory
+ PCI-E I/O:		9.992000ms
+** MapCount
+** Do prefix sum on intermediate data's size
+
+** Map Output: keys buf size 480000 bytes, vals buf size 360000 bytes, index buf size 480000 bytes, 30000 records
+** Allocate intermediate memory on device memory
+** Map
+       Map:		384.854000ms
+----------start group-----------
+** Sort for group
+** InterRecordCount:30000, number of groups: 24
+     Group:		5729.884000ms
+----------start reduce--------
+** ReduceCount
+** Do prefix sum on output data's size
+** Reduce Output: key buf size 384 bytes, val buf size 288 bytes, index buf size 384 bytes, 24 records
+** Allocate intermediate memory on device memory
+** Reduce
+    Reduce:		188.402000ms
+=====start map/reduce=====
+** init GPU
+----------start map-----------
+** Map Input: keys buf size 480000 bytes, vals buf size 360000 bytes, index buf size 480000 bytes, 30000 records
+** Upload map input data onto device memory
+ PCI-E I/O:		0.000000ms
+** MapCount
+** Do prefix sum on intermediate data's size
+
+** Map Output: keys buf size 480000 bytes, vals buf size 360000 bytes, index buf size 480000 bytes, 30000 records
+** Allocate intermediate memory on device memory
+** Map
+       Map:		392.096000ms
+----------start group-----------
+** Sort for group
+** InterRecordCount:30000, number of groups: 24
+     Group:		5862.350000ms
+----------start reduce--------
+** ReduceCount
+** Do prefix sum on output data's size
+** Reduce Output: key buf size 384 bytes, val buf size 288 bytes, index buf size 384 bytes, 24 records
+** Allocate intermediate memory on device memory
+** Reduce
+    Reduce:		190.008000ms
+=====start map/reduce=====
+** init GPU
+----------start map-----------
+** Map Input: keys buf size 480000 bytes, vals buf size 360000 bytes, index buf size 480000 bytes, 30000 records
+** Upload map input data onto device memory
+ PCI-E I/O:		0.000000ms
+** MapCount
+** Do prefix sum on intermediate data's size
+
+** Map Output: keys buf size 480000 bytes, vals buf size 360000 bytes, index buf size 480000 bytes, 30000 records
+** Allocate intermediate memory on device memory
+** Map
+       Map:		430.027000ms
+----------start group-----------
+** Sort for group
+** InterRecordCount:30000, number of groups: 24
+     Group:		6140.886000ms
+----------start reduce--------
+** ReduceCount
+** Do prefix sum on output data's size
+** Reduce Output: key buf size 384 bytes, val buf size 288 bytes, index buf size 384 bytes, 24 records
+** Allocate intermediate memory on device memory
+** Reduce
+    Reduce:		180.015000ms
+=====start map/reduce=====
+** init GPU
+----------start map-----------
+** Map Input: keys buf size 480000 bytes, vals buf size 360000 bytes, index buf size 480000 bytes, 30000 records
+** Upload map input data onto device memory
+ PCI-E I/O:		0.000000ms
+** MapCount
+** Do prefix sum on intermediate data's size
+
+** Map Output: keys buf size 480000 bytes, vals buf size 360000 bytes, index buf size 480000 bytes, 30000 records
+** Allocate intermediate memory on device memory
+** Map
+       Map:		411.240000ms
+----------start group-----------
+** Sort for group
+** InterRecordCount:30000, number of groups: 24
+     Group:		6480.558000ms
+----------start reduce--------
+** ReduceCount
+** Do prefix sum on output data's size
+** Reduce Output: key buf size 384 bytes, val buf size 288 bytes, index buf size 384 bytes, 24 records
+** Allocate intermediate memory on device memory
+** Reduce
+    Reduce:		190.018000ms
+=====start map/reduce=====
+** init GPU
+----------start map-----------
+** Map Input: keys buf size 480000 bytes, vals buf size 360000 bytes, index buf size 480000 bytes, 30000 records
+** Upload map input data onto device memory
+ PCI-E I/O:		0.000000ms
+** MapCount
+** Do prefix sum on intermediate data's size
+
+** Map Output: keys buf size 480000 bytes, vals buf size 360000 bytes, index buf size 480000 bytes, 30000 records
+** Allocate intermediate memory on device memory
+** Map
+       Map:		440.031000ms
+----------start group-----------
+** Sort for group
+** InterRecordCount:30000, number of groups: 24
+     Group:		6663.170000ms
+----------start reduce--------
+** ReduceCount
+** Do prefix sum on output data's size
+** Reduce Output: key buf size 384 bytes, val buf size 288 bytes, index buf size 384 bytes, 24 records
+** Allocate intermediate memory on device memory
+** Reduce
+    Reduce:		200.011000ms
+=====start map/reduce=====
+** init GPU
+----------start map-----------
+** Map Input: keys buf size 480000 bytes, vals buf size 360000 bytes, index buf size 480000 bytes, 30000 records
+** Upload map input data onto device memory
+ PCI-E I/O:		0.000000ms
+** MapCount
+** Do prefix sum on intermediate data's size
+
+** Map Output: keys buf size 480000 bytes, vals buf size 360000 bytes, index buf size 480000 bytes, 30000 records
+** Allocate intermediate memory on device memory
+** Map
+       Map:		450.025000ms
+----------start group-----------
+** Sort for group
+** InterRecordCount:30000, number of groups: 24
+     Group:		6930.456000ms
+----------start reduce--------
+** ReduceCount
+** Do prefix sum on output data's size
+** Reduce Output: key buf size 384 bytes, val buf size 288 bytes, index buf size 384 bytes, 24 records
+** Allocate intermediate memory on device memory
+** Reduce
+    Reduce:		200.010000ms
+=====start map/reduce=====
+** init GPU
+----------start map-----------
+** Map Input: keys buf size 480000 bytes, vals buf size 360000 bytes, index buf size 480000 bytes, 30000 records
+** Upload map input data onto device memory
+ PCI-E I/O:		0.000000ms
+** MapCount
+** Do prefix sum on intermediate data's size
+
+** Map Output: keys buf size 480000 bytes, vals buf size 360000 bytes, index buf size 480000 bytes, 30000 records
+** Allocate intermediate memory on device memory
+** Map
+       Map:		460.032000ms
+----------start group-----------
+** Sort for group
+** InterRecordCount:30000, number of groups: 24
+     Group:		7099.349000ms
+----------start reduce--------
+** ReduceCount
+** Do prefix sum on output data's size
+** Reduce Output: key buf size 384 bytes, val buf size 288 bytes, index buf size 384 bytes, 24 records
+** Allocate intermediate memory on device memory
+** Reduce
+    Reduce:		231.222000ms
+=====start map/reduce=====
+** init GPU
+----------start map-----------
+** Map Input: keys buf size 480000 bytes, vals buf size 360000 bytes, index buf size 480000 bytes, 30000 records
+** Upload map input data onto device memory
+ PCI-E I/O:		1.001000ms
+** MapCount
+** Do prefix sum on intermediate data's size
+
+** Map Output: keys buf size 480000 bytes, vals buf size 360000 bytes, index buf size 480000 bytes, 30000 records
+** Allocate intermediate memory on device memory
+** Map
+       Map:		515.315000ms
+----------start group-----------
+** Sort for group
+** InterRecordCount:30000, number of groups: 24
+     Group:		7376.622000ms
+----------start reduce--------
+** ReduceCount
+** Do prefix sum on output data's size
+** Reduce Output: key buf size 384 bytes, val buf size 288 bytes, index buf size 384 bytes, 24 records
+** Allocate intermediate memory on device memory
+** Reduce
+    Reduce:		210.015000ms
+=====start map/reduce=====
+** init GPU
+----------start map-----------
+** Map Input: keys buf size 480000 bytes, vals buf size 360000 bytes, index buf size 480000 bytes, 30000 records
+** Upload map input data onto device memory
+ PCI-E I/O:		0.000000ms
+** MapCount
+** Do prefix sum on intermediate data's size
+
+** Map Output: keys buf size 480000 bytes, vals buf size 360000 bytes, index buf size 480000 bytes, 30000 records
+** Allocate intermediate memory on device memory
+** Map
+       Map:		490.482000ms
+----------start group-----------
+** Sort for group
+** InterRecordCount:30000, number of groups: 24
+     Group:		7336.475000ms
+----------start reduce--------
+** ReduceCount
+** Do prefix sum on output data's size
+** Reduce Output: key buf size 384 bytes, val buf size 288 bytes, index buf size 384 bytes, 24 records
+** Allocate intermediate memory on device memory
+** Reduce
+    Reduce:		220.014000ms
+=====start map/reduce=====
+** init GPU
+----------start map-----------
+** Map Input: keys buf size 480000 bytes, vals buf size 360000 bytes, index buf size 480000 bytes, 30000 records
+** Upload map input data onto device memory
+ PCI-E I/O:		0.000000ms
+** MapCount
+** Do prefix sum on intermediate data's size
+
+** Map Output: keys buf size 480000 bytes, vals buf size 360000 bytes, index buf size 480000 bytes, 30000 records
+** Allocate intermediate memory on device memory
+** Map
+       Map:		495.101000ms
+----------start group-----------
+** Sort for group
+** InterRecordCount:30000, number of groups: 24
+     Group:		7366.425000ms
+----------start reduce--------
+** ReduceCount
+** Do prefix sum on output data's size
+** Reduce Output: key buf size 384 bytes, val buf size 288 bytes, index buf size 384 bytes, 24 records
+** Allocate intermediate memory on device memory
+** Reduce
+    Reduce:		210.014000ms
+=====start map/reduce=====
+** init GPU
+----------start map-----------
+** Map Input: keys buf size 480000 bytes, vals buf size 360000 bytes, index buf size 480000 bytes, 30000 records
+** Upload map input data onto device memory
+ PCI-E I/O:		0.000000ms
+** MapCount
+** Do prefix sum on intermediate data's size
+
+** Map Output: keys buf size 480000 bytes, vals buf size 360000 bytes, index buf size 480000 bytes, 30000 records
+** Allocate intermediate memory on device memory
+** Map
+       Map:		511.211000ms
+----------start group-----------
+** Sort for group
+** InterRecordCount:30000, number of groups: 24
+     Group:		7396.527000ms
+----------start reduce--------
+** ReduceCount
+** Do prefix sum on output data's size
+** Reduce Output: key buf size 384 bytes, val buf size 288 bytes, index buf size 384 bytes, 24 records
+** Allocate intermediate memory on device memory
+** Reduce
+    Reduce:		220.014000ms
+=====start map/reduce=====
+** init GPU
+----------start map-----------
+** Map Input: keys buf size 480000 bytes, vals buf size 360000 bytes, index buf size 480000 bytes, 30000 records
+** Upload map input data onto device memory
+ PCI-E I/O:		0.000000ms
+** MapCount
+** Do prefix sum on intermediate data's size
+
+** Map Output: keys buf size 480000 bytes, vals buf size 360000 bytes, index buf size 480000 bytes, 30000 records
+** Allocate intermediate memory on device memory
+** Map
+       Map:		530.033000ms
+----------start group-----------
+** Sort for group
+** InterRecordCount:30000, number of groups: 24
+     Group:		7938.655000ms
+----------start reduce--------
+** ReduceCount
+** Do prefix sum on output data's size
+** Reduce Output: key buf size 384 bytes, val buf size 288 bytes, index buf size 384 bytes, 24 records
+** Allocate intermediate memory on device memory
+** Reduce
+    Reduce:		220.014000ms
+=====start map/reduce=====
+** init GPU
+----------start map-----------
+** Map Input: keys buf size 480000 bytes, vals buf size 360000 bytes, index buf size 480000 bytes, 30000 records
+** Upload map input data onto device memory
+ PCI-E I/O:		10.001000ms
+** MapCount
+** Do prefix sum on intermediate data's size
+
+** Map Output: keys buf size 480000 bytes, vals buf size 360000 bytes, index buf size 480000 bytes, 30000 records
+** Allocate intermediate memory on device memory
+** Map
+       Map:		550.032000ms
+----------start group-----------
+** Sort for group
+** InterRecordCount:30000, number of groups: 24
+     Group:		8189.791000ms
+----------start reduce--------
+** ReduceCount
+** Do prefix sum on output data's size
+** Reduce Output: key buf size 384 bytes, val buf size 288 bytes, index buf size 384 bytes, 24 records
+** Allocate intermediate memory on device memory
+** Reduce
+    Reduce:		230.014000ms
+=====finish map/reduce=====
+       all:		141079.057000ms
+======== Warning: Metric "branch_efficiency" cannot be found on device 0.
+==3240== NVPROF is profiling process 3240, command: Mars_Kmeans.exe 30000 3 24
+==3240== Warning: Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==3240== Profiling application: Mars_Kmeans.exe 30000 3 24
+==3240== Profiling result:
+==3240== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"GeForce GTX 780 (0)","initialize_kernel(int4*, int, int, int4)",21,"inst_replay_overhead","Instruction Replay Overhead",0.257705,0.366456,0.304248
+"GeForce GTX 780 (0)","initialize_kernel(int4*, int, int, int4)",21,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","initialize_kernel(int4*, int, int, int4)",21,"local_replay_overhead","Local Memory Cache Replay Overhead",0.065701,0.067426,0.066539
+"GeForce GTX 780 (0)","initialize_kernel(int4*, int, int, int4)",21,"cf_issued","Issued Control-Flow Instructions",115456,115456,115456
+"GeForce GTX 780 (0)","initialize_kernel(int4*, int, int, int4)",21,"cf_executed","Executed Control-Flow Instructions",106496,106496,106496
+"GeForce GTX 780 (0)","initialize_kernel(int4*, int, int, int4)",21,"inst_executed","Instructions Executed",530432,530432,530432
+"GeForce GTX 780 (0)","initialize_kernel(int4*, int, int, int4)",21,"inst_issued","Instructions Issued",667127,724812,691814
+"GeForce GTX 780 (0)","initialize_kernel(int4*, int, int, int4)",21,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","ReducerCount(char*, char*, int4*, int2*, int*, int*, int*, int, int, int)",21,"inst_replay_overhead","Instruction Replay Overhead",0.329154,0.329154,0.329154
+"GeForce GTX 780 (0)","ReducerCount(char*, char*, int4*, int2*, int*, int*, int*, int, int, int)",21,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","ReducerCount(char*, char*, int4*, int2*, int*, int*, int*, int, int, int)",21,"local_replay_overhead","Local Memory Cache Replay Overhead",0.012539,0.012539,0.012539
+"GeForce GTX 780 (0)","ReducerCount(char*, char*, int4*, int2*, int*, int*, int*, int, int, int)",21,"cf_issued","Issued Control-Flow Instructions",167,167,167
+"GeForce GTX 780 (0)","ReducerCount(char*, char*, int4*, int2*, int*, int*, int*, int, int, int)",21,"cf_executed","Executed Control-Flow Instructions",149,149,149
+"GeForce GTX 780 (0)","ReducerCount(char*, char*, int4*, int2*, int*, int*, int*, int, int, int)",21,"inst_executed","Instructions Executed",638,638,638
+"GeForce GTX 780 (0)","ReducerCount(char*, char*, int4*, int2*, int*, int*, int*, int, int, int)",21,"inst_issued","Instructions Issued",848,848,848
+"GeForce GTX 780 (0)","ReducerCount(char*, char*, int4*, int2*, int*, int*, int*, int, int, int)",21,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","bitonicKernel(void*, int, int4*, unsigned int, int, int)",2520,"inst_replay_overhead","Instruction Replay Overhead",0.307869,1.566486,0.893832
+"GeForce GTX 780 (0)","bitonicKernel(void*, int, int4*, unsigned int, int, int)",2520,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","bitonicKernel(void*, int, int4*, unsigned int, int, int)",2520,"local_replay_overhead","Local Memory Cache Replay Overhead",0.088246,0.172781,0.128836
+"GeForce GTX 780 (0)","bitonicKernel(void*, int, int4*, unsigned int, int, int)",2520,"cf_issued","Issued Control-Flow Instructions",24885,63582,34364
+"GeForce GTX 780 (0)","bitonicKernel(void*, int, int4*, unsigned int, int, int)",2520,"cf_executed","Executed Control-Flow Instructions",21300,54620,29467
+"GeForce GTX 780 (0)","bitonicKernel(void*, int, int4*, unsigned int, int, int)",2520,"inst_executed","Instructions Executed",156584,511752,244878
+"GeForce GTX 780 (0)","bitonicKernel(void*, int, int4*, unsigned int, int, int)",2520,"inst_issued","Instructions Issued",237745,871464,447629
+"GeForce GTX 780 (0)","bitonicKernel(void*, int, int4*, unsigned int, int, int)",2520,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","copyChunks_kernel(void*, int, int2*, int, int*, void*)",42,"inst_replay_overhead","Instruction Replay Overhead",1.410446,1.752944,1.572150
+"GeForce GTX 780 (0)","copyChunks_kernel(void*, int, int2*, int, int*, void*)",42,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","copyChunks_kernel(void*, int, int2*, int, int*, void*)",42,"local_replay_overhead","Local Memory Cache Replay Overhead",0.012820,0.016247,0.014503
+"GeForce GTX 780 (0)","copyChunks_kernel(void*, int, int2*, int, int*, void*)",42,"cf_issued","Issued Control-Flow Instructions",52460,60223,56332
+"GeForce GTX 780 (0)","copyChunks_kernel(void*, int, int2*, int, int*, void*)",42,"cf_executed","Executed Control-Flow Instructions",48965,56469,52717
+"GeForce GTX 780 (0)","copyChunks_kernel(void*, int, int2*, int, int*, void*)",42,"inst_executed","Instructions Executed",295191,351471,323331
+"GeForce GTX 780 (0)","copyChunks_kernel(void*, int, int2*, int, int*, void*)",42,"inst_issued","Instructions Issued",711542,967580,834502
+"GeForce GTX 780 (0)","copyChunks_kernel(void*, int, int2*, int, int*, void*)",42,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","Mapper(char*, char*, int4*, int*, int*, int*, int2*, char*, char*, int4*, int*, int, int, int)",21,"inst_replay_overhead","Instruction Replay Overhead",0.249237,0.272406,0.260353
+"GeForce GTX 780 (0)","Mapper(char*, char*, int4*, int*, int*, int*, int2*, char*, char*, int4*, int*, int, int, int)",21,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","Mapper(char*, char*, int4*, int*, int*, int*, int2*, char*, char*, int4*, int*, int, int, int)",21,"local_replay_overhead","Local Memory Cache Replay Overhead",0.010252,0.010537,0.010440
+"GeForce GTX 780 (0)","Mapper(char*, char*, int4*, int*, int*, int*, int2*, char*, char*, int4*, int*, int, int, int)",21,"cf_issued","Issued Control-Flow Instructions",426466,426466,426466
+"GeForce GTX 780 (0)","Mapper(char*, char*, int4*, int*, int*, int*, int2*, char*, char*, int4*, int*, int, int, int)",21,"cf_executed","Executed Control-Flow Instructions",372514,372514,372514
+"GeForce GTX 780 (0)","Mapper(char*, char*, int4*, int*, int*, int*, int2*, char*, char*, int4*, int*, int, int, int)",21,"inst_executed","Instructions Executed",2847236,2912333,2858822
+"GeForce GTX 780 (0)","Mapper(char*, char*, int4*, int*, int*, int*, int2*, char*, char*, int4*, int*, int, int, int)",21,"inst_issued","Instructions Issued",3575361,3650575,3603117
+"GeForce GTX 780 (0)","Mapper(char*, char*, int4*, int*, int*, int*, int2*, char*, char*, int4*, int*, int, int, int)",21,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void prescan<bool=0, bool=0>(int*, int const *, int*, int, int, int)",63,"inst_replay_overhead","Instruction Replay Overhead",0.037588,0.037588,0.037588
+"GeForce GTX 780 (0)","void prescan<bool=0, bool=0>(int*, int const *, int*, int, int, int)",63,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void prescan<bool=0, bool=0>(int*, int const *, int*, int, int, int)",63,"local_replay_overhead","Local Memory Cache Replay Overhead",0.015143,0.015143,0.015143
+"GeForce GTX 780 (0)","void prescan<bool=0, bool=0>(int*, int const *, int*, int, int, int)",63,"cf_issued","Issued Control-Flow Instructions",739,739,739
+"GeForce GTX 780 (0)","void prescan<bool=0, bool=0>(int*, int const *, int*, int, int, int)",63,"cf_executed","Executed Control-Flow Instructions",654,654,654
+"GeForce GTX 780 (0)","void prescan<bool=0, bool=0>(int*, int const *, int*, int, int, int)",63,"inst_executed","Instructions Executed",3698,3698,3698
+"GeForce GTX 780 (0)","void prescan<bool=0, bool=0>(int*, int const *, int*, int, int, int)",63,"inst_issued","Instructions Issued",3837,3837,3837
+"GeForce GTX 780 (0)","void prescan<bool=0, bool=0>(int*, int const *, int*, int, int, int)",63,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void prescan<bool=1, bool=0>(int*, int const *, int*, int, int, int)",126,"inst_replay_overhead","Instruction Replay Overhead",0.063708,0.190893,0.109047
+"GeForce GTX 780 (0)","void prescan<bool=1, bool=0>(int*, int const *, int*, int, int, int)",126,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void prescan<bool=1, bool=0>(int*, int const *, int*, int, int, int)",126,"local_replay_overhead","Local Memory Cache Replay Overhead",0.042724,0.043885,0.043313
+"GeForce GTX 780 (0)","void prescan<bool=1, bool=0>(int*, int const *, int*, int, int, int)",126,"cf_issued","Issued Control-Flow Instructions",89494,91037,90265
+"GeForce GTX 780 (0)","void prescan<bool=1, bool=0>(int*, int const *, int*, int, int, int)",126,"cf_executed","Executed Control-Flow Instructions",78764,80122,79443
+"GeForce GTX 780 (0)","void prescan<bool=1, bool=0>(int*, int const *, int*, int, int, int)",126,"inst_executed","Instructions Executed",414236,421378,417807
+"GeForce GTX 780 (0)","void prescan<bool=1, bool=0>(int*, int const *, int*, int, int, int)",126,"inst_issued","Instructions Issued",440626,501816,463376
+"GeForce GTX 780 (0)","void prescan<bool=1, bool=0>(int*, int const *, int*, int, int, int)",126,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void prescan<bool=0, bool=1>(int*, int const *, int*, int, int, int)",126,"inst_replay_overhead","Instruction Replay Overhead",0.016813,0.016813,0.016813
+"GeForce GTX 780 (0)","void prescan<bool=0, bool=1>(int*, int const *, int*, int, int, int)",126,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void prescan<bool=0, bool=1>(int*, int const *, int*, int, int, int)",126,"local_replay_overhead","Local Memory Cache Replay Overhead",0.011209,0.011209,0.011209
+"GeForce GTX 780 (0)","void prescan<bool=0, bool=1>(int*, int const *, int*, int, int, int)",126,"cf_issued","Issued Control-Flow Instructions",203,203,203
+"GeForce GTX 780 (0)","void prescan<bool=0, bool=1>(int*, int const *, int*, int, int, int)",126,"cf_executed","Executed Control-Flow Instructions",183,183,183
+"GeForce GTX 780 (0)","void prescan<bool=0, bool=1>(int*, int const *, int*, int, int, int)",126,"inst_executed","Instructions Executed",1249,1249,1249
+"GeForce GTX 780 (0)","void prescan<bool=0, bool=1>(int*, int const *, int*, int, int, int)",126,"inst_issued","Instructions Issued",1270,1270,1270
+"GeForce GTX 780 (0)","void prescan<bool=0, bool=1>(int*, int const *, int*, int, int, int)",126,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void prescan<bool=1, bool=1>(int*, int const *, int*, int, int, int)",63,"inst_replay_overhead","Instruction Replay Overhead",0.039084,0.039084,0.039084
+"GeForce GTX 780 (0)","void prescan<bool=1, bool=1>(int*, int const *, int*, int, int, int)",63,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","void prescan<bool=1, bool=1>(int*, int const *, int*, int, int, int)",63,"local_replay_overhead","Local Memory Cache Replay Overhead",0.016034,0.016034,0.016034
+"GeForce GTX 780 (0)","void prescan<bool=1, bool=1>(int*, int const *, int*, int, int, int)",63,"cf_issued","Issued Control-Flow Instructions",1586,1586,1586
+"GeForce GTX 780 (0)","void prescan<bool=1, bool=1>(int*, int const *, int*, int, int, int)",63,"cf_executed","Executed Control-Flow Instructions",1385,1385,1385
+"GeForce GTX 780 (0)","void prescan<bool=1, bool=1>(int*, int const *, int*, int, int, int)",63,"inst_executed","Instructions Executed",6985,6985,6985
+"GeForce GTX 780 (0)","void prescan<bool=1, bool=1>(int*, int const *, int*, int, int, int)",63,"inst_issued","Instructions Issued",7258,7258,7258
+"GeForce GTX 780 (0)","void prescan<bool=1, bool=1>(int*, int const *, int*, int, int, int)",63,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","MapperCount(char*, char*, int4*, int*, int*, int*, int, int, int)",21,"inst_replay_overhead","Instruction Replay Overhead",0.214026,0.596201,0.286425
+"GeForce GTX 780 (0)","MapperCount(char*, char*, int4*, int*, int*, int*, int, int, int)",21,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","MapperCount(char*, char*, int4*, int*, int*, int*, int, int, int)",21,"local_replay_overhead","Local Memory Cache Replay Overhead",0.049538,0.052030,0.051309
+"GeForce GTX 780 (0)","MapperCount(char*, char*, int4*, int*, int*, int*, int, int, int)",21,"cf_issued","Issued Control-Flow Instructions",29012,29012,29012
+"GeForce GTX 780 (0)","MapperCount(char*, char*, int4*, int*, int*, int*, int, int, int)",21,"cf_executed","Executed Control-Flow Instructions",25424,25424,25424
+"GeForce GTX 780 (0)","MapperCount(char*, char*, int4*, int*, int*, int*, int, int, int)",21,"inst_executed","Instructions Executed",201078,201078,201078
+"GeForce GTX 780 (0)","MapperCount(char*, char*, int4*, int*, int*, int*, int, int, int)",21,"inst_issued","Instructions Issued",244114,320961,258671
+"GeForce GTX 780 (0)","MapperCount(char*, char*, int4*, int*, int*, int*, int, int, int)",21,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","getChunkBoundary_kernel(void*, int, int4*, int, int*)",21,"inst_replay_overhead","Instruction Replay Overhead",0.435675,0.509523,0.465991
+"GeForce GTX 780 (0)","getChunkBoundary_kernel(void*, int, int4*, int, int*)",21,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","getChunkBoundary_kernel(void*, int, int4*, int, int*)",21,"local_replay_overhead","Local Memory Cache Replay Overhead",0.080578,0.082493,0.082059
+"GeForce GTX 780 (0)","getChunkBoundary_kernel(void*, int, int4*, int, int*)",21,"cf_issued","Issued Control-Flow Instructions",119757,119757,119757
+"GeForce GTX 780 (0)","getChunkBoundary_kernel(void*, int, int4*, int, int*)",21,"cf_executed","Executed Control-Flow Instructions",107045,107045,107045
+"GeForce GTX 780 (0)","getChunkBoundary_kernel(void*, int, int4*, int, int*)",21,"inst_executed","Instructions Executed",534206,534206,534206
+"GeForce GTX 780 (0)","getChunkBoundary_kernel(void*, int, int4*, int, int*)",21,"inst_issued","Instructions Issued",766946,806396,783141
+"GeForce GTX 780 (0)","getChunkBoundary_kernel(void*, int, int4*, int, int*)",21,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","Reducer(char*, char*, int4*, int2*, int*, int*, int*, char*, char*, int4*, int2*, int*, int, int, int)",21,"inst_replay_overhead","Instruction Replay Overhead",0.628768,1.002340,0.946800
+"GeForce GTX 780 (0)","Reducer(char*, char*, int4*, int2*, int*, int*, int*, char*, char*, int4*, int2*, int*, int, int, int)",21,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","Reducer(char*, char*, int4*, int2*, int*, int*, int*, char*, char*, int4*, int2*, int*, int, int, int)",21,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000063,0.000110,0.000102
+"GeForce GTX 780 (0)","Reducer(char*, char*, int4*, int2*, int*, int*, int*, char*, char*, int4*, int2*, int*, int, int, int)",21,"cf_issued","Issued Control-Flow Instructions",22117,38665,24259
+"GeForce GTX 780 (0)","Reducer(char*, char*, int4*, int2*, int*, int*, int*, char*, char*, int4*, int2*, int*, int, int, int)",21,"cf_executed","Executed Control-Flow Instructions",20530,35896,22519
+"GeForce GTX 780 (0)","Reducer(char*, char*, int4*, int2*, int*, int*, int*, char*, char*, int4*, int2*, int*, int, int, int)",21,"inst_executed","Instructions Executed",182287,319399,200040
+"GeForce GTX 780 (0)","Reducer(char*, char*, int4*, int2*, int*, int*, int*, char*, char*, int4*, int2*, int*, int, int, int)",21,"inst_issued","Instructions Issued",364799,520227,386005
+"GeForce GTX 780 (0)","Reducer(char*, char*, int4*, int2*, int*, int*, int*, char*, char*, int4*, int2*, int*, int, int, int)",21,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","getIntYArray_kernel(int2*, int, int, int*)",42,"inst_replay_overhead","Instruction Replay Overhead",0.145091,0.159026,0.147329
+"GeForce GTX 780 (0)","getIntYArray_kernel(int2*, int, int, int*)",42,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","getIntYArray_kernel(int2*, int, int, int*)",42,"local_replay_overhead","Local Memory Cache Replay Overhead",0.005216,0.005626,0.005500
+"GeForce GTX 780 (0)","getIntYArray_kernel(int2*, int, int, int*)",42,"cf_issued","Issued Control-Flow Instructions",90881,90881,90881
+"GeForce GTX 780 (0)","getIntYArray_kernel(int2*, int, int, int*)",42,"cf_executed","Executed Control-Flow Instructions",81921,81921,81921
+"GeForce GTX 780 (0)","getIntYArray_kernel(int2*, int, int, int*)",42,"inst_executed","Instructions Executed",327243,327243,327243
+"GeForce GTX 780 (0)","getIntYArray_kernel(int2*, int, int, int*)",42,"inst_issued","Instructions Issued",374723,379283,375455
+"GeForce GTX 780 (0)","getIntYArray_kernel(int2*, int, int, int*)",42,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","getZWArray_kernel(int4*, int, int, int2*)",21,"inst_replay_overhead","Instruction Replay Overhead",0.193950,0.314267,0.228678
+"GeForce GTX 780 (0)","getZWArray_kernel(int4*, int, int, int2*)",21,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","getZWArray_kernel(int4*, int, int, int2*)",21,"local_replay_overhead","Local Memory Cache Replay Overhead",0.011849,0.012381,0.012113
+"GeForce GTX 780 (0)","getZWArray_kernel(int4*, int, int, int2*)",21,"cf_issued","Issued Control-Flow Instructions",90881,90881,90881
+"GeForce GTX 780 (0)","getZWArray_kernel(int4*, int, int, int2*)",21,"cf_executed","Executed Control-Flow Instructions",81921,81921,81921
+"GeForce GTX 780 (0)","getZWArray_kernel(int4*, int, int, int2*)",21,"inst_executed","Instructions Executed",338499,338499,338499
+"GeForce GTX 780 (0)","getZWArray_kernel(int4*, int, int, int2*)",21,"inst_issued","Instructions Issued",404151,444878,415906
+"GeForce GTX 780 (0)","getZWArray_kernel(int4*, int, int, int2*)",21,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","getXYArray_kernel(int4*, int, int, int2*)",21,"inst_replay_overhead","Instruction Replay Overhead",0.194193,0.324896,0.226408
+"GeForce GTX 780 (0)","getXYArray_kernel(int4*, int, int, int2*)",21,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","getXYArray_kernel(int4*, int, int, int2*)",21,"local_replay_overhead","Local Memory Cache Replay Overhead",0.011973,0.013034,0.012746
+"GeForce GTX 780 (0)","getXYArray_kernel(int4*, int, int, int2*)",21,"cf_issued","Issued Control-Flow Instructions",90881,90881,90881
+"GeForce GTX 780 (0)","getXYArray_kernel(int4*, int, int, int2*)",21,"cf_executed","Executed Control-Flow Instructions",81921,81921,81921
+"GeForce GTX 780 (0)","getXYArray_kernel(int4*, int, int, int2*)",21,"inst_executed","Instructions Executed",338499,338499,338499
+"GeForce GTX 780 (0)","getXYArray_kernel(int4*, int, int, int2*)",21,"inst_issued","Instructions Issued",404233,448476,415137
+"GeForce GTX 780 (0)","getXYArray_kernel(int4*, int, int, int2*)",21,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","setBoundaryInt2_kernel(int*, int, int, int, int2*)",21,"inst_replay_overhead","Instruction Replay Overhead",0.157520,0.157831,0.157671
+"GeForce GTX 780 (0)","setBoundaryInt2_kernel(int*, int, int, int, int2*)",21,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","setBoundaryInt2_kernel(int*, int, int, int, int2*)",21,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000006,0.000006,0.000006
+"GeForce GTX 780 (0)","setBoundaryInt2_kernel(int*, int, int, int, int2*)",21,"cf_issued","Issued Control-Flow Instructions",99079,99079,99079
+"GeForce GTX 780 (0)","setBoundaryInt2_kernel(int*, int, int, int, int2*)",21,"cf_executed","Executed Control-Flow Instructions",90118,90118,90118
+"GeForce GTX 780 (0)","setBoundaryInt2_kernel(int*, int, int, int, int2*)",21,"inst_executed","Instructions Executed",327718,327718,327718
+"GeForce GTX 780 (0)","setBoundaryInt2_kernel(int*, int, int, int, int2*)",21,"inst_issued","Instructions Issued",379340,379442,379389
+"GeForce GTX 780 (0)","setBoundaryInt2_kernel(int*, int, int, int, int2*)",21,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","setZWArray_kernel(int4*, int, int, int2*)",21,"inst_replay_overhead","Instruction Replay Overhead",0.210215,0.356183,0.269160
+"GeForce GTX 780 (0)","setZWArray_kernel(int4*, int, int, int2*)",21,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","setZWArray_kernel(int4*, int, int, int2*)",21,"local_replay_overhead","Local Memory Cache Replay Overhead",0.021648,0.023550,0.022729
+"GeForce GTX 780 (0)","setZWArray_kernel(int4*, int, int, int2*)",21,"cf_issued","Issued Control-Flow Instructions",90881,90881,90881
+"GeForce GTX 780 (0)","setZWArray_kernel(int4*, int, int, int2*)",21,"cf_executed","Executed Control-Flow Instructions",81921,81921,81921
+"GeForce GTX 780 (0)","setZWArray_kernel(int4*, int, int, int2*)",21,"inst_executed","Instructions Executed",351631,351631,351631
+"GeForce GTX 780 (0)","setZWArray_kernel(int4*, int, int, int2*)",21,"inst_issued","Instructions Issued",425549,476876,446275
+"GeForce GTX 780 (0)","setZWArray_kernel(int4*, int, int, int2*)",21,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","setXYArray_kernel(int4*, int, int, int2*)",21,"inst_replay_overhead","Instruction Replay Overhead",0.209714,0.359456,0.263307
+"GeForce GTX 780 (0)","setXYArray_kernel(int4*, int, int, int2*)",21,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","setXYArray_kernel(int4*, int, int, int2*)",21,"local_replay_overhead","Local Memory Cache Replay Overhead",0.021622,0.023428,0.022576
+"GeForce GTX 780 (0)","setXYArray_kernel(int4*, int, int, int2*)",21,"cf_issued","Issued Control-Flow Instructions",90881,90881,90881
+"GeForce GTX 780 (0)","setXYArray_kernel(int4*, int, int, int2*)",21,"cf_executed","Executed Control-Flow Instructions",81921,81921,81921
+"GeForce GTX 780 (0)","setXYArray_kernel(int4*, int, int, int2*)",21,"inst_executed","Instructions Executed",351631,351631,351631
+"GeForce GTX 780 (0)","setXYArray_kernel(int4*, int, int, int2*)",21,"inst_issued","Instructions Issued",425373,478027,444217
+"GeForce GTX 780 (0)","setXYArray_kernel(int4*, int, int, int2*)",21,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","uniformAdd(int*, int*, int, int, int)",189,"inst_replay_overhead","Instruction Replay Overhead",0.153643,0.164103,0.158313
+"GeForce GTX 780 (0)","uniformAdd(int*, int*, int, int, int)",189,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","uniformAdd(int*, int*, int, int, int)",189,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","uniformAdd(int*, int*, int, int, int)",189,"cf_issued","Issued Control-Flow Instructions",121,7139,4759
+"GeForce GTX 780 (0)","uniformAdd(int*, int*, int, int, int)",189,"cf_executed","Executed Control-Flow Instructions",105,6195,4130
+"GeForce GTX 780 (0)","uniformAdd(int*, int*, int, int, int)",189,"inst_executed","Instructions Executed",585,34515,23010
+"GeForce GTX 780 (0)","uniformAdd(int*, int*, int, int, int)",189,"inst_issued","Instructions Issued",681,39947,26587
+"GeForce GTX 780 (0)","uniformAdd(int*, int*, int, int, int)",189,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","writeBoundary_kernel(int, int, int*, int*, int*)",21,"inst_replay_overhead","Instruction Replay Overhead",0.183859,0.184075,0.183950
+"GeForce GTX 780 (0)","writeBoundary_kernel(int, int, int*, int*, int*)",21,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","writeBoundary_kernel(int, int, int*, int*, int*)",21,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","writeBoundary_kernel(int, int, int*, int*, int*)",21,"cf_issued","Issued Control-Flow Instructions",91843,91843,91843
+"GeForce GTX 780 (0)","writeBoundary_kernel(int, int, int*, int*, int*)",21,"cf_executed","Executed Control-Flow Instructions",82883,82883,82883
+"GeForce GTX 780 (0)","writeBoundary_kernel(int, int, int*, int*, int*)",21,"inst_executed","Instructions Executed",290843,290843,290843
+"GeForce GTX 780 (0)","writeBoundary_kernel(int, int, int*, int*, int*)",21,"inst_issued","Instructions Issued",344317,344380,344343
+"GeForce GTX 780 (0)","writeBoundary_kernel(int, int, int*, int*, int*)",21,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000

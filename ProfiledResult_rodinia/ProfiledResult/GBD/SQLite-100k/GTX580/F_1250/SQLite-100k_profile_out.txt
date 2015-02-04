@@ -1,0 +1,69 @@
+Using pinned memory
+Loading database into memory
+Using database sqlite_inputs\\hundredthousand.db
+native execution time: 0.251179 seconds
+vm execution time: 0.390029 seconds
+transfer results time: 0.000000 seconds
+stream
+speedup:		0.644001x
+speedup with results:	0.644001x
+==== Results ===========================================================
+ Rows:		94982
+ Columns:	2
+ Stride:	32
+========================================================================
+800	63	
+768	36	
+897	-68	
+864	5	
+833	4	
+769	68	
+898	-97	
+928	14	
+834	88	
+770	0	
+801	58	
+899	-95	
+865	-86	
+835	17	
+803	-9	
+900	1	
+929	-5	
+866	-4	
+836	-79	
+771	-17	
+772	10	
+773	-80	
+804	-21	
+774	-52	
+807	-58	
+808	5	
+775	22	
+809	-80	
+838	-38	
+810	-39	
+811	-5	
+776	-12	
+812	13	
+813	8	
+777	53	
+839	87	
+814	25	
+815	86	
+778	-51	
+840	-60	
+==1124== NVPROF is profiling process 1124, command: SQLite.exe -p -m -d sqlite_inputs\\hundredthousand.db
+==1124== Warning: Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==1124== Profiling application: SQLite.exe -p -m -d sqlite_inputs\\hundredthousand.db
+==1124== Profiling result:
+==1124== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"GeForce GTX 580 (0)","VmKernel(char*, sphyraena_results*, int, int, int)",1,"branch_efficiency","Branch Efficiency",93.599605%,93.599605%,93.599605%
+"GeForce GTX 580 (0)","VmKernel(char*, sphyraena_results*, int, int, int)",1,"inst_executed","Instructions Executed",6590509,6590509,6590509
+"GeForce GTX 580 (0)","VmKernel(char*, sphyraena_results*, int, int, int)",1,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 580 (0)","VmKernel(char*, sphyraena_results*, int, int, int)",1,"inst_replay_overhead","Instruction Replay Overhead",0.030204,0.030204,0.030204
+"GeForce GTX 580 (0)","VmKernel(char*, sphyraena_results*, int, int, int)",1,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.006799,0.006799,0.006799
+"GeForce GTX 580 (0)","VmKernel(char*, sphyraena_results*, int, int, int)",1,"local_replay_overhead","Local Memory Cache Replay Overhead",0.008981,0.008981,0.008981
+"GeForce GTX 580 (0)","VmKernel(char*, sphyraena_results*, int, int, int)",1,"cf_issued","Issued Control-Flow Instructions",1667870,1667870,1667870
+"GeForce GTX 580 (0)","VmKernel(char*, sphyraena_results*, int, int, int)",1,"cf_executed","Executed Control-Flow Instructions",1669881,1669881,1669881
+"GeForce GTX 580 (0)","VmKernel(char*, sphyraena_results*, int, int, int)",1,"inst_issued","Instructions Issued",6789569,6789569,6789569

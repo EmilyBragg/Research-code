@@ -1,0 +1,27 @@
+Reading matrix from file rodinia_inputs\lud\2048.dat
+Profiling enabled...
+Time consumed(ms): 6443.209000
+Time longer than 1000ms
+======== Warning: Metric "branch_efficiency" cannot be found on device 0.
+==3892== NVPROF is profiling process 3892, command: LUD.exe -i rodinia_inputs\lud\2048.dat
+==3892== Warning: Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==3892== Profiling application: LUD.exe -i rodinia_inputs\lud\2048.dat
+==3892== Profiling result:
+==3892== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"GeForce GTX 780 (0)","lud_diagonal(float*, int, int)",128,"inst_replay_overhead","Instruction Replay Overhead",0.151737,0.154054,0.152748
+"GeForce GTX 780 (0)","lud_diagonal(float*, int, int)",128,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","lud_diagonal(float*, int, int)",128,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","lud_diagonal(float*, int, int)",128,"cf_issued","Issued Control-Flow Instructions",309,309,309
+"GeForce GTX 780 (0)","lud_diagonal(float*, int, int)",128,"cf_executed","Executed Control-Flow Instructions",298,298,298
+"GeForce GTX 780 (0)","lud_diagonal(float*, int, int)",128,"inst_executed","Instructions Executed",2590,2590,2590
+"GeForce GTX 780 (0)","lud_diagonal(float*, int, int)",128,"inst_issued","Instructions Issued",2983,2989,2985
+"GeForce GTX 780 (0)","lud_diagonal(float*, int, int)",128,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","lud_perimeter(float*, int, int)",127,"inst_replay_overhead","Instruction Replay Overhead",0.432914,0.447892,0.441725
+"GeForce GTX 780 (0)","lud_perimeter(float*, int, int)",127,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","lud_perimeter(float*, int, int)",127,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","lud_perimeter(float*, int, int)",127,"cf_issued","Issued Control-Flow Instructions",273,34679,17475
+"GeForce GTX 780 (0)","lud_perimeter(float*, int, int)",127,"cf_executed","Executed Control-Flow Instructions",273,34671,17472
+"GeForce GTX 780 (0)","lud_perimeter(float*, int, int)",127,"inst_executed","Instructions Executed",2872,364744,183808
+"GeForce GTX 780 (0)","lud_perimeter(float*, int, int)",127,"inst_issued","Instructions Issued",4145,523122,264583
+"GeForce GTX 780 (0)","lud_perimeter(float*, int, int)",127,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000

@@ -1,0 +1,30 @@
+Input file: rodinia_inputs\graph65536.txt
+Reading File
+Read File
+Kernels Executed 21 times
+Processing time: 1038.256226 (ms)
+Result stored in result.txt
+======== Warning: Metric "branch_efficiency" cannot be found on device 0.
+==3168== NVPROF is profiling process 3168, command: SSSP.exe rodinia_inputs\graph65536.txt
+==3168== Warning: Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==3168== Profiling application: SSSP.exe rodinia_inputs\graph65536.txt
+==3168== Profiling result:
+==3168== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"GeForce GTX 780 (0)","DijkastraKernel2(int*, int*, short*, int*, bool*, int*, bool*, int, int)",21,"inst_replay_overhead","Instruction Replay Overhead",0.273575,0.342601,0.309420
+"GeForce GTX 780 (0)","DijkastraKernel2(int*, int*, short*, int*, bool*, int*, bool*, int, int)",21,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","DijkastraKernel2(int*, int*, short*, int*, bool*, int*, bool*, int, int)",21,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","DijkastraKernel2(int*, int*, short*, int*, bool*, int*, bool*, int, int)",21,"cf_issued","Issued Control-Flow Instructions",12277,12333,12295
+"GeForce GTX 780 (0)","DijkastraKernel2(int*, int*, short*, int*, bool*, int*, bool*, int, int)",21,"cf_executed","Executed Control-Flow Instructions",10240,10240,10240
+"GeForce GTX 780 (0)","DijkastraKernel2(int*, int*, short*, int*, bool*, int*, bool*, int, int)",21,"inst_executed","Instructions Executed",38912,49152,44095
+"GeForce GTX 780 (0)","DijkastraKernel2(int*, int*, short*, int*, bool*, int*, bool*, int, int)",21,"inst_issued","Instructions Issued",52191,63521,57626
+"GeForce GTX 780 (0)","DijkastraKernel2(int*, int*, short*, int*, bool*, int*, bool*, int, int)",21,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","DijkastraKernel1(int*, int*, short*, int*, bool*, int*, int, int)",21,"inst_replay_overhead","Instruction Replay Overhead",0.272356,1.730879,0.703177
+"GeForce GTX 780 (0)","DijkastraKernel1(int*, int*, short*, int*, bool*, int*, int, int)",21,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","DijkastraKernel1(int*, int*, short*, int*, bool*, int*, int, int)",21,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","DijkastraKernel1(int*, int*, short*, int*, bool*, int*, int, int)",21,"cf_issued","Issued Control-Flow Instructions",4106,29047,15766
+"GeForce GTX 780 (0)","DijkastraKernel1(int*, int*, short*, int*, bool*, int*, int, int)",21,"cf_executed","Executed Control-Flow Instructions",4105,27545,14677
+"GeForce GTX 780 (0)","DijkastraKernel1(int*, int*, short*, int*, bool*, int*, int, int)",21,"inst_executed","Instructions Executed",20565,298540,134396
+"GeForce GTX 780 (0)","DijkastraKernel1(int*, int*, short*, int*, bool*, int*, int, int)",21,"inst_issued","Instructions Issued",26166,801248,277647
+"GeForce GTX 780 (0)","DijkastraKernel1(int*, int*, short*, int*, bool*, int*, int, int)",21,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.759662,0.152660
+======== Error: Application returned non-zero code 1

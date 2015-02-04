@@ -1,0 +1,50 @@
+Detecting cells in frame 0
+Cells detected: 36
+
+Detection runtime
+-----------------
+GICOV computation: 0.05002 seconds
+   GICOV dilation: 0.03000 seconds
+            Total: 0.11001 seconds
+
+Tracking cells across 5 frames
+Processing frame 1 / 5Processing frame 2 / 5Processing frame 3 / 5Processing frame 4 / 5Processing frame 5 / 5
+
+Tracking runtime (average per frame):
+------------------------------------
+MGVF computation: 0.04332 seconds
+ Snake evolution: 0.01129 seconds
+           Total: 0.06261 seconds
+
+Total application run time: 0.42304 seconds
+======== Warning: Metric "branch_efficiency" cannot be found on device 0.
+==4796== NVPROF is profiling process 4796, command: LKYT.exe 5 rodinia_inputs\\testfile.avi
+==4796== Warning: Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==4796== Profiling application: LKYT.exe 5 rodinia_inputs\\testfile.avi
+==4796== Profiling result:
+==4796== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"GeForce GTX 780 (0)","dilate_kernel(int, int, int, int, float*)",1,"inst_replay_overhead","Instruction Replay Overhead",0.063995,0.063995,0.063995
+"GeForce GTX 780 (0)","dilate_kernel(int, int, int, int, float*)",1,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","dilate_kernel(int, int, int, int, float*)",1,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","dilate_kernel(int, int, int, int, float*)",1,"cf_issued","Issued Control-Flow Instructions",17340508,17340508,17340508
+"GeForce GTX 780 (0)","dilate_kernel(int, int, int, int, float*)",1,"cf_executed","Executed Control-Flow Instructions",17326532,17326532,17326532
+"GeForce GTX 780 (0)","dilate_kernel(int, int, int, int, float*)",1,"inst_executed","Instructions Executed",49101261,49101261,49101261
+"GeForce GTX 780 (0)","dilate_kernel(int, int, int, int, float*)",1,"inst_issued","Instructions Issued",52243509,52243509,52243509
+"GeForce GTX 780 (0)","dilate_kernel(int, int, int, int, float*)",1,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","IMGVF_kernel(float**, float**, int*, int*, float, float, float, int, float)",5,"inst_replay_overhead","Instruction Replay Overhead",0.239748,0.240126,0.239902
+"GeForce GTX 780 (0)","IMGVF_kernel(float**, float**, int*, int*, float, float, float, int, float)",5,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","IMGVF_kernel(float**, float**, int*, int*, float, float, float, int, float)",5,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","IMGVF_kernel(float**, float**, int*, int*, float, float, float, int, float)",5,"cf_issued","Issued Control-Flow Instructions",12404667,12419514,12410107
+"GeForce GTX 780 (0)","IMGVF_kernel(float**, float**, int*, int*, float, float, float, int, float)",5,"cf_executed","Executed Control-Flow Instructions",12403240,12418980,12409412
+"GeForce GTX 780 (0)","IMGVF_kernel(float**, float**, int*, int*, float, float, float, int, float)",5,"inst_executed","Instructions Executed",83536645,83633529,83575918
+"GeForce GTX 780 (0)","IMGVF_kernel(float**, float**, int*, int*, float, float, float, int, float)",5,"inst_issued","Instructions Issued",103596000,103684473,103625931
+"GeForce GTX 780 (0)","IMGVF_kernel(float**, float**, int*, int*, float, float, float, int, float)",5,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","GICOV_kernel(int, float*)",1,"inst_replay_overhead","Instruction Replay Overhead",0.130761,0.130761,0.130761
+"GeForce GTX 780 (0)","GICOV_kernel(int, float*)",1,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","GICOV_kernel(int, float*)",1,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","GICOV_kernel(int, float*)",1,"cf_issued","Issued Control-Flow Instructions",37620253,37620253,37620253
+"GeForce GTX 780 (0)","GICOV_kernel(int, float*)",1,"cf_executed","Executed Control-Flow Instructions",35500126,35500126,35500126
+"GeForce GTX 780 (0)","GICOV_kernel(int, float*)",1,"inst_executed","Instructions Executed",159068528,159068528,159068528
+"GeForce GTX 780 (0)","GICOV_kernel(int, float*)",1,"inst_issued","Instructions Issued",179868506,179868506,179868506
+"GeForce GTX 780 (0)","GICOV_kernel(int, float*)",1,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000

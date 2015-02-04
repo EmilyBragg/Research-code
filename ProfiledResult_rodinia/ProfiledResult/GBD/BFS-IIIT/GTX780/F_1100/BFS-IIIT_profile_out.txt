@@ -1,0 +1,41 @@
+Chose device: name='GeForce GTX 780' index=0
+Vertices: 1000000
+Edges: 999999
+Running Benchmark
+Verification of GPU results: Passed
+Verification of GPU results: Passed
+Verification of GPU results: Passed
+Verification of GPU results: Passed
+Verification of GPU results: Passed
+Verification of GPU results: Passed
+Verification of GPU results: Passed
+Verification of GPU results: Passed
+Verification of GPU results: Passed
+Verification of GPU results: Passed
+test	atts	units	median	mean	stddev	min	max	trial0	trial1	trial2	trial3	trial4	trial5	trial6	trial7	trial8	trial9	
+BFS	v:1000000_e:1999998	GB/s	0.0136517	0.0133395	0.000601164	0.0119756	0.0138826	0.0136524	0.0138826	0.0137705	0.0134588	0.0127701	0.013651	0.0127223	0.0138338	0.0119756	0.0136777	
+BFS_PCIe	v:1000000_e:1999998	GB/s	0.0136171	0.0133061	0.00059807	0.0119489	0.0138458	0.0136177	0.0138458	0.0137352	0.0134251	0.0127397	0.0136165	0.0126923	0.0137976	0.0119489	0.013642	
+BFS_Parity	v:1000000_e:1999998	N	0.00254139	0.00250374	0.000128781	0.00223057	0.00266113	0.00254642	0.00266113	0.00256737	0.00250715	0.00238579	0.00253635	0.00236531	0.00262181	0.00223057	0.0026155	
+BFS_kernel_time	v:1000000_e:1999998	s	1.17202	1.20203	0.0572591	1.15252	1.33605	1.17195	1.15252	1.1619	1.18882	1.25293	1.17208	1.25763	1.15659	1.33605	1.16979	
+BFS_teps	v:1000000_e:1999998	Edges/s	834376	818639	35097.1	740192	853241	838222	853241	843881	823722	787401	834028	780639	850339	740192	834724	
+BFS_total	v:1000000_e:1999998	s	1.1985	1.2239	0.0551225	1.172	1.351	1.193	1.172	1.185	1.214	1.27	1.199	1.281	1.176	1.351	1.198	
+BFS_visited_vertices	v:1000000_e:1999998	N	1e+006	1e+006	0	1e+006	1e+006	1e+006	1e+006	1e+006	1e+006	1e+006	1e+006	1e+006	1e+006	1e+006	1e+006	
+
+Note: Any results marked with (*) had missing values.
+      This can occur on systems with a mixture of
+      device types or architectural capabilities.
+======== Warning: Metric "branch_efficiency" cannot be found on device 0.
+==836== NVPROF is profiling process 836, command: BFS.exe --algo 1 -s 4
+==836== Warning: Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==836== Profiling application: BFS.exe --algo 1 -s 4
+==836== Profiling result:
+==836== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"GeForce GTX 780 (0)","BFS_kernel_warp(unsigned int*, unsigned int*, unsigned int*, int, int, unsigned int, int, int*)",200,"inst_replay_overhead","Instruction Replay Overhead",0.104797,0.215207,0.123191
+"GeForce GTX 780 (0)","BFS_kernel_warp(unsigned int*, unsigned int*, unsigned int*, int, int, unsigned int, int, int*)",200,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","BFS_kernel_warp(unsigned int*, unsigned int*, unsigned int*, int, int, unsigned int, int, int*)",200,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","BFS_kernel_warp(unsigned int*, unsigned int*, unsigned int*, int, int, unsigned int, int, int*)",200,"cf_issued","Issued Control-Flow Instructions",3062516,4013940,3162514
+"GeForce GTX 780 (0)","BFS_kernel_warp(unsigned int*, unsigned int*, unsigned int*, int, int, unsigned int, int, int*)",200,"cf_executed","Executed Control-Flow Instructions",3062516,4013940,3162514
+"GeForce GTX 780 (0)","BFS_kernel_warp(unsigned int*, unsigned int*, unsigned int*, int, int, unsigned int, int, int*)",200,"inst_executed","Instructions Executed",9875833,19865785,10925812
+"GeForce GTX 780 (0)","BFS_kernel_warp(unsigned int*, unsigned int*, unsigned int*, int, int, unsigned int, int, int*)",200,"inst_issued","Instructions Issued",10910789,24079184,12349534
+"GeForce GTX 780 (0)","BFS_kernel_warp(unsigned int*, unsigned int*, unsigned int*, int, int, unsigned int, int, int*)",200,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000

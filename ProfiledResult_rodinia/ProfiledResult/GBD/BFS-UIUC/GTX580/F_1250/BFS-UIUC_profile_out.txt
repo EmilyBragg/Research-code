@@ -1,0 +1,78 @@
+Chose device: name='GeForce GTX 580' index=0
+Vertices: 1000000
+Edges: 999999
+Running Benchmark
+
+Verification of GPU results: Passed
+
+Verification of GPU results: Passed
+
+Verification of GPU results: Passed
+
+Verification of GPU results: Passed
+
+Verification of GPU results: Passed
+
+Verification of GPU results: Passed
+
+Verification of GPU results: Passed
+
+Verification of GPU results: Passed
+
+Verification of GPU results: Passed
+
+Verification of GPU results: Passed
+test	atts	units	median	mean	stddev	min	max	trial0	trial1	trial2	trial3	trial4	trial5	trial6	trial7	trial8	trial9	
+BFS	v:1000000_e:1999998	GB/s	0.0149881	0.0150534	0.000558711	0.0138613	0.0157873	0.0147639	0.0150849	0.015697	0.0157681	0.0138613	0.0148728	0.0147228	0.0157873	0.0150158	0.0149604	
+BFS_PCIe	v:1000000_e:1999998	GB/s	0.0149459	0.0150109	0.000555581	0.0138253	0.0157405	0.014723	0.0150422	0.015651	0.0157214	0.0138253	0.0148313	0.0146821	0.0157405	0.0149735	0.0149184	
+BFS_Parity	v:1000000_e:1999998	N	0.00282108	0.00283019	0.000105676	0.00259874	0.00297124	0.00277862	0.00283622	0.00293832	0.00296818	0.00259874	0.00279712	0.00277129	0.00297124	0.00282609	0.00281606	
+BFS_kernel_time	v:1000000_e:1999998	s	1.86815	1.86265	0.0704836	1.77358	2.02002	1.89652	1.85616	1.78378	1.77574	2.02002	1.88263	1.90181	1.77358	1.8647	1.8716	
+BFS_teps	v:1000000_e:1999998	Edges/s	533766	536567	20303.3	495294	564971	525486	537056	558659	564015	495294	529100	523560	564971	535618	531914	
+BFS_total	v:1000000_e:1999998	s	1.8735	1.8664	0.0715139	1.77	2.019	1.903	1.862	1.79	1.773	2.019	1.89	1.91	1.77	1.867	1.88	
+BFS_visited_vertices	v:1000000_e:1999998	N	1e+006	1e+006	0	1e+006	1e+006	1e+006	1e+006	1e+006	1e+006	1e+006	1e+006	1e+006	1e+006	1e+006	1e+006	
+
+Note: Any results marked with (*) had missing values.
+      This can occur on systems with a mixture of
+      device types or architectural capabilities.
+==3140== NVPROF is profiling process 3140, command: BFS.exe --algo 2 -s 4
+==3140== Warning: Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==3140== Profiling application: BFS.exe --algo 2 -s 4
+==3140== Profiling result:
+==3140== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"GeForce GTX 580 (0)","Reset_kernel_parameters(unsigned int*)",100,"branch_efficiency","Branch Efficiency",100.000000%,100.000000%,100.000000%
+"GeForce GTX 580 (0)","Reset_kernel_parameters(unsigned int*)",100,"inst_executed","Instructions Executed",12,12,12
+"GeForce GTX 580 (0)","Reset_kernel_parameters(unsigned int*)",100,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 580 (0)","Reset_kernel_parameters(unsigned int*)",100,"inst_replay_overhead","Instruction Replay Overhead",0.333333,0.416667,0.356667
+"GeForce GTX 580 (0)","Reset_kernel_parameters(unsigned int*)",100,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 580 (0)","Reset_kernel_parameters(unsigned int*)",100,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 580 (0)","Reset_kernel_parameters(unsigned int*)",100,"cf_issued","Issued Control-Flow Instructions",1,1,1
+"GeForce GTX 580 (0)","Reset_kernel_parameters(unsigned int*)",100,"cf_executed","Executed Control-Flow Instructions",1,1,1
+"GeForce GTX 580 (0)","Reset_kernel_parameters(unsigned int*)",100,"inst_issued","Instructions Issued",16,17,16
+"GeForce GTX 580 (0)","Frontier_copy(unsigned int*, unsigned int*, unsigned int*)",90,"branch_efficiency","Branch Efficiency",99.998401%,99.998401%,99.998401%
+"GeForce GTX 580 (0)","Frontier_copy(unsigned int*, unsigned int*, unsigned int*)",90,"inst_executed","Instructions Executed",312649,372117,326481
+"GeForce GTX 580 (0)","Frontier_copy(unsigned int*, unsigned int*, unsigned int*)",90,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 580 (0)","Frontier_copy(unsigned int*, unsigned int*, unsigned int*)",90,"inst_replay_overhead","Instruction Replay Overhead",0.004138,0.004926,0.004732
+"GeForce GTX 580 (0)","Frontier_copy(unsigned int*, unsigned int*, unsigned int*)",90,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.040106,0.009860
+"GeForce GTX 580 (0)","Frontier_copy(unsigned int*, unsigned int*, unsigned int*)",90,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 580 (0)","Frontier_copy(unsigned int*, unsigned int*, unsigned int*)",90,"cf_issued","Issued Control-Flow Instructions",62529,62529,62529
+"GeForce GTX 580 (0)","Frontier_copy(unsigned int*, unsigned int*, unsigned int*)",90,"cf_executed","Executed Control-Flow Instructions",62529,62529,62529
+"GeForce GTX 580 (0)","Frontier_copy(unsigned int*, unsigned int*, unsigned int*)",90,"inst_issued","Instructions Issued",314189,373658,328021
+"GeForce GTX 580 (0)","BFS_kernel_multi_block_spill(unsigned int volatile *, unsigned int volatile *, unsigned int, unsigned int volatile *, int volatile *, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int volatile *, unsigned int)",90,"branch_efficiency","Branch Efficiency",89.490159%,99.998927%,92.657070%
+"GeForce GTX 580 (0)","BFS_kernel_multi_block_spill(unsigned int volatile *, unsigned int volatile *, unsigned int, unsigned int volatile *, int volatile *, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int volatile *, unsigned int)",90,"inst_executed","Instructions Executed",832072,19712525,5048339
+"GeForce GTX 580 (0)","BFS_kernel_multi_block_spill(unsigned int volatile *, unsigned int volatile *, unsigned int, unsigned int volatile *, int volatile *, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int volatile *, unsigned int)",90,"atomic_replay_overhead","Atomic Replay Overhead",0.020107,0.392750,0.084886
+"GeForce GTX 580 (0)","BFS_kernel_multi_block_spill(unsigned int volatile *, unsigned int volatile *, unsigned int, unsigned int volatile *, int volatile *, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int volatile *, unsigned int)",90,"inst_replay_overhead","Instruction Replay Overhead",0.185589,7.890950,1.876830
+"GeForce GTX 580 (0)","BFS_kernel_multi_block_spill(unsigned int volatile *, unsigned int volatile *, unsigned int, unsigned int volatile *, int volatile *, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int volatile *, unsigned int)",90,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.010399,1.105033,0.154020
+"GeForce GTX 580 (0)","BFS_kernel_multi_block_spill(unsigned int volatile *, unsigned int volatile *, unsigned int, unsigned int volatile *, int volatile *, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int volatile *, unsigned int)",90,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 580 (0)","BFS_kernel_multi_block_spill(unsigned int volatile *, unsigned int volatile *, unsigned int, unsigned int volatile *, int volatile *, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int volatile *, unsigned int)",90,"cf_issued","Issued Control-Flow Instructions",260182,4813481,1272463
+"GeForce GTX 580 (0)","BFS_kernel_multi_block_spill(unsigned int volatile *, unsigned int volatile *, unsigned int, unsigned int volatile *, int volatile *, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int volatile *, unsigned int)",90,"cf_executed","Executed Control-Flow Instructions",260258,4820061,1274275
+"GeForce GTX 580 (0)","BFS_kernel_multi_block_spill(unsigned int volatile *, unsigned int volatile *, unsigned int, unsigned int volatile *, int volatile *, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int volatile *, unsigned int)",90,"inst_issued","Instructions Issued",998175,54257647,13995196
+"GeForce GTX 580 (0)","BFS_kernel_one_block_spill(unsigned int volatile *, unsigned int, unsigned int volatile *, int volatile *, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int volatile *, unsigned int)",10,"branch_efficiency","Branch Efficiency",90.484214%,91.092500%,90.822785%
+"GeForce GTX 580 (0)","BFS_kernel_one_block_spill(unsigned int volatile *, unsigned int, unsigned int volatile *, int volatile *, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int volatile *, unsigned int)",10,"inst_executed","Instructions Executed",221894,236038,228880
+"GeForce GTX 580 (0)","BFS_kernel_one_block_spill(unsigned int volatile *, unsigned int, unsigned int volatile *, int volatile *, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int volatile *, unsigned int)",10,"atomic_replay_overhead","Atomic Replay Overhead",0.115818,0.125917,0.119624
+"GeForce GTX 580 (0)","BFS_kernel_one_block_spill(unsigned int volatile *, unsigned int, unsigned int volatile *, int volatile *, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int volatile *, unsigned int)",10,"inst_replay_overhead","Instruction Replay Overhead",0.115650,0.125605,0.120578
+"GeForce GTX 580 (0)","BFS_kernel_one_block_spill(unsigned int volatile *, unsigned int, unsigned int volatile *, int volatile *, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int volatile *, unsigned int)",10,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.027855,0.030744,0.029337
+"GeForce GTX 580 (0)","BFS_kernel_one_block_spill(unsigned int volatile *, unsigned int, unsigned int volatile *, int volatile *, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int volatile *, unsigned int)",10,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 580 (0)","BFS_kernel_one_block_spill(unsigned int volatile *, unsigned int, unsigned int volatile *, int volatile *, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int volatile *, unsigned int)",10,"cf_issued","Issued Control-Flow Instructions",54779,58378,56598
+"GeForce GTX 580 (0)","BFS_kernel_one_block_spill(unsigned int volatile *, unsigned int, unsigned int volatile *, int volatile *, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int volatile *, unsigned int)",10,"cf_executed","Executed Control-Flow Instructions",53455,58359,55896
+"GeForce GTX 580 (0)","BFS_kernel_one_block_spill(unsigned int volatile *, unsigned int, unsigned int volatile *, int volatile *, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int volatile *, unsigned int)",10,"inst_issued","Instructions Issued",249765,264001,257323

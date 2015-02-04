@@ -1,0 +1,22 @@
+preprocess:		1101.984000ms
+=====start map/reduce=====
+** init GPU
+----------start map-----------
+** Map Input: keys buf size 13348 bytes, vals buf size 53392 bytes, index buf size 53392 bytes, 3337 records
+** Upload map input data onto device memory
+ PCI-E I/O:		0.000000ms
+** MapCount
+** Do prefix sum on intermediate data's size
+
+** Map Output: keys buf size 2566768 bytes, vals buf size 1202892 bytes, index buf size 4811568 bytes, 300723 records
+** Allocate intermediate memory on device memory
+** Map
+       Map:		333.694000ms
+----------start group-----------
+** Sort for group
+Cuda error in file 'C:/ProgramData/NVIDIA Corporation/NVIDIA GPU Computing SDK 4.2/C/src/Mars_WordCount/MarsLib.cu' in line 540 : unspecified launch failure.
+======== Warning: Metric "branch_efficiency" cannot be found on device 0.
+==4088== NVPROF is profiling process 4088, command: Mars_WordCount.exe Mars_inputs\\WordCount\\pg2981.txt
+==4088== Warning: Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==4088== Error: Internal profiling error 2900:999.
+======== Error: Application returned non-zero code 1

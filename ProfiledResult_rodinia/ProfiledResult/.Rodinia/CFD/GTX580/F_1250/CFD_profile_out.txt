@@ -1,0 +1,49 @@
+Name:                     GeForce GTX 580
+Starting...
+5.36989 seconds per iteration
+Saving solution...
+Saved solution...
+Cleaning up...
+Done...
+==3816== NVPROF is profiling process 3816, command: CFD.exe rodinia_inputs\\missile.domn.0.2M
+==3816== Warning: Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==3816== Profiling application: CFD.exe rodinia_inputs\\missile.domn.0.2M
+==3816== Profiling result:
+==3816== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"GeForce GTX 580 (0)","cuda_initialize_variables(int, float*)",3,"branch_efficiency","Branch Efficiency",100.000000%,100.000000%,100.000000%
+"GeForce GTX 580 (0)","cuda_initialize_variables(int, float*)",3,"inst_executed","Instructions Executed",5555214,5555214,5555214
+"GeForce GTX 580 (0)","cuda_initialize_variables(int, float*)",3,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 580 (0)","cuda_initialize_variables(int, float*)",3,"inst_replay_overhead","Instruction Replay Overhead",0.276595,0.277193,0.276837
+"GeForce GTX 580 (0)","cuda_initialize_variables(int, float*)",3,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 580 (0)","cuda_initialize_variables(int, float*)",3,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 580 (0)","cuda_initialize_variables(int, float*)",3,"cf_issued","Issued Control-Flow Instructions",264534,264534,264534
+"GeForce GTX 580 (0)","cuda_initialize_variables(int, float*)",3,"cf_executed","Executed Control-Flow Instructions",264534,264534,264534
+"GeForce GTX 580 (0)","cuda_initialize_variables(int, float*)",3,"inst_issued","Instructions Issued",7091756,7095082,7093103
+"GeForce GTX 580 (0)","cuda_compute_step_factor(int, float*, float*, float*)",1,"branch_efficiency","Branch Efficiency",99.999987%,99.999987%,99.999987%
+"GeForce GTX 580 (0)","cuda_compute_step_factor(int, float*, float*, float*)",1,"inst_executed","Instructions Executed",68267270,68267270,68267270
+"GeForce GTX 580 (0)","cuda_compute_step_factor(int, float*, float*, float*)",1,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 580 (0)","cuda_compute_step_factor(int, float*, float*, float*)",1,"inst_replay_overhead","Instruction Replay Overhead",0.000175,0.000175,0.000175
+"GeForce GTX 580 (0)","cuda_compute_step_factor(int, float*, float*, float*)",1,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.023247,0.023247,0.023247
+"GeForce GTX 580 (0)","cuda_compute_step_factor(int, float*, float*, float*)",1,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 580 (0)","cuda_compute_step_factor(int, float*, float*, float*)",1,"cf_issued","Issued Control-Flow Instructions",14976716,14976716,14976716
+"GeForce GTX 580 (0)","cuda_compute_step_factor(int, float*, float*, float*)",1,"cf_executed","Executed Control-Flow Instructions",14976716,14976716,14976716
+"GeForce GTX 580 (0)","cuda_compute_step_factor(int, float*, float*, float*)",1,"inst_issued","Instructions Issued",68279184,68279184,68279184
+"GeForce GTX 580 (0)","cuda_time_step(int, int, float*, float*, float*, float*)",3,"branch_efficiency","Branch Efficiency",99.999974%,99.999974%,99.999974%
+"GeForce GTX 580 (0)","cuda_time_step(int, int, float*, float*, float*, float*)",3,"inst_executed","Instructions Executed",26470892,26470892,26470892
+"GeForce GTX 580 (0)","cuda_time_step(int, int, float*, float*, float*, float*)",3,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 580 (0)","cuda_time_step(int, int, float*, float*, float*, float*)",3,"inst_replay_overhead","Instruction Replay Overhead",0.061763,0.063286,0.062489
+"GeForce GTX 580 (0)","cuda_time_step(int, int, float*, float*, float*, float*)",3,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.110094,0.110254,0.110154
+"GeForce GTX 580 (0)","cuda_time_step(int, int, float*, float*, float*, float*)",3,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 580 (0)","cuda_time_step(int, int, float*, float*, float*, float*)",3,"cf_issued","Issued Control-Flow Instructions",3888085,3888085,3888085
+"GeForce GTX 580 (0)","cuda_time_step(int, int, float*, float*, float*, float*)",3,"cf_executed","Executed Control-Flow Instructions",3888085,3888085,3888085
+"GeForce GTX 580 (0)","cuda_time_step(int, int, float*, float*, float*, float*)",3,"inst_issued","Instructions Issued",28105812,28146137,28125037
+"GeForce GTX 580 (0)","cuda_compute_flux(int, int*, float*, float*, float*)",3,"branch_efficiency","Branch Efficiency",99.979625%,99.982579%,99.981142%
+"GeForce GTX 580 (0)","cuda_compute_flux(int, int*, float*, float*, float*)",3,"inst_executed","Instructions Executed",105728419,108704108,107708782
+"GeForce GTX 580 (0)","cuda_compute_flux(int, int*, float*, float*, float*)",3,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 580 (0)","cuda_compute_flux(int, int*, float*, float*, float*)",3,"inst_replay_overhead","Instruction Replay Overhead",0.018820,0.019460,0.019197
+"GeForce GTX 580 (0)","cuda_compute_flux(int, int*, float*, float*, float*)",3,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.060148,0.062739,0.061229
+"GeForce GTX 580 (0)","cuda_compute_flux(int, int*, float*, float*, float*)",3,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 580 (0)","cuda_compute_flux(int, int*, float*, float*, float*)",3,"cf_issued","Issued Control-Flow Instructions",21274491,24740007,23583763
+"GeForce GTX 580 (0)","cuda_compute_flux(int, int*, float*, float*, float*)",3,"cf_executed","Executed Control-Flow Instructions",21274491,24740007,23583763
+"GeForce GTX 580 (0)","cuda_compute_flux(int, int*, float*, float*, float*)",3,"inst_issued","Instructions Issued",107718195,110819475,109776821

@@ -1,0 +1,46 @@
+Name:                     GeForce GTX 780
+Starting...
+0.641954 seconds per iteration
+Saving solution...
+Saved solution...
+Cleaning up...
+Done...
+======== Warning: Metric "branch_efficiency" cannot be found on device 0.
+==5152== NVPROF is profiling process 5152, command: CFD.exe rodinia_inputs\\missile.domn.0.2M
+==5152== Warning: Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==5152== Profiling application: CFD.exe rodinia_inputs\\missile.domn.0.2M
+==5152== Profiling result:
+==5152== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"GeForce GTX 780 (0)","cuda_initialize_variables(int, float*)",3,"inst_replay_overhead","Instruction Replay Overhead",0.727022,0.727450,0.727196
+"GeForce GTX 780 (0)","cuda_initialize_variables(int, float*)",3,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","cuda_initialize_variables(int, float*)",3,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","cuda_initialize_variables(int, float*)",3,"cf_issued","Issued Control-Flow Instructions",519360,519733,519565
+"GeForce GTX 780 (0)","cuda_initialize_variables(int, float*)",3,"cf_executed","Executed Control-Flow Instructions",264534,264534,264534
+"GeForce GTX 780 (0)","cuda_initialize_variables(int, float*)",3,"inst_executed","Instructions Executed",5555214,5555214,5555214
+"GeForce GTX 780 (0)","cuda_initialize_variables(int, float*)",3,"inst_issued","Instructions Issued",9593976,9596354,9594944
+"GeForce GTX 780 (0)","cuda_initialize_variables(int, float*)",3,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","cuda_compute_step_factor(int, float*, float*, float*)",1,"inst_replay_overhead","Instruction Replay Overhead",0.052846,0.052846,0.052846
+"GeForce GTX 780 (0)","cuda_compute_step_factor(int, float*, float*, float*)",1,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","cuda_compute_step_factor(int, float*, float*, float*)",1,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","cuda_compute_step_factor(int, float*, float*, float*)",1,"cf_issued","Issued Control-Flow Instructions",14976716,14976716,14976716
+"GeForce GTX 780 (0)","cuda_compute_step_factor(int, float*, float*, float*)",1,"cf_executed","Executed Control-Flow Instructions",14976716,14976716,14976716
+"GeForce GTX 780 (0)","cuda_compute_step_factor(int, float*, float*, float*)",1,"inst_executed","Instructions Executed",68267270,68267270,68267270
+"GeForce GTX 780 (0)","cuda_compute_step_factor(int, float*, float*, float*)",1,"inst_issued","Instructions Issued",71874917,71874917,71874917
+"GeForce GTX 780 (0)","cuda_compute_step_factor(int, float*, float*, float*)",1,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","cuda_time_step(int, int, float*, float*, float*, float*)",3,"inst_replay_overhead","Instruction Replay Overhead",0.189059,0.189349,0.189167
+"GeForce GTX 780 (0)","cuda_time_step(int, int, float*, float*, float*, float*)",3,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","cuda_time_step(int, int, float*, float*, float*, float*)",3,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","cuda_time_step(int, int, float*, float*, float*, float*)",3,"cf_issued","Issued Control-Flow Instructions",3888085,3888085,3888085
+"GeForce GTX 780 (0)","cuda_time_step(int, int, float*, float*, float*, float*)",3,"cf_executed","Executed Control-Flow Instructions",3888085,3888085,3888085
+"GeForce GTX 780 (0)","cuda_time_step(int, int, float*, float*, float*, float*)",3,"inst_executed","Instructions Executed",26470892,26470892,26470892
+"GeForce GTX 780 (0)","cuda_time_step(int, int, float*, float*, float*, float*)",3,"inst_issued","Instructions Issued",31475465,31483126,31478311
+"GeForce GTX 780 (0)","cuda_time_step(int, int, float*, float*, float*, float*)",3,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","cuda_compute_flux(int, int*, float*, float*, float*)",3,"inst_replay_overhead","Instruction Replay Overhead",0.123131,0.126946,0.124431
+"GeForce GTX 780 (0)","cuda_compute_flux(int, int*, float*, float*, float*)",3,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","cuda_compute_flux(int, int*, float*, float*, float*)",3,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","cuda_compute_flux(int, int*, float*, float*, float*)",3,"cf_issued","Issued Control-Flow Instructions",22326558,25800126,24641402
+"GeForce GTX 780 (0)","cuda_compute_flux(int, int*, float*, float*, float*)",3,"cf_executed","Executed Control-Flow Instructions",21274491,24740007,23583763
+"GeForce GTX 780 (0)","cuda_compute_flux(int, int*, float*, float*, float*)",3,"inst_executed","Instructions Executed",105728419,108704108,107708782
+"GeForce GTX 780 (0)","cuda_compute_flux(int, int*, float*, float*, float*)",3,"inst_issued","Instructions Issued",119150261,122088973,121108639
+"GeForce GTX 780 (0)","cuda_compute_flux(int, int*, float*, float*, float*)",3,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
