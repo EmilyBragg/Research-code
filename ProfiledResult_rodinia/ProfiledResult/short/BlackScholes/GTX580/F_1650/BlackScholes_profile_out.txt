@@ -1,0 +1,54 @@
+[BlackScholes.exe] starting...
+
+BlackScholes.exe Starting...
+
+Initializing data...
+...allocating CPU memory for options.
+...allocating GPU memory for options.
+...generating input data in CPU mem.
+...copying input data to GPU mem.
+Data init done.
+
+Executing Black-Scholes GPU kernel (512 iterations)...
+Options count             : 8000000     
+BlackScholesGPU() time    : 19.136871 msec
+Effective memory bandwidth: 4.180412 GB/s
+Gigaoptions per second    : 0.418041     
+
+BlackScholes, Throughput = 0.4180 GOptions/s, Time = 0.01914 s, Size = 8000000 options, NumDevsUsed = 1, Workgroup = 128
+
+Reading back GPU results...
+Checking the results...
+...running CPU calculations.
+
+Comparing the results...
+L1 norm: 1.682933E-007
+Max absolute error: 1.049042E-005
+
+Shutting down...
+...releasing GPU memory.
+...releasing CPU memory.
+Shutdown done.
+
+[BlackScholes] - Test Summary
+[BlackScholes.exe] test results...
+PASSED
+
+> exiting in 3 seconds: 3...2...1...done!
+
+==3132== NVPROF is profiling process 3132, command: BlackScholes.exe
+==3132== Warning: Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==3132== Profiling application: BlackScholes.exe
+==3132== Profiling result:
+==3132== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"GeForce GTX 580 (0)","BlackScholesGPU(float*, float*, float*, float*, float*, float, float, int)",512,"branch_efficiency","Branch Efficiency",100.000000%,100.000000%,100.000000%
+"GeForce GTX 580 (0)","BlackScholesGPU(float*, float*, float*, float*, float*, float, float, int)",512,"inst_executed","Instructions Executed",19023040,19023040,19023040
+"GeForce GTX 580 (0)","BlackScholesGPU(float*, float*, float*, float*, float*, float, float, int)",512,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 580 (0)","BlackScholesGPU(float*, float*, float*, float*, float*, float, float, int)",512,"inst_replay_overhead","Instruction Replay Overhead",0.000085,0.000171,0.000119
+"GeForce GTX 580 (0)","BlackScholesGPU(float*, float*, float*, float*, float*, float, float, int)",512,"shared_replay_overhead","Shared Memory Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 580 (0)","BlackScholesGPU(float*, float*, float*, float*, float*, float, float, int)",512,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.019386,0.020042,0.019723
+"GeForce GTX 580 (0)","BlackScholesGPU(float*, float*, float*, float*, float*, float, float, int)",512,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 580 (0)","BlackScholesGPU(float*, float*, float*, float*, float*, float, float, int)",512,"cf_issued","Issued Control-Flow Instructions",2003840,2003840,2003840
+"GeForce GTX 580 (0)","BlackScholesGPU(float*, float*, float*, float*, float*, float, float, int)",512,"cf_executed","Executed Control-Flow Instructions",2003840,2003840,2003840
+"GeForce GTX 580 (0)","BlackScholesGPU(float*, float*, float*, float*, float*, float, float, int)",512,"inst_issued","Instructions Issued",19024660,19026293,19025299

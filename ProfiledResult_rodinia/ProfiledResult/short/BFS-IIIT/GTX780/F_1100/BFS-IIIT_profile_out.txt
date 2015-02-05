@@ -1,0 +1,42 @@
+Chose device: name='GeForce GTX 780' index=0
+Vertices: 1000000
+Edges: 999999
+Running Benchmark
+Verification of GPU results: Passed
+Verification of GPU results: Passed
+Verification of GPU results: Passed
+Verification of GPU results: Passed
+Verification of GPU results: Passed
+Verification of GPU results: Passed
+Verification of GPU results: Passed
+Verification of GPU results: Passed
+Verification of GPU results: Passed
+Verification of GPU results: Passed
+test	atts	units	median	mean	stddev	min	max	trial0	trial1	trial2	trial3	trial4	trial5	trial6	trial7	trial8	trial9	
+BFS	v:1000000_e:1999998	GB/s	0.0116019	0.0114177	0.000685004	0.010249	0.0125403	0.0111167	0.010399	0.010249	0.0114313	0.0118618	0.0117725	0.0118621	0.0110188	0.0119256	0.0125403	
+BFS_PCIe	v:1000000_e:1999998	GB/s	0.0115768	0.0113933	0.00068212	0.0102295	0.0125113	0.0110933	0.0103787	0.0102295	0.0114067	0.0118357	0.0117469	0.0118359	0.0109965	0.0118982	0.0125113	
+BFS_Parity	v:1000000_e:1999998	N	0.00216462	0.00213605	0.000131531	0.00189878	0.00231985	0.00211198	0.00195654	0.00189878	0.00214887	0.00219906	0.00218037	0.00221306	0.00203128	0.00230071	0.00231985	
+BFS_kernel_time	v:1000000_e:1999998	s	1.37938	1.40651	0.08644	1.27589	1.56113	1.43927	1.5386	1.56113	1.39967	1.34887	1.35909	1.34883	1.45206	1.34165	1.27589	
+BFS_teps	v:1000000_e:1999998	Edges/s	710370	699420	41445.3	628535	767459	679347	638569	628535	700279	725162	720460	727801	676132	730459	767459	
+BFS_total	v:1000000_e:1999998	s	1.408	1.4349	0.087004	1.303	1.591	1.472	1.566	1.591	1.428	1.379	1.388	1.374	1.479	1.369	1.303	
+BFS_visited_vertices	v:1000000_e:1999998	N	1e+006	1e+006	0	1e+006	1e+006	1e+006	1e+006	1e+006	1e+006	1e+006	1e+006	1e+006	1e+006	1e+006	1e+006	
+
+Note: Any results marked with (*) had missing values.
+      This can occur on systems with a mixture of
+      device types or architectural capabilities.
+======== Warning: Metric "branch_efficiency" cannot be found on device 0.
+==2544== NVPROF is profiling process 2544, command: BFS.exe --algo 1 -s 4
+==2544== Warning: Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==2544== Profiling application: BFS.exe --algo 1 -s 4
+==2544== Profiling result:
+==2544== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"GeForce GTX 780 (0)","BFS_kernel_warp(unsigned int*, unsigned int*, unsigned int*, int, int, unsigned int, int, int*)",200,"inst_replay_overhead","Instruction Replay Overhead",0.104805,0.215130,0.123178
+"GeForce GTX 780 (0)","BFS_kernel_warp(unsigned int*, unsigned int*, unsigned int*, int, int, unsigned int, int, int*)",200,"shared_replay_overhead","Shared Memory Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","BFS_kernel_warp(unsigned int*, unsigned int*, unsigned int*, int, int, unsigned int, int, int*)",200,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","BFS_kernel_warp(unsigned int*, unsigned int*, unsigned int*, int, int, unsigned int, int, int*)",200,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 780 (0)","BFS_kernel_warp(unsigned int*, unsigned int*, unsigned int*, int, int, unsigned int, int, int*)",200,"cf_issued","Issued Control-Flow Instructions",3062516,4013940,3162514
+"GeForce GTX 780 (0)","BFS_kernel_warp(unsigned int*, unsigned int*, unsigned int*, int, int, unsigned int, int, int*)",200,"cf_executed","Executed Control-Flow Instructions",3062516,4013940,3162514
+"GeForce GTX 780 (0)","BFS_kernel_warp(unsigned int*, unsigned int*, unsigned int*, int, int, unsigned int, int, int*)",200,"inst_executed","Instructions Executed",9875833,19865785,10925812
+"GeForce GTX 780 (0)","BFS_kernel_warp(unsigned int*, unsigned int*, unsigned int*, int, int, unsigned int, int, int*)",200,"inst_issued","Instructions Issued",10910871,24079369,12349387
+"GeForce GTX 780 (0)","BFS_kernel_warp(unsigned int*, unsigned int*, unsigned int*, int, int, unsigned int, int, int*)",200,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000

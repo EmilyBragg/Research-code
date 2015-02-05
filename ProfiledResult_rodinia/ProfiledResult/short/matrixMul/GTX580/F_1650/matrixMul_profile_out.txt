@@ -1,0 +1,55 @@
+[matrixMul.exe] starting...
+
+[ matrixMul ]
+matrixMul.exe
+	Starting (CUDA and CUBLAS tests)...
+
+Device 0: "GeForce GTX 580" with Compute 2.0 capability
+
+Using Matrix Sizes: A(640 x 960), B(640 x 640), C(640 x 960)
+
+Runing Kernels...
+
+> CUBLAS         51.0801 GFlop/s, Time = 0.01540 s, Size = 786432000 Ops
+
+> CUDA matrixMul 37.6377 GFlop/s, Time = 0.02089 s, Size = 786432000 Ops, NumDevsUsed = 1, Workgroup = 1024
+
+Comparing GPU results with Host computation...
+
+Comparing CUBLAS & Host results
+CUBLAS compares OK
+
+Comparing CUDA matrixMul & Host results
+CUDA matrixMul compares OK
+
+[matrixMul.exe] test results...
+PASSED
+
+> exiting in 3 seconds: 3...2...1...done!
+
+==4900== NVPROF is profiling process 4900, command: matrixMul.exe
+==4900== Warning: Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==4900== Profiling application: matrixMul.exe
+==4900== Profiling result:
+==4900== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"GeForce GTX 580 (0)","void fermiSgemm_v3_kernel_val<bool=0, bool=0, int=6, int=5, int=3, int=8, int=8, bool=1>(int, int, int, float const *, int, float const *, int, float*, int, float, float, int, int)",31,"branch_efficiency","Branch Efficiency",100.000000%,100.000000%,100.000000%
+"GeForce GTX 580 (0)","void fermiSgemm_v3_kernel_val<bool=0, bool=0, int=6, int=5, int=3, int=8, int=8, bool=1>(int, int, int, float const *, int, float const *, int, float*, int, float, float, int, int)",31,"inst_executed","Instructions Executed",15644400,15644400,15644400
+"GeForce GTX 580 (0)","void fermiSgemm_v3_kernel_val<bool=0, bool=0, int=6, int=5, int=3, int=8, int=8, bool=1>(int, int, int, float const *, int, float const *, int, float*, int, float, float, int, int)",31,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 580 (0)","void fermiSgemm_v3_kernel_val<bool=0, bool=0, int=6, int=5, int=3, int=8, int=8, bool=1>(int, int, int, float const *, int, float const *, int, float*, int, float, float, int, int)",31,"inst_replay_overhead","Instruction Replay Overhead",0.003759,0.004001,0.003909
+"GeForce GTX 580 (0)","void fermiSgemm_v3_kernel_val<bool=0, bool=0, int=6, int=5, int=3, int=8, int=8, bool=1>(int, int, int, float const *, int, float const *, int, float*, int, float, float, int, int)",31,"shared_replay_overhead","Shared Memory Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 580 (0)","void fermiSgemm_v3_kernel_val<bool=0, bool=0, int=6, int=5, int=3, int=8, int=8, bool=1>(int, int, int, float const *, int, float const *, int, float*, int, float, float, int, int)",31,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 580 (0)","void fermiSgemm_v3_kernel_val<bool=0, bool=0, int=6, int=5, int=3, int=8, int=8, bool=1>(int, int, int, float const *, int, float const *, int, float*, int, float, float, int, int)",31,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 580 (0)","void fermiSgemm_v3_kernel_val<bool=0, bool=0, int=6, int=5, int=3, int=8, int=8, bool=1>(int, int, int, float const *, int, float const *, int, float*, int, float, float, int, int)",31,"cf_issued","Issued Control-Flow Instructions",52800,52800,52800
+"GeForce GTX 580 (0)","void fermiSgemm_v3_kernel_val<bool=0, bool=0, int=6, int=5, int=3, int=8, int=8, bool=1>(int, int, int, float const *, int, float const *, int, float*, int, float, float, int, int)",31,"cf_executed","Executed Control-Flow Instructions",52800,52800,52800
+"GeForce GTX 580 (0)","void fermiSgemm_v3_kernel_val<bool=0, bool=0, int=6, int=5, int=3, int=8, int=8, bool=1>(int, int, int, float const *, int, float const *, int, float*, int, float, float, int, int)",31,"inst_issued","Instructions Issued",15703210,15706988,15705559
+"GeForce GTX 580 (0)","void matrixMul<int=32>(float*, float*, float*, int, int)",31,"branch_efficiency","Branch Efficiency",100.000000%,100.000000%,100.000000%
+"GeForce GTX 580 (0)","void matrixMul<int=32>(float*, float*, float*, int, int)",31,"inst_executed","Instructions Executed",34060800,34060800,34060800
+"GeForce GTX 580 (0)","void matrixMul<int=32>(float*, float*, float*, int, int)",31,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 580 (0)","void matrixMul<int=32>(float*, float*, float*, int, int)",31,"inst_replay_overhead","Instruction Replay Overhead",0.009905,0.010710,0.010321
+"GeForce GTX 580 (0)","void matrixMul<int=32>(float*, float*, float*, int, int)",31,"shared_replay_overhead","Shared Memory Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 580 (0)","void matrixMul<int=32>(float*, float*, float*, int, int)",31,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.022548,0.022849,0.022640
+"GeForce GTX 580 (0)","void matrixMul<int=32>(float*, float*, float*, int, int)",31,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 580 (0)","void matrixMul<int=32>(float*, float*, float*, int, int)",31,"cf_issued","Issued Control-Flow Instructions",460800,460800,460800
+"GeForce GTX 580 (0)","void matrixMul<int=32>(float*, float*, float*, int, int)",31,"cf_executed","Executed Control-Flow Instructions",460800,460800,460800
+"GeForce GTX 580 (0)","void matrixMul<int=32>(float*, float*, float*, int, int)",31,"inst_issued","Instructions Issued",34398160,34425601,34412332

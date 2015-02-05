@@ -1,0 +1,40 @@
+[binomialOptions.exe] starting...
+
+> Using CUDA device [0]: GeForce GTX 580
+Using single precision...
+Generating input data...
+Running GPU binomial tree...
+Options count            : 512     
+Time steps               : 2048     
+binomialOptionsGPU() time: 71.848320 msec
+Options per second       : 7126.123477     
+Running CPU binomial tree...
+Comparing the results...
+GPU binomial vs. Black-Scholes
+L1 norm: 1.323648E-004
+CPU binomial vs. Black-Scholes
+L1 norm: 1.045247E-004
+CPU binomial vs. GPU binomial
+L1 norm: 3.390644E-005
+Shutting down...
+[binomialOptions.exe] test results...
+PASSED
+
+> exiting in 3 seconds: 3...2...1...done!
+
+==4016== NVPROF is profiling process 4016, command: binomialOptions.exe
+==4016== Warning: Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==4016== Profiling application: binomialOptions.exe
+==4016== Profiling result:
+==4016== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"GeForce GTX 580 (0)","binomialOptionsKernel(void)",1,"branch_efficiency","Branch Efficiency",99.997889%,99.997889%,99.997889%
+"GeForce GTX 580 (0)","binomialOptionsKernel(void)",1,"inst_executed","Instructions Executed",395409920,395409920,395409920
+"GeForce GTX 580 (0)","binomialOptionsKernel(void)",1,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 580 (0)","binomialOptionsKernel(void)",1,"inst_replay_overhead","Instruction Replay Overhead",0.002886,0.002886,0.002886
+"GeForce GTX 580 (0)","binomialOptionsKernel(void)",1,"shared_replay_overhead","Shared Memory Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 580 (0)","binomialOptionsKernel(void)",1,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.002913,0.002913,0.002913
+"GeForce GTX 580 (0)","binomialOptionsKernel(void)",1,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 580 (0)","binomialOptionsKernel(void)",1,"cf_issued","Issued Control-Flow Instructions",24261120,24261120,24261120
+"GeForce GTX 580 (0)","binomialOptionsKernel(void)",1,"cf_executed","Executed Control-Flow Instructions",24261120,24261120,24261120
+"GeForce GTX 580 (0)","binomialOptionsKernel(void)",1,"inst_issued","Instructions Issued",396550999,396550999,396550999

@@ -1,0 +1,55 @@
+[fastWalshTransform.exe] starting...
+
+Initializing data...
+...allocating CPU memory
+...allocating GPU memory
+...generating data
+Data length: 8388608; kernel length: 128
+Running GPU dyadic convolution using Fast Walsh Transform...
+GPU time: 396.260834 ms; GOP/s: 0.730345
+Reading back GPU results...
+Running straightforward CPU dyadic convolution...
+Comparing the results...
+Shutting down...
+L2 norm: 1.567494E-007
+[fastWalshTransform.exe] test results...
+PASSED
+
+> exiting in 3 seconds: 3...2...1...done!
+
+==1332== NVPROF is profiling process 1332, command: fastWalshTransform.exe
+==1332== Warning: Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==1332== Profiling application: fastWalshTransform.exe
+==1332== Profiling result:
+==1332== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"GeForce GTX 580 (0)","fwtBatch1Kernel(float*, float*, int)",3,"branch_efficiency","Branch Efficiency",100.000000%,100.000000%,100.000000%
+"GeForce GTX 580 (0)","fwtBatch1Kernel(float*, float*, int)",3,"inst_executed","Instructions Executed",17825792,17825792,17825792
+"GeForce GTX 580 (0)","fwtBatch1Kernel(float*, float*, int)",3,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 580 (0)","fwtBatch1Kernel(float*, float*, int)",3,"inst_replay_overhead","Instruction Replay Overhead",0.177902,0.178042,0.177983
+"GeForce GTX 580 (0)","fwtBatch1Kernel(float*, float*, int)",3,"shared_replay_overhead","Shared Memory Replay Overhead",0.176126,0.176815,0.176585
+"GeForce GTX 580 (0)","fwtBatch1Kernel(float*, float*, int)",3,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.014677,0.014720,0.014696
+"GeForce GTX 580 (0)","fwtBatch1Kernel(float*, float*, int)",3,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 580 (0)","fwtBatch1Kernel(float*, float*, int)",3,"cf_issued","Issued Control-Flow Instructions",1507328,1507328,1507328
+"GeForce GTX 580 (0)","fwtBatch1Kernel(float*, float*, int)",3,"cf_executed","Executed Control-Flow Instructions",1507328,1507328,1507328
+"GeForce GTX 580 (0)","fwtBatch1Kernel(float*, float*, int)",3,"inst_issued","Instructions Issued",20997035,20999536,20998480
+"GeForce GTX 580 (0)","fwtBatch2Kernel(float*, float*, int)",18,"branch_efficiency","Branch Efficiency",100.000000%,100.000000%,100.000000%
+"GeForce GTX 580 (0)","fwtBatch2Kernel(float*, float*, int)",18,"inst_executed","Instructions Executed",2555904,2555904,2555904
+"GeForce GTX 580 (0)","fwtBatch2Kernel(float*, float*, int)",18,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 580 (0)","fwtBatch2Kernel(float*, float*, int)",18,"inst_replay_overhead","Instruction Replay Overhead",0.419707,1.057701,0.754496
+"GeForce GTX 580 (0)","fwtBatch2Kernel(float*, float*, int)",18,"shared_replay_overhead","Shared Memory Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 580 (0)","fwtBatch2Kernel(float*, float*, int)",18,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.101512,0.103566,0.102570
+"GeForce GTX 580 (0)","fwtBatch2Kernel(float*, float*, int)",18,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 580 (0)","fwtBatch2Kernel(float*, float*, int)",18,"cf_issued","Issued Control-Flow Instructions",65536,65536,65536
+"GeForce GTX 580 (0)","fwtBatch2Kernel(float*, float*, int)",18,"cf_executed","Executed Control-Flow Instructions",65536,65536,65536
+"GeForce GTX 580 (0)","fwtBatch2Kernel(float*, float*, int)",18,"inst_issued","Instructions Issued",3628636,5259286,4484324
+"GeForce GTX 580 (0)","modulateKernel(float*, float*, int)",1,"branch_efficiency","Branch Efficiency",100.000000%,100.000000%,100.000000%
+"GeForce GTX 580 (0)","modulateKernel(float*, float*, int)",1,"inst_executed","Instructions Executed",2640896,2640896,2640896
+"GeForce GTX 580 (0)","modulateKernel(float*, float*, int)",1,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 580 (0)","modulateKernel(float*, float*, int)",1,"inst_replay_overhead","Instruction Replay Overhead",0.683450,0.683450,0.683450
+"GeForce GTX 580 (0)","modulateKernel(float*, float*, int)",1,"shared_replay_overhead","Shared Memory Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 580 (0)","modulateKernel(float*, float*, int)",1,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.210934,0.210934,0.210934
+"GeForce GTX 580 (0)","modulateKernel(float*, float*, int)",1,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 580 (0)","modulateKernel(float*, float*, int)",1,"cf_issued","Issued Control-Flow Instructions",267264,267264,267264
+"GeForce GTX 580 (0)","modulateKernel(float*, float*, int)",1,"cf_executed","Executed Control-Flow Instructions",267264,267264,267264
+"GeForce GTX 580 (0)","modulateKernel(float*, float*, int)",1,"inst_issued","Instructions Issued",4445817,4445817,4445817

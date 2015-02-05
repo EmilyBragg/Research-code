@@ -1,0 +1,42 @@
+Chose device: name='GeForce GTX 580' index=0
+Vertices: 1000000
+Edges: 999999
+Running Benchmark
+Verification of GPU results: Passed
+Verification of GPU results: Passed
+Verification of GPU results: Passed
+Verification of GPU results: Passed
+Verification of GPU results: Passed
+Verification of GPU results: Passed
+Verification of GPU results: Passed
+Verification of GPU results: Passed
+Verification of GPU results: Passed
+Verification of GPU results: Passed
+test	atts	units	median	mean	stddev	min	max	trial0	trial1	trial2	trial3	trial4	trial5	trial6	trial7	trial8	trial9	
+BFS	v:1000000_e:1999998	GB/s	0.0139329	0.013964	0.000869613	0.0126052	0.0158134	0.0139083	0.0128991	0.0145511	0.0146063	0.0133725	0.0158134	0.0138027	0.0139576	0.0141242	0.0126052	
+BFS_PCIe	v:1000000_e:1999998	GB/s	0.0138879	0.0139185	0.000863975	0.0125683	0.0157553	0.0138636	0.0128602	0.0145022	0.0145567	0.0133304	0.0157553	0.0137586	0.0139122	0.0140774	0.0125683	
+BFS_Parity	v:1000000_e:1999998	N	0.00324282	0.00326053	0.000198164	0.0029375	0.00368629	0.00322269	0.00302557	0.00337224	0.00340693	0.00316204	0.00368629	0.00320629	0.00326295	0.00332277	0.0029375	
+BFS_kernel_time	v:1000000_e:1999998	s	1.14836	1.15017	0.0704142	1.0118	1.26931	1.15039	1.24039	1.09957	1.09541	1.19648	1.0118	1.15919	1.14633	1.13281	1.26931	
+BFS_teps	v:1000000_e:1999998	Edges/s	849990	853102	52750.3	771009	965250	846739	787401	888888	892856	819000	965250	845308	853241	861326	771009	
+BFS_total	v:1000000_e:1999998	s	1.1765	1.1766	0.0715195	1.036	1.297	1.181	1.27	1.125	1.12	1.221	1.036	1.183	1.172	1.161	1.297	
+BFS_visited_vertices	v:1000000_e:1999998	N	1e+006	1e+006	0	1e+006	1e+006	1e+006	1e+006	1e+006	1e+006	1e+006	1e+006	1e+006	1e+006	1e+006	1e+006	
+
+Note: Any results marked with (*) had missing values.
+      This can occur on systems with a mixture of
+      device types or architectural capabilities.
+==5084== NVPROF is profiling process 5084, command: BFS.exe --algo 1 -s 4
+==5084== Warning: Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==5084== Profiling application: BFS.exe --algo 1 -s 4
+==5084== Profiling result:
+==5084== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"GeForce GTX 580 (0)","BFS_kernel_warp(unsigned int*, unsigned int*, unsigned int*, int, int, unsigned int, int, int*)",200,"branch_efficiency","Branch Efficiency",84.216242%,99.999952%,98.117224%
+"GeForce GTX 580 (0)","BFS_kernel_warp(unsigned int*, unsigned int*, unsigned int*, int, int, unsigned int, int, int*)",200,"inst_executed","Instructions Executed",9813319,19803271,10863298
+"GeForce GTX 580 (0)","BFS_kernel_warp(unsigned int*, unsigned int*, unsigned int*, int, int, unsigned int, int, int*)",200,"atomic_replay_overhead","Atomic Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 580 (0)","BFS_kernel_warp(unsigned int*, unsigned int*, unsigned int*, int, int, unsigned int, int, int*)",200,"inst_replay_overhead","Instruction Replay Overhead",0.000081,0.018897,0.002459
+"GeForce GTX 580 (0)","BFS_kernel_warp(unsigned int*, unsigned int*, unsigned int*, int, int, unsigned int, int, int*)",200,"shared_replay_overhead","Shared Memory Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 580 (0)","BFS_kernel_warp(unsigned int*, unsigned int*, unsigned int*, int, int, unsigned int, int, int*)",200,"global_cache_replay_overhead","Global Memory Cache Replay Overhead",0.003178,0.037517,0.007395
+"GeForce GTX 580 (0)","BFS_kernel_warp(unsigned int*, unsigned int*, unsigned int*, int, int, unsigned int, int, int*)",200,"local_replay_overhead","Local Memory Cache Replay Overhead",0.000000,0.000000,0.000000
+"GeForce GTX 580 (0)","BFS_kernel_warp(unsigned int*, unsigned int*, unsigned int*, int, int, unsigned int, int, int*)",200,"cf_issued","Issued Control-Flow Instructions",3062516,4013940,3162514
+"GeForce GTX 580 (0)","BFS_kernel_warp(unsigned int*, unsigned int*, unsigned int*, int, int, unsigned int, int, int*)",200,"cf_executed","Executed Control-Flow Instructions",3062516,4013940,3162514
+"GeForce GTX 580 (0)","BFS_kernel_warp(unsigned int*, unsigned int*, unsigned int*, int, int, unsigned int, int, int*)",200,"inst_issued","Instructions Issued",9814855,19804924,10895101
